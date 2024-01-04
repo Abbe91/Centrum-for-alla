@@ -1,5 +1,6 @@
 "use client"
-import { Button, CircularProgress, Snackbar } from '@mui/material';
+import { Button, CircularProgress, Snackbar, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import Alert from '@mui/material/Alert';
 import { useState } from 'react';
 
 const RandomUserButton: React.FC = () => {
@@ -23,46 +24,57 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <Button
-        variant="contained"
-        onClick={fetchRandomUser}
-        disabled={loading}
-        style={{ marginBottom: '10px' }}
-      >
-        {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
-      </Button>
+    <Card style={{ maxWidth: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
+      <CardContent>
+        <Typography variant="h5" component="div">
+          Random User App
+        </Typography>
 
-      {error && (
-        <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
-          <div style={{ backgroundColor: 'red', color: 'white', padding: '10px' }}>{error}</div>
-        </Snackbar>
-      )}
+        <Button
+          variant="contained"
+          onClick={fetchRandomUser}
+          disabled={loading}
+          style={{ marginTop: '20px' }}
+        >
+          {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
+        </Button>
 
-      {user && (
-        <div style={{ marginTop: '20px' }}>
-          <h2>User Information</h2>
-          <img
-            src={user.picture.large}
-            alt={`${user.name.first} ${user.name.last}`}
-            style={{ borderRadius: '50%', marginBottom: '10px' }}
-          />
-          <p>
-            <strong>Name:</strong> {`${user.name.first} ${user.name.last}`}
-          </p>
-          <p>
-            <strong>Email:</strong> {user.email}
-          </p>
-          <p>
-            <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()}
-          </p>
-          <p>
-            <strong>Gender:</strong> {user.gender}
-          </p>
-          {/* Add more user details as needed */}
-        </div>
-      )}
-    </div>
+        {error && (
+          <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
+            <Alert severity="error" onClose={() => setError(null)}>
+              {error}
+            </Alert>
+          </Snackbar>
+        )}
+
+        {user && (
+          <div style={{ marginTop: '20px' }}>
+            <CardMedia
+              component="img"
+              alt={`${user.name.first} ${user.name.last}`}
+              height="140"
+              image={user.picture.large}
+              style={{ borderRadius: '50%', margin: 'auto' }}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div">
+                {`${user.name.first} ${user.name.last}`}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <strong>Email:</strong> {user.email}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <strong>Gender:</strong> {user.gender}
+              </Typography>
+              {/* Add more user details as needed */}
+            </CardContent>
+          </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 
