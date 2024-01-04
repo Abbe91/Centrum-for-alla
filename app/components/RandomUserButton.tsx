@@ -1,6 +1,9 @@
 "use client"
-import { Button, CircularProgress, Snackbar, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Button, CircularProgress, Snackbar, Card, CardContent, Typography, Avatar } from '@mui/material';
 import Alert from '@mui/material/Alert';
+import CakeIcon from '@mui/icons-material/Cake';
+import MaleIcon from '@mui/icons-material/Male';
+import FemaleIcon from '@mui/icons-material/Female';
 import { useState } from 'react';
 
 const RandomUserButton: React.FC = () => {
@@ -24,58 +27,56 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <Card style={{ maxWidth: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
-      <CardContent>
-        <Typography variant="h5" component="div">
-          Random User App
-        </Typography>
+    <Card sx={{ maxWidth: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
+    <CardContent>
+      <Typography variant="h5" component="div" gutterBottom>
+        Random User App
+      </Typography>
 
-        <Button
-          variant="contained"
-          onClick={fetchRandomUser}
-          disabled={loading}
-          style={{ marginTop: '20px' }}
-        >
-          {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
-        </Button>
+      <Button
+        variant="contained"
+        onClick={fetchRandomUser}
+        disabled={loading}
+        style={{ marginTop: '20px' }}
+      >
+        {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
+      </Button>
 
-        {error && (
-          <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
-            <Alert severity="error" onClose={() => setError(null)}>
-              {error}
-            </Alert>
-          </Snackbar>
-        )}
+      {error && (
+        <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
+          <Alert severity="error" onClose={() => setError(null)}>
+            {error}
+          </Alert>
+        </Snackbar>
+      )}
 
-        {user && (
-          <div style={{ marginTop: '20px' }}>
-            <CardMedia
-              component="img"
-              alt={`${user.name.first} ${user.name.last}`}
-              height="140"
-              image={user.picture.large}
-              style={{ borderRadius: '50%', margin: 'auto' }}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                {`${user.name.first} ${user.name.last}`}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <strong>Email:</strong> {user.email}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <strong>Gender:</strong> {user.gender}
-              </Typography>
-              {/* Add more user details as needed */}
-            </CardContent>
-          </div>
-        )}
-      </CardContent>
-    </Card>
-  );
+      {user && (
+        <div style={{ marginTop: '20px' }}>
+          <Avatar
+            alt={`${user.name.first} ${user.name.last}`}
+            src={user.picture.large}
+            sx={{ width: 120, height: 120, margin: 'auto' }}
+          />
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              {`${user.name.first} ${user.name.last}`}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <strong>Email:</strong> {user.email}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()} <CakeIcon />
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <strong>Gender:</strong> {user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />}
+            </Typography>
+            {/* Add more user details as needed */}
+          </CardContent>
+        </div>
+      )}
+    </CardContent>
+  </Card>
+);
 };
 
 export default RandomUserButton;
