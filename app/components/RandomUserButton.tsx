@@ -23,22 +23,28 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <div>
-      <Button variant="contained" onClick={fetchRandomUser} disabled={loading}>
+    <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <Button
+        variant="contained"
+        onClick={fetchRandomUser}
+        disabled={loading}
+        style={{ marginBottom: '10px' }}
+      >
         {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
       </Button>
 
       {error && (
         <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
-          <div>{error}</div>
+          <div style={{ backgroundColor: 'red', color: 'white', padding: '10px' }}>{error}</div>
         </Snackbar>
       )}
 
       {user && (
-        <div>
+        <div style={{ marginTop: '20px' }}>
           <h2>User Information</h2>
           <p>Name: {`${user.name.first} ${user.name.last}`}</p>
           <p>Email: {user.email}</p>
+          {/* Add more user details as needed */}
         </div>
       )}
     </div>
