@@ -6,6 +6,7 @@ import MaleIcon from '@mui/icons-material/Male';
 import FemaleIcon from '@mui/icons-material/Female';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { Grid, Box } from '@mui/material';
 import { useState } from 'react';
 
 const RandomUserButton: React.FC = () => {
@@ -29,65 +30,78 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <Card sx={{ width: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
-    <CardContent>
-      <Typography variant="h5" component="div" gutterBottom>
-        Random User App
-      </Typography>
+    <Card sx={{ width: 'auto', margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
+      <CardContent>
+        <Typography variant="h5" gutterBottom>
+          Random User App
+        </Typography>
 
-      <Button
-        variant="contained"
-        onClick={fetchRandomUser}
-        disabled={loading}
-        className="fetch-button"
-        style={{ marginTop: '20px' }}
-      >
-        {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
-      </Button>
+        <Button
+          variant="contained"
+          onClick={fetchRandomUser}
+          disabled={loading}
+          className="fetch-button"
+          style={{ marginTop: '20px' }}
+        >
+          {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
+        </Button>
 
-      {error && (
-        <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
-          <Alert severity="error" onClose={() => setError(null)}>
-            {error}
-          </Alert>
-        </Snackbar>
-      )}
+        {error && (
+          <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
+            <Alert severity="error" onClose={() => setError(null)}>
+              {error}
+            </Alert>
+          </Snackbar>
+        )}
 
-      {user && (
-        <div style={{ marginTop: '20px' }}>
-          <Avatar
-            alt={`${user.name.first} ${user.name.last}`}
-            src={user.picture.large}
-            sx={{ width: 120, height: 120, margin: 'auto' }}
-          />
-          <CardContent>
-            <Typography variant="h6" gutterBottom>
-              {`${user.name.first} ${user.name.last}`}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              <strong>Email:</strong> {user.email}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()} <CakeIcon />
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              <strong>Gender:</strong> {user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            <strong>Nationality:</strong> {user.nat}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            <strong>Location:</strong> <LocationOnIcon /> {`${user.location.city}, ${user.location.country}`}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            <strong>Phone:</strong> <PhoneIcon /> {user.phone}
-            </Typography>
-        </CardContent>
-        </div>
-      )}
-    </CardContent>
-  </Card>
-);
+        {user && (
+          <Box marginTop={4}>
+            <Avatar
+              alt={`${user.name.first} ${user.name.last}`}
+              src={user.picture.large}
+              sx={{ width: 120, height: 120, margin: 'auto' }}
+            />
+
+            <Box marginTop={3}>
+              <Typography variant="h6" gutterBottom>
+                {`${user.name.first} ${user.name.last}`}
+              </Typography>
+
+              <Grid container spacing={2}>
+                {[
+                  { label: 'Email', value: user.email },
+                  {
+                    label: 'Birthday',
+                    value: new Date(user.dob.date).toLocaleDateString(),
+                    icon: <CakeIcon />,
+                  },
+                  {
+                    label: 'Gender',
+                    value: user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />,
+                  },
+                  { label: 'Nationality', value: user.nat },
+                  {
+                    label: 'Location',
+                    value: `${user.location.city}, ${user.location.country}`,
+                    icon: <LocationOnIcon />,
+                  },
+                  { label: 'Phone', value: user.phone, icon: <PhoneIcon /> },
+                ].map((item, index) => (
+                  <Grid item xs={6} key={index}>
+                    <Typography variant="body2" color="text.secondary">
+                      <strong>{item.label}:</strong>
+                      {item.icon && <Box component="span" marginLeft={1}>{item.icon}</Box>}
+                      {item.value}
+                    </Typography>
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
+          </Box>
+        )}
+      </CardContent>
+    </Card>
+  );
 };
 
 export default RandomUserButton;
