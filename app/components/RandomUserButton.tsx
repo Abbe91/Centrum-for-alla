@@ -4,6 +4,8 @@ import Alert from '@mui/material/Alert';
 import CakeIcon from '@mui/icons-material/Cake';
 import MaleIcon from '@mui/icons-material/Male';
 import FemaleIcon from '@mui/icons-material/Female';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
 import { useState } from 'react';
 
 const RandomUserButton: React.FC = () => {
@@ -70,8 +72,17 @@ const RandomUserButton: React.FC = () => {
             <Typography variant="body2" color="text.secondary">
               <strong>Gender:</strong> {user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />}
             </Typography>
-            {/* Add more user details as needed */}
-          </CardContent>
+            <Typography variant="body2" color="text.secondary">
+                <strong>Nationality:</strong> {user.nat}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <strong>Location:</strong> <LocationOnIcon /> {`${user.location.city}, ${user.location.country}`}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <strong>Phone:</strong> <PhoneIcon /> {user.phone}
+              </Typography>
+              {/* Add more user details as needed */}
+            </CardContent>
         </div>
       )}
     </CardContent>
