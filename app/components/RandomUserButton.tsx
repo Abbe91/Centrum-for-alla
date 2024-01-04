@@ -29,7 +29,7 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <Card sx={{ maxWidth: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
+    <Card sx={{ width: 400, margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
     <CardContent>
       <Typography variant="h5" component="div" gutterBottom>
         Random User App
@@ -39,6 +39,7 @@ const RandomUserButton: React.FC = () => {
         variant="contained"
         onClick={fetchRandomUser}
         disabled={loading}
+        className="fetch-button"
         style={{ marginTop: '20px' }}
       >
         {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
@@ -73,16 +74,15 @@ const RandomUserButton: React.FC = () => {
               <strong>Gender:</strong> {user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-                <strong>Nationality:</strong> {user.nat}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <strong>Location:</strong> <LocationOnIcon /> {`${user.location.city}, ${user.location.country}`}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <strong>Phone:</strong> <PhoneIcon /> {user.phone}
-              </Typography>
-              {/* Add more user details as needed */}
-            </CardContent>
+            <strong>Nationality:</strong> {user.nat}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            <strong>Location:</strong> <LocationOnIcon /> {`${user.location.city}, ${user.location.country}`}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            <strong>Phone:</strong> <PhoneIcon /> {user.phone}
+            </Typography>
+        </CardContent>
         </div>
       )}
     </CardContent>

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #092b1b; 
+}
+
+.random-user-button-container {
+  width: 300px; 
+  height: 400px; 
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
