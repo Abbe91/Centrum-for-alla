@@ -42,8 +42,23 @@ const RandomUserButton: React.FC = () => {
       {user && (
         <div style={{ marginTop: '20px' }}>
           <h2>User Information</h2>
-          <p>Name: {`${user.name.first} ${user.name.last}`}</p>
-          <p>Email: {user.email}</p>
+          <img
+            src={user.picture.large}
+            alt={`${user.name.first} ${user.name.last}`}
+            style={{ borderRadius: '50%', marginBottom: '10px' }}
+          />
+          <p>
+            <strong>Name:</strong> {`${user.name.first} ${user.name.last}`}
+          </p>
+          <p>
+            <strong>Email:</strong> {user.email}
+          </p>
+          <p>
+            <strong>Birthday:</strong> {new Date(user.dob.date).toLocaleDateString()}
+          </p>
+          <p>
+            <strong>Gender:</strong> {user.gender}
+          </p>
           {/* Add more user details as needed */}
         </div>
       )}
