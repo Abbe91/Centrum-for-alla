@@ -30,76 +30,83 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <Card sx={{ width: 'auto', margin: 'auto', textAlign: 'center' }}  className= "card-box">
-      <CardContent>
-        <Typography variant="h5" gutterBottom>
-          Random User App
-        </Typography>
+    <Card  className= "card-box">
+        <Grid item xs={12} sm={6}>
+            <CardContent>
+                <Typography variant="h5" gutterBottom>
+                Random User App
+                </Typography>
 
-        <Button
-          variant="contained"
-          onClick={fetchRandomUser}
-          disabled={loading}
-          className="fetch-button"
-          style={{ backgroundColor: '#00f181' }}
-        >
-          {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
-        </Button>
+                <Button
+                variant="contained"
+                onClick={fetchRandomUser}
+                disabled={loading}
+                className="fetch-button"
+                style={{ backgroundColor: '#00f181' }}
+                >
+                {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
+                </Button>
 
-        {error && (
-          <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
-            <Alert severity="error" onClose={() => setError(null)}>
-              {error}
-            </Alert>
-          </Snackbar>
-        )}
+                {error && (
+                <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
+                    <Alert severity="error" onClose={() => setError(null)}>
+                    {error}
+                    </Alert>
+                </Snackbar>
+                )}
 
-        {user && (
-          <Box marginTop={4}>
-            <Avatar
-              alt={`${user.name.first} ${user.name.last}`}
-              src={user.picture.large}
-              sx={{ width: 120, height: 120, margin: 'auto' }}
-            />
+                {user && (
+                <Box marginTop={4}>
+                    <Avatar
+                    alt={`${user.name.first} ${user.name.last}`}
+                    src={user.picture.large}
+                    sx={{ width: 120, height: 120, margin: 'auto' }}
+                    />
 
-            <Box marginTop={3}>
-              <Typography variant="h6" gutterBottom>
-                {`${user.name.first} ${user.name.last}`}
-              </Typography>
+                    <Box marginTop={3}>
+                        <Typography variant="h6" gutterBottom>
+                            {`${user.name.first} ${user.name.last}`}
+                        </Typography>
+                    <Grid item xs={12}>
+                        <Typography variant="body2" color="text.secondary">
+                        <strong>Username:</strong> {user.login.username}
+                        </Typography>
+                    </Grid>
 
-              <Grid container spacing={2}>
-                {[
-                  { label: 'Email', value: user.email },
-                  {
-                    label: 'Birthday',
-                    value: new Date(user.dob.date).toLocaleDateString(),
-                    icon: <CakeIcon />,
-                  },
-                  {
-                    label: 'Gender',
-                    value: user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />,
-                  },
-                  { label: 'Nationality', value: user.nat },
-                  {
-                    label: 'Location',
-                    value: `${user.location.city}, ${user.location.country}`,
-                    icon: <LocationOnIcon />,
-                  },
-                  { label: 'Phone', value: user.phone, icon: <PhoneIcon /> },
-                ].map((item, index) => (
-                  <Grid item xs={12} sm={6} key={index}>
-                    <Typography variant="body2" color="text.secondary">
-                      <strong>{item.label}:</strong>
-                      {item.icon && <Box component="span" marginLeft={1}>{item.icon}</Box>}
-                      {item.value}
-                    </Typography>
-                  </Grid>
-                ))}
-              </Grid>
-            </Box>
-          </Box>
-        )}
-      </CardContent>
+                        <Grid container spacing={2}>
+                            {[
+                            { label: 'Email', value: user.email },
+                            {
+                                label: 'Birthday',
+                                value: new Date(user.dob.date).toLocaleDateString(),
+                                icon: <CakeIcon />,
+                            },
+                            {
+                                label: 'Gender',
+                                value: user.gender === 'male' ? <MaleIcon /> : <FemaleIcon />,
+                            },
+                            { label: 'Nationality', value: user.nat },
+                            {
+                                label: 'Location',
+                                value: `${user.location.city}, ${user.location.country}`,
+                                icon: <LocationOnIcon />,
+                            },
+                            { label: 'Phone', value: user.phone, icon: <PhoneIcon /> },
+                            ].map((item, index) => (
+                            <Grid item xs={12} sm={6} key={index}>
+                                <Typography variant="body2" color="text.secondary">
+                                <strong>{item.label}:</strong>
+                                {item.icon && <Box component="span" marginLeft={1}>{item.icon}</Box>}
+                                {item.value}
+                                </Typography>
+                            </Grid>
+                            ))}
+                        </Grid>
+                    </Box>
+                </Box>
+                )}
+            </CardContent>
+      </Grid>
     </Card>
   );
 };
