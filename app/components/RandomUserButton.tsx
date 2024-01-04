@@ -30,7 +30,7 @@ const RandomUserButton: React.FC = () => {
   };
 
   return (
-    <Card sx={{ width: 'auto', margin: 'auto', textAlign: 'center', marginTop: '20px' }}>
+    <Card sx={{ width: 'auto', margin: 'auto', textAlign: 'center' }}  className= "card-box">
       <CardContent>
         <Typography variant="h5" gutterBottom>
           Random User App
@@ -41,7 +41,7 @@ const RandomUserButton: React.FC = () => {
           onClick={fetchRandomUser}
           disabled={loading}
           className="fetch-button"
-          style={{ marginTop: '20px' }}
+          style={{ backgroundColor: '#00f181' }}
         >
           {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
         </Button>
@@ -87,7 +87,7 @@ const RandomUserButton: React.FC = () => {
                   },
                   { label: 'Phone', value: user.phone, icon: <PhoneIcon /> },
                 ].map((item, index) => (
-                  <Grid item xs={6} key={index}>
+                  <Grid item xs={12} sm={6} key={index}>
                     <Typography variant="body2" color="text.secondary">
                       <strong>{item.label}:</strong>
                       {item.icon && <Box component="span" marginLeft={1}>{item.icon}</Box>}
