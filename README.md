@@ -40,6 +40,11 @@ This is the main page that combines the Header and RandomUserButton components.
   - `../app/components/RandomUserButton`: The RandomUserButton component.
   - `../app/components/Header`: The Header component.
 
+## Branches
+
+- **Main**: The main branch contains the stable and production-ready version of the app.
+- **Dev**: The dev branch is used for development and may include the latest features or updates.
+
 ## How to Run
 
 1. Install dependencies:
