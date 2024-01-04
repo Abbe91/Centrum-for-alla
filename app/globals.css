@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #00f181; 
+}
+
+.fetch-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color:#1a1a1a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-box {
+  margin: 14px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.77);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+@media (min-width: 800px) {
+  .card-box {
+    width: 900px ;
+  }
+}
