@@ -8,7 +8,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { Grid, Box } from '@mui/material';
 import { useState } from 'react';
-
+import FetchMaleUserButton from './FetchMaleUserButton';
+import FetchFemaleUserButton from './FetchFemaleUserButton';
 const RandomUserButton: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,6 +28,27 @@ const RandomUserButton: React.FC = () => {
     } finally {
       setLoading(false);
     }
+    
+  };
+  const fetchMaleUser = async () => {
+    // Adjust the URL to fetch only male users
+    try {
+      const response = await fetch('https://randomuser.me/api/?gender=male');
+      const data = await response.json();
+      setUser(data.results[0]);
+    } catch (error) {
+      console.error('Error fetching male user:', error);
+    }
+  };
+  const fetchFemaleUser = async () => {
+    // Adjust the URL to fetch only male users
+    try {
+      const response = await fetch('https://randomuser.me/api/?gender=female');
+      const data = await response.json();
+      setUser(data.results[0]);
+    } catch (error) {
+      console.error('Error fetching Female user:', error);
+    }
   };
 
   return (
@@ -36,7 +58,8 @@ const RandomUserButton: React.FC = () => {
                 <Typography variant="h5" gutterBottom>
                 Random User App
                 </Typography>
-
+                <FetchMaleUserButton onFetchMaleUser={fetchMaleUser} />
+                <FetchFemaleUserButton onFetchFemaleUser={fetchFemaleUser} />
                 <Button
                 variant="contained"
                 onClick={fetchRandomUser}
