@@ -1,5 +1,5 @@
 "use client"
-import { Button, CircularProgress, Snackbar, Card, CardContent, Typography, Avatar } from '@mui/material';
+import { Snackbar, Card, CardContent, Typography, Avatar } from '@mui/material';
 import Alert from '@mui/material/Alert';
 import CakeIcon from '@mui/icons-material/Cake';
 import MaleIcon from '@mui/icons-material/Male';
@@ -11,26 +11,11 @@ import { useState } from 'react';
 import FetchMaleUserButton from './FetchMaleUserButton';
 import FetchFemaleUserButton from './FetchFemaleUserButton';
 import { fetchRandomUser, fetchMaleUser, fetchFemaleUser } from './api';
+import FetchRandomUserButton from './FetchRandomUserButton';
 
 const RandomUserButton: React.FC = () => {
-  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [user, setUser] = useState<any | null>(null);
-
-  const handleFetchRandomUser = async () => {
-    setLoading(true);
-    setError(null);
-
-    try {
-      const userData = await fetchRandomUser();
-      setUser(userData);
-    } catch (error: any) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleFetchMaleUser = async () => {
     try {
       const userData = await fetchMaleUser();
@@ -49,6 +34,15 @@ const RandomUserButton: React.FC = () => {
     }
   };
 
+  const handleFetchRandomUser = async () => {
+    try {
+      const userData = await fetchRandomUser();
+      setUser(userData);
+    } catch (error) {
+      console.error('Error fetching Random user:', error);
+    }
+  };
+
   return (
     <Card  className= "card-box">
         <Grid item xs={12} sm={6}>
@@ -58,16 +52,7 @@ const RandomUserButton: React.FC = () => {
                 </Typography>
                 <FetchMaleUserButton onFetchMaleUser={handleFetchMaleUser} />
                 <FetchFemaleUserButton onFetchFemaleUser={handleFetchFemaleUser} />
-                <Button
-                variant="contained"
-                onClick={handleFetchRandomUser}
-                disabled={loading}
-                className="fetch-button"
-                style={{ backgroundColor: '#00f181' }}
-                >
-                {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
-                </Button>
-
+                <FetchRandomUserButton onFetchRandomUser={handleFetchRandomUser} />
                 {error && (
                 <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
                     <Alert severity="error" onClose={() => setError(null)}>
