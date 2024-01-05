@@ -3,7 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #00f181; 
+  background-color: #d0d1d1; 
+  font-weight: 700;
+  font-size: 50px;
 }
 
 .fetch-button {
@@ -21,6 +23,7 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
+  font-weight: 700;
   
 }
 
@@ -38,13 +41,18 @@ body {
 
 .custom-appbar {
   margin-top: 10px;
-  background-color: rgba(7, 24, 101, 0.659);
+  background-color: rgba(235, 235, 237, 0.659);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-weight: bold;
 }
 
 .app-title {
-  color: #fff;
+  color: #1d1919;
   font-size: 1.5rem;
   margin-right: 20px;
+  font-size: 50px;
+  font-weight: bold;
 }
