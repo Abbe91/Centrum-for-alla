@@ -10,44 +10,42 @@ import { Grid, Box } from '@mui/material';
 import { useState } from 'react';
 import FetchMaleUserButton from './FetchMaleUserButton';
 import FetchFemaleUserButton from './FetchFemaleUserButton';
+import { fetchRandomUser, fetchMaleUser, fetchFemaleUser } from './api';
+
 const RandomUserButton: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [user, setUser] = useState<any | null>(null);
 
-  const fetchRandomUser = async () => {
+  const handleFetchRandomUser = async () => {
     setLoading(true);
     setError(null);
 
     try {
-      const response = await fetch('https://randomuser.me/api/');
-      const data = await response.json();
-      setUser(data.results[0]);
-    } catch (error) {
-      setError('Something went wrong. Please try again.');
+      const userData = await fetchRandomUser();
+      setUser(userData);
+    } catch (error: any) {
+      setError(error.message);
     } finally {
       setLoading(false);
     }
-    
   };
-  const fetchMaleUser = async () => {
-    // Adjust the URL to fetch only male users
+
+  const handleFetchMaleUser = async () => {
     try {
-      const response = await fetch('https://randomuser.me/api/?gender=male');
-      const data = await response.json();
-      setUser(data.results[0]);
+      const userData = await fetchMaleUser();
+      setUser(userData);
     } catch (error) {
       console.error('Error fetching male user:', error);
     }
   };
-  const fetchFemaleUser = async () => {
-    // Adjust the URL to fetch only male users
+
+  const handleFetchFemaleUser = async () => {
     try {
-      const response = await fetch('https://randomuser.me/api/?gender=female');
-      const data = await response.json();
-      setUser(data.results[0]);
+      const userData = await fetchFemaleUser();
+      setUser(userData);
     } catch (error) {
-      console.error('Error fetching Female user:', error);
+      console.error('Error fetching female user:', error);
     }
   };
 
@@ -58,11 +56,11 @@ const RandomUserButton: React.FC = () => {
                 <Typography variant="h5" gutterBottom>
                 Random User App
                 </Typography>
-                <FetchMaleUserButton onFetchMaleUser={fetchMaleUser} />
-                <FetchFemaleUserButton onFetchFemaleUser={fetchFemaleUser} />
+                <FetchMaleUserButton onFetchMaleUser={handleFetchMaleUser} />
+                <FetchFemaleUserButton onFetchFemaleUser={handleFetchFemaleUser} />
                 <Button
                 variant="contained"
-                onClick={fetchRandomUser}
+                onClick={handleFetchRandomUser}
                 disabled={loading}
                 className="fetch-button"
                 style={{ backgroundColor: '#00f181' }}
