@@ -34,7 +34,7 @@ const FetchRandomUserButton: React.FC<FetchRandomUserButtonProps> = ({ onFetchRa
         className="fetch-button"
         style={{ backgroundColor: '#00f181', marginLeft: '10px' }}
       >
-        {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Random User'}
+        {loading ? <CircularProgress size={24} color="inherit" /> : 'Random User'}
       </Button>
 
       {error && (

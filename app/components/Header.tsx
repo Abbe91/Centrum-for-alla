@@ -21,7 +21,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed"className="custom-appbar">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           My App
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
           <MenuItem onClick={() => handleMenuItemClick('https://github.com/Abbe91')}>
             My GitHub
           </MenuItem>
-          <MenuItem onClick={() => handleMenuItemClick('https://randomuser.me/api/')}>
+          <MenuItem onClick={() => handleMenuItemClick('https://randomuser.me/')}>
             Randomuser Website
           </MenuItem>
         </Menu>

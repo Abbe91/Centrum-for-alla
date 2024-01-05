@@ -34,7 +34,7 @@ const FetchFemaleUserButton: React.FC<FetchFemaleUserButtonProps> = ({ onFetchFe
         className="fetch-button"
         style={{ backgroundColor: '#00f181', marginLeft: '10px' }}
       >
-        {loading ? <CircularProgress size={24} color="inherit" /> : 'Fetch Female User'}
+        {loading ? <CircularProgress size={24} color="inherit" /> : 'Female User'}
       </Button>
 
       {error && (
