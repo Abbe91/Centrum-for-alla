@@ -10,11 +10,17 @@ This React app fetches and displays random user information using the Random Use
 
 ## Components
 
-### 1. RandomUserButton
+### 1. FetchRandomUserButton
 
 This component fetches a random user from the Random User API and displays their information in a Material-UI Card.
+- **File**: `FetchRandomUserButton.tsx`
 
-- **File**: `RandomUserButton.tsx`
+### 2. Fetch Male and Female Users
+
+Now, you can fetch random male and female users separately. We've added two new buttons for more customization.
+
+- **File**: `FetchFemalUserButton.tsx`
+- **File**: `FetchMalelUserButton.tsx`
 - **Dependencies**:
   - `@mui/material`: Material-UI components for styling.
   - `@mui/icons-material`: Material-UI icons for additional visual elements.
