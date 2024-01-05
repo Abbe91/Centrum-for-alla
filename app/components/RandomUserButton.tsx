@@ -74,12 +74,12 @@ const RandomUserButton: React.FC = () => {
                             {`${user.name.first} ${user.name.last}`}
                         </Typography>
                     <Grid item xs={12}>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" sx={{ color: '#121212' }}>
                         <strong>Username:</strong> {user.login.username}
                         </Typography>
                     </Grid>
 
-                        <Grid container spacing={2}>
+                        <Grid container spacing={2} >
                             {[
                             { label: 'Email', value: user.email },
                             {
@@ -100,7 +100,7 @@ const RandomUserButton: React.FC = () => {
                             { label: 'Phone', value: user.phone, icon: <PhoneIcon /> },
                             ].map((item, index) => (
                             <Grid item xs={12} sm={6} key={index}>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" sx={{ color: '#121212' }}>
                                 <strong>{item.label}:</strong>
                                 {item.icon && <Box component="span" marginLeft={1}>{item.icon}</Box>}
                                 {item.value}

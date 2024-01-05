@@ -24,7 +24,6 @@ body {
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
   font-weight: 700;
-  
 }
 
 .error-message {
@@ -55,4 +54,13 @@ body {
   margin-right: 20px;
   font-size: 50px;
   font-weight: bold;
+}
+
+.toggle-dark-light {
+  position: fixed;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 24px; 
+  transition: 0.3s;
+
 }
