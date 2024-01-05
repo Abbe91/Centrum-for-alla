@@ -26,6 +26,8 @@ Now, you can fetch random male and female users separately. We've added two new 
   - `@mui/icons-material`: Material-UI icons for additional visual elements.
   - `react`: React library for building UI components.
 
+  _ Dark and light mode is on the project 
+
 ### 2. Header
 
 This component represents the app's header, featuring a Material-UI AppBar with a title and a menu.
