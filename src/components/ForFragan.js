@@ -11,7 +11,7 @@ import { db } from "../firebase";
 const steps = ["Uppdraget", "Kontaktinfo"];
 const useStyles = makeStyles({
   root: {
-    "& .MuiStepIcon-active": { color: "rgb(227, 193, 72)" },
+    "& .MuiStepIcon-active": { color: "#4890e3" },
     "& .MuiStepIcon-completed": { color: "green" }
   }
 });

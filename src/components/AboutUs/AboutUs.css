@@ -1,7 +1,7 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  background: rgb(227, 193, 72);
+  background: #4890e3;
   margin: 1rem 0.5rem;
   align-items: center;
   text-align: center;

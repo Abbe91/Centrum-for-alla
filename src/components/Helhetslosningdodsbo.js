@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     display: "flex",
     padding: "3rem",
     flexDirection: "row",
-    background: "rgb(227, 193, 72)",
+    background: "#4890e3",
     margin: "0 0.5rem",
     color: "white",
     justifyContent: "space-evenly",
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     flexDirection: "column"
   },
   btn: {
-    background: "#e3c148",
+    background: "#4890e3",
     color: "white",
     border: "none",
     height: "2rem",

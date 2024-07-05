@@ -1,5 +1,5 @@
 .recycling-center-section-h1 {
-  background-color: #e3c148;
+  background-color: #4890e3;
   margin-top: 1rem;
   color: white;
   width: 100%;
@@ -12,7 +12,7 @@
 
 .recycling-info {
   font-size: 0.85rem;
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   padding: 1.5rem;
   line-height: 1.6;
@@ -28,7 +28,7 @@
 }
 
 .recycling-facts-container {
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   font-size: 0.85rem;
   line-height: 1.6;
@@ -70,7 +70,7 @@
 
 .recycling-guide-container ::marker {
   font-weight: bold;
-  color: #e3c148;
+  color: #4890e3;
 }
 
 .recycling-guide-container li p {
@@ -84,7 +84,7 @@
 }
 
 .recycling-tips-container {
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
     0px 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -155,7 +155,7 @@
 }
 
 .recycling-best-practices ::marker {
-  color: #e3c148;
+  color: #4890e3;
 }
 
 .recycling-best-practices li {
@@ -163,7 +163,7 @@
 }
 
 .recycling-services-description {
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -184,7 +184,7 @@
 .recycling-services-description-btn {
   display: block;
   margin: 1.85rem auto 0 auto;
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   padding: 0.85rem;
   font-size: 1rem;
@@ -270,7 +270,7 @@
 }
 
 .recycling-center-section-btn {
-  background-color: #e3c148;
+  background-color: #4890e3;
   color: white;
   padding: 0.5rem;
   font-size: 1rem;
