@@ -62,3 +62,5 @@ This is the main page that combines the Header and RandomUserButton components.
 
 ## How to Run
     npm run dev
+
+## Push it to netlify
