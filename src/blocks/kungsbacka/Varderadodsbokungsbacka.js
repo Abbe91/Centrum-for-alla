@@ -72,7 +72,7 @@ const Varderadodsbokungsbacka = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-kungsbacka"
+          href="https://sheglam.se/vardera-dodsbo-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

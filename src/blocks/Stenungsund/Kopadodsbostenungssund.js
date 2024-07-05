@@ -68,7 +68,7 @@ const Kopadodsbostenungssund = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/kopa-dodsbo-stenungsund"
+          href="https://sheglam.se/kopa-dodsbo-stenungsund"
         />
       </Helmet>
       <div className="Nav">

@@ -66,7 +66,7 @@ const Varderadodsboboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-boras"
+          href="https://sheglam.se/vardera-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

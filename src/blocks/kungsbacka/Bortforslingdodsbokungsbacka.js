@@ -48,7 +48,7 @@ const Bortforslingdodsbokungsbacka = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling-dodsbo-kungsbacka"
+          href="https://sheglam.se/bortforsling-dodsbo-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

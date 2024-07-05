@@ -47,7 +47,7 @@ const Tommerhemgoteborg = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-hem-goteborg"
+          href="https://sheglam.se/tommer-hem-goteborg"
         />
       </Helmet>
       <div className="Nav">

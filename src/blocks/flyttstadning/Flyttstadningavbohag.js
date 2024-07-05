@@ -69,7 +69,7 @@ const Flyttstadningavbohag = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/flyttstadning-av-bohag"
+          href="https://sheglam.se/flyttstadning-av-bohag"
         />
       </Helmet>
       <div className="Nav">

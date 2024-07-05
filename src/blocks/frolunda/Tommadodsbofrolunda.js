@@ -50,7 +50,7 @@ const Tommadodsbofrolunda = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-frolunda"
+          href="https://sheglam.se/tomma-dodsbo-frolunda"
         />
       </Helmet>
       <div className="Nav">

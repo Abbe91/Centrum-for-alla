@@ -52,7 +52,7 @@ const Atervinning = () => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/atervinning"
+          href="https://sheglam.se/atervinning"
         />
         <meta
           property="og:description"

@@ -36,7 +36,7 @@ const Home = ({ videoText }) => {
   const articleStructuredData = {
     "@context": "https://schema.org",
     "@type": "RecyclingCenter",
-    name: "Dödsbo Jouren",
+    name: "Sheglam",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Hisingsgatan 10",
@@ -50,7 +50,7 @@ const Home = ({ videoText }) => {
       latitude: "57.71659765082482",
       longitude: "11.94740491088092"
     },
-    url: "www.dodsbojouren.com",
+    url: "www.sheglam.se",
     telephone: "+46317539060",
     openingHoursSpecification: [
       {
@@ -83,13 +83,13 @@ const Home = ({ videoText }) => {
         <meta charSet="utf-8" />
         <title>{content.metaTitle}</title>
         <meta name="description" content={content.metaContent} />
-        <meta property="og:url" content="https://dodsbojouren.com" />
+        <meta property="og:url" content="https://sheglam.se" />
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:image"
           content="https://images.pexels.com/photos/3651376/pexels-photo-3651376.jpeg?auto=compress&cs=tinysrgb&w=1300"
         />
-        <link hrefLang="sv" rel="canonical" href="https://dodsbojouren.com" />
+        <link hrefLang="sv" rel="canonical" href="https://sheglam.se" />
       </Helmet>
       <div className="Nav">
         <Nav />

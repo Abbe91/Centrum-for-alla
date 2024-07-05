@@ -46,7 +46,7 @@ const Rojadodsbostenungsund = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/roja-dodsbo-stenungsund"
+          href="https://sheglam.se/roja-dodsbo-stenungsund"
         />
       </Helmet>
       <div className="Nav">

@@ -48,7 +48,7 @@ const Rojadodsbogoteborg = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/roja-dodsbo-goteborg"
+          href="https://sheglam.se/roja-dodsbo-goteborg"
         />
       </Helmet>
       <div className="Nav">

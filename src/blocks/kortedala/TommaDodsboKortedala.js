@@ -66,7 +66,7 @@ const TommaDodsboKortedala = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tomma-dodsbo-kortedala"
+          content="https://sheglam.se/tomma-dodsbo-kortedala"
         />
         <meta
           property="og:image"
@@ -75,7 +75,7 @@ const TommaDodsboKortedala = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-kortedala"
+          href="https://sheglam.se/tomma-dodsbo-kortedala"
         />
       </Helmet>
       <div className="Nav">

@@ -50,7 +50,7 @@ const Saljadosboale = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/salja-dodsbo-ale"
+          href="https://sheglam.se/salja-dodsbo-ale"
         />
       </Helmet>
       <div className="Nav">

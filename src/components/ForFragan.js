@@ -286,7 +286,7 @@ const ForFragan = () => {
                   }}
                 />
                 <label style={{ fontSize: "0.7rem" }} htmlFor="accept">
-                  Jag godkänner att Dödsbo Jouren lagrar mina personuppgifter
+                  Jag godkänner att Sheglam lagrar mina personuppgifter
                   för att återkoppla till mig som kund eller användare.
                 </label>
               </div>

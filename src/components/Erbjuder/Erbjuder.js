@@ -23,7 +23,7 @@ const Erbjuder = ({ city }) => {
         <h4>Städa dödsbo {city ? `i ${city}` : ""}</h4>
         <p>
           Behöver du hjälp med att städa ett dödsbo eller hushåll{" "}
-          {city ? `i ${city}` : ""}? Vi på Dödsbo Jouren erbjuder en
+          {city ? `i ${city}` : ""}? Vi på Sheglam erbjuder en
           professionell och pålitlig städtjänst för att underlätta för dig i en
           svår tid. Vårt erfarna och kompetenta team tar hand om allt från
           grundlig rengöring av bostaden till bortforsling av skräp och sopor.
@@ -38,7 +38,7 @@ const Erbjuder = ({ city }) => {
         <h4>Värdera dödsbo {city ? `i ${city}` : ""} </h4>
         <p>
           Om du behöver värdera ett dödsbo eller lösöre {"  "}
-          {city ? `i ${city}` : ""}, kan vi på Dödsbo Jouren hjälpa dig. Vi
+          {city ? `i ${city}` : ""}, kan vi på Sheglam hjälpa dig. Vi
           erbjuder en professionell och pålitlig värderingstjänst för att hjälpa
           dig att fastställa värdet på din egendom. Vårt erfarna team har
           omfattande kunskap om marknadspriser och kan säkerställa en rättvis
@@ -68,7 +68,7 @@ const Erbjuder = ({ city }) => {
       <div id="uppkop-dodsbo">
         <h4>Köper dödsbon {city ? `i ${city}` : ""}</h4>
         <p>
-          Vi på Dödsbo Jouren är specialiserade på att köpa dödsbo{" "}
+          Vi på Sheglam är specialiserade på att köpa dödsbo{" "}
           {city ? `i ${city} ` : ""}
           och vi köper alla typer av dödsbon. Vi förstår att hantering av ett
           dödsbo kan vara en svår och känslig uppgift och att det kan vara

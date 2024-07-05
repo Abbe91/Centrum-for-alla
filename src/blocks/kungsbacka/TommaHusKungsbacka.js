@@ -23,7 +23,7 @@ const TommaHusKungsbacka = ({ videoText }) => {
   const [content, setContent] = useState({
     metaTitle: "Tömma hus i Kungsbacka - Prisvärt & Pålitligt",
     metaContent:
-      "Behöver du hjälp med att Tömma hus i Kungsbacka? Vi på Dödsbo Jouren hjälper dig med att tömma ert hus i Kungsbacka.",
+      "Behöver du hjälp med att Tömma hus i Kungsbacka? Vi på Sheglam hjälper dig med att tömma ert hus i Kungsbacka.",
     query: "Tömma hus i Kungsbacka",
     formTitle: "Tömma hus i Kungsbacka",
     subTitle2:
@@ -48,7 +48,7 @@ const TommaHusKungsbacka = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-hus/tomma-hus-kungsbacka"
+          href="https://sheglam.se/tomma-hus/tomma-hus-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

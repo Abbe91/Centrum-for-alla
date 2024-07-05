@@ -49,7 +49,7 @@ const Saljadodsbokungsbacka = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/salja-dodsbo-kungsbacka"
+          href="https://sheglam.se/salja-dodsbo-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

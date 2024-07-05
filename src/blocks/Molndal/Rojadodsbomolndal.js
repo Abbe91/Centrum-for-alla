@@ -48,7 +48,7 @@ const Rojadodsbomolndal = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/roja-dodsbo-molndal"
+          href="https://sheglam.se/roja-dodsbo-molndal"
         />
       </Helmet>
       <div className="Nav">

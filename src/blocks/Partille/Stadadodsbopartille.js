@@ -48,7 +48,7 @@ const Stadadodsbopartille = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/stada-dodsbo-partille"
+          href="https://sheglam.se/stada-dodsbo-partille"
         />
       </Helmet>
       <div className="Nav">

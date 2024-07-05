@@ -49,7 +49,7 @@ const Tommerlagenheterboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-lagenheter-boras"
+          href="https://sheglam.se/tommer-lagenheter-boras"
         />
       </Helmet>
       <div className="Nav">

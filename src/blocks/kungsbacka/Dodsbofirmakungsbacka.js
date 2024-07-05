@@ -49,7 +49,7 @@ const Dodsbofirmakungsbacka = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/dodsbo-firma-kungsbacka"
+          href="https://sheglam.se/dodsbo-firma-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

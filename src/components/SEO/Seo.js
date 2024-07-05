@@ -86,7 +86,7 @@ const Seo = () => {
               {local.city}.
             </h5>
             <p style={{ fontSize: "0.75rem", lineHeight: "22px" }}>
-              Välkommen till oss på Dödsbo Jouren i {local.city} ! Vi hjälper er
+              Välkommen till oss på Sheglam i {local.city} ! Vi hjälper er
               gärna om ni har ett behov av att få ett dödsbo värderat i{" "}
               {local.city}, dödsbo uppköpt i {local.city}, dödsbo tömt i{" "}
               {local.city}, dödsbo bortforslat i {local.city} eller städa dödsbo

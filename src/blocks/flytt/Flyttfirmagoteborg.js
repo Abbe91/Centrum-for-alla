@@ -65,7 +65,7 @@ const Flyttfirmagoteborg = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/flyttfirma/flyttfirma-goteborg"
+          href="https://sheglam.se/flyttfirma/flyttfirma-goteborg"
         />
       </Helmet>
       <div className="Nav">

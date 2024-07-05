@@ -65,7 +65,7 @@ const Tommadodsboboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-boras"
+          href="https://sheglam.se/tomma-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

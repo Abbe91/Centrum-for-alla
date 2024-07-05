@@ -48,7 +48,7 @@ const DodsboGoteborg = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/dodsbo-goteborg"
+          href="https://sheglam.se/dodsbo-goteborg"
           hrefLang="sv"
         />
       </Helmet>

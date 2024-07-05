@@ -100,7 +100,7 @@ export const customerReviews = [
     kund: "Liselott Andersson",
     path: "/uppkop-av-dodsbo",
     comment:
-      "De kom ut på en kostnadsfri värdering för uppköp av vårt dödsbo. Dödsbo Jouren köpte en hel del av oss och resten forsla dom bort och skänkte. Tack för hjälpen med vårt dödsbo."
+      "De kom ut på en kostnadsfri värdering för uppköp av vårt dödsbo. Sheglam köpte en hel del av oss och resten forsla dom bort och skänkte. Tack för hjälpen med vårt dödsbo."
   },
   {
     id: 222,
@@ -108,7 +108,7 @@ export const customerReviews = [
     kund: "Bosse Eriksson",
     path: "/salja-dodsbo-goteborg",
     comment:
-      "Jag fick hjälp med att sälja lösöre ur mitt dödsbo och det gick hur bra som helst. Dödsbo Jourens helhetslösning passade mig perfekt när de sedan tömde dch städade dödsboet."
+      "Jag fick hjälp med att sälja lösöre ur mitt dödsbo och det gick hur bra som helst. Sheglams helhetslösning passade mig perfekt när de sedan tömde dch städade dödsboet."
   },
   {
     id: 243,
@@ -124,7 +124,7 @@ export const customerReviews = [
     kund: "Petra Dahl",
     path: "/flyttstadning",
     comment:
-      "Vi fick hjälp med att flyttstäda vårt bohag och Dödsbo Jouren forslade bort lite gammla möbler vi hade i förrådet. Enkelt och prisvärt."
+      "Vi fick hjälp med att flyttstäda vårt bohag och Sheglam forslade bort lite gammla möbler vi hade i förrådet. Enkelt och prisvärt."
   },
   {
     id: 5777,
@@ -132,7 +132,7 @@ export const customerReviews = [
     kund: "Kirsten Abbasi",
     path: "/bortforsling-dodsbo-goteborg",
     comment:
-      "Dödsbo Jouren hjälpte oss med att sortera och forsla bort vårt dödsbo. Vi fick lite avdrag på priset då de köpte lite lösöre ur dödsboet. Jag rekommenderar Dödsbo Jouren starkt."
+      "Sheglam hjälpte oss med att sortera och forsla bort vårt dödsbo. Vi fick lite avdrag på priset då de köpte lite lösöre ur dödsboet. Jag rekommenderar Sheglam starkt."
   },
   {
     id: 6777775,
@@ -148,7 +148,7 @@ export const customerReviews = [
     kund: "Ali Hussein",
     path: "/salja-dodsbo-goteborg",
     comment:
-      "Vi ville sälja vårt dödsbo i Göteborg och Dödsbo Jouren hjälpte oss med en helhetslösning där de köpte upp lösöre ur dödsboet, tömde dödsboet, forslade bort dödsboet och sedan slutstädade."
+      "Vi ville sälja vårt dödsbo i Göteborg och Sheglam hjälpte oss med en helhetslösning där de köpte upp lösöre ur dödsboet, tömde dödsboet, forslade bort dödsboet och sedan slutstädade."
   },
   {
     id: 8688,
@@ -156,7 +156,7 @@ export const customerReviews = [
     kund: "Lisa Magnusson",
     path: "/tomma-dodsbo-goteborg",
     comment:
-      "De tömde vårt dödsbo i Göteborg vilket gick utmärkt. Dödsbo Jouren gav oss även en liten slant för våra gammla prylar."
+      "De tömde vårt dödsbo i Göteborg vilket gick utmärkt. Sheglam gav oss även en liten slant för våra gammla prylar."
   },
   {
     id: 996986,
@@ -180,7 +180,7 @@ export const customerReviews = [
     kund: "Liselott Thor",
     path: "/uppkop-dodsbo-goteborg",
     comment:
-      "Dödsbo Jouren hjälpte oss med att köpa upp lösöre ur vårt dödsbo. De köpte en hel del."
+      "Sheglam hjälpte oss med att köpa upp lösöre ur vårt dödsbo. De köpte en hel del."
   },
   {
     id: 166462,
@@ -195,7 +195,7 @@ export const customerReviews = [
     kund: "Janne Jansson",
     path: "/flyttstadning-i-goteborg",
     comment:
-      "Vi fick hjälp med att röja vårt dödsbo och sen gjorde Dödsbo Jouren flyttstädning av dödsboet. Enkel kommunikation och smidigt."
+      "Vi fick hjälp med att röja vårt dödsbo och sen gjorde Sheglam flyttstädning av dödsboet. Enkel kommunikation och smidigt."
   },
   {
     id: 166466868,
@@ -203,6 +203,6 @@ export const customerReviews = [
     kund: "Karl Einersson",
     path: "/roja-dodsbo-goteborg",
     comment:
-      "Röjning av dödsboet gick som vi ville. Dödsbo Jouren skötte allt trots att vi inte kunde vara på plats. Pålitligt företag och rekommenderar dem starkt. "
+      "Röjning av dödsboet gick som vi ville. Sheglam skötte allt trots att vi inte kunde vara på plats. Pålitligt företag och rekommenderar dem starkt. "
   }
 ];

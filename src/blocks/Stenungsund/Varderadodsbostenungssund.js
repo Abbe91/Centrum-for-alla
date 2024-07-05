@@ -48,7 +48,7 @@ const Varderadodsbostenungssund = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-stenungsund"
+          href="https://sheglam.se/vardera-dodsbo-stenungsund"
         />
       </Helmet>
       <div className="Nav">

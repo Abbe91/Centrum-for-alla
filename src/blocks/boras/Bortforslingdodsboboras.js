@@ -51,7 +51,7 @@ const Bortforslingdodsboboras = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling-dodsbo-boras"
+          href="https://sheglam.se/bortforsling-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

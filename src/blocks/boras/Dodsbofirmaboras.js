@@ -51,7 +51,7 @@ const Dodsbofirmaboras = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/dodsbo-firma-boras"
+          href="https://sheglam.se/dodsbo-firma-boras"
         />
       </Helmet>
       <div className="Nav">

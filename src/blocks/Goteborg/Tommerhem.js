@@ -47,7 +47,7 @@ const Tommerhem = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-hem"
+          href="https://sheglam.se/tommer-hem"
           hrefLang="sv"
         />
       </Helmet>

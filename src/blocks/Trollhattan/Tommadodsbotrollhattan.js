@@ -66,11 +66,11 @@ const Tommadodsbotrollhattan = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tomma-dodsbo-trollhattan"
+          content="https://sheglam.se/tomma-dodsbo-trollhattan"
         />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-trollhattan"
+          href="https://sheglam.se/tomma-dodsbo-trollhattan"
         />
         <meta
           property="og:image"

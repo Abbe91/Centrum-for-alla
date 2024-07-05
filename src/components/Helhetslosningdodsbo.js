@@ -67,7 +67,7 @@ const Helhetslosningdodsbo = () => {
           enkel för dig. Kontakta oss idag för en kostnadsfri konsultation
           angående dödsbo och dödsbo tömning. Ett dödsbo är mer krävande än vad
           man tror. Idag ställs det ju många krav på sortering och avfall av
-          dödsbon. Vi på Dödsbo Jouren tar hela ansvaret från att sortera{" "}
+          dödsbon. Vi på Sheglam tar hela ansvaret från att sortera{" "}
           <a href="/dodsboet" style={{ color: "white" }} title="dödsboet">
             dödsboet
           </a>

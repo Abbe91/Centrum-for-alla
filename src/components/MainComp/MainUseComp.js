@@ -6,62 +6,62 @@ export const items = [
     title: "Bortforsling",
     alt: "bortforsling av dödsbo och möbler",
     srcImg: "https://www.svgrepo.com/show/85909/furniture.svg",
-    srcPath: "https://dodsbojouren.com/bortforsling-dodsbo"
+    srcPath: "https://sheglam.se/bortforsling-dodsbo"
   },
   {
     title: "Dödsbo",
     alt: "Värderar dödsbo, tömmer dödsbo",
     srcImg: "https://www.svgrepo.com/show/490798/house.svg",
-    srcPath: "https://dodsbojouren.com"
+    srcPath: "https://sheglam.se"
   },
   {
     title: "Städning",
     alt: "Flyttstädning och städning av dödsbo",
     srcImg: "https://www.svgrepo.com/show/287614/cleaning-mop.svg",
-    srcPath: "https://dodsbojouren.com/flyttstadning"
+    srcPath: "https://sheglam.se/flyttstadning"
   },
   {
     title: "Flytt",
     alt: "Bohagsflytt och trasnport",
     srcImg: "https://www.svgrepo.com/show/270968/truck.svg",
-    srcPath: "https://dodsbojouren.com/bohagsflytt"
+    srcPath: "https://sheglam.se/bohagsflytt"
   },
   {
     title: "Återvinning",
     alt: "återvinning och återvinningstjänster",
     srcImg: "https://www.svgrepo.com/show/230586/recycling-bin-recycle-bin.svg",
-    srcPath: "https://dodsbojouren.com/atervinning"
+    srcPath: "https://sheglam.se/atervinning"
   },
   {
     title: "Avfall",
     alt: "avfallshantering och avfallstjänster",
     srcImg: "https://www.svgrepo.com/show/484065/trash-can.svg",
-    srcPath: "https://dodsbojouren.com/avfallshantering"
+    srcPath: "https://sheglam.se/avfallshantering"
   },
   {
     title: "Uppköp",
     alt: "Uppköp av lösöre och dödsbo",
     srcImg: "https://www.svgrepo.com/show/480209/painting-1.svg",
-    srcPath: "https://dodsbojouren.com/uppkop-av-dodsbo"
+    srcPath: "https://sheglam.se/uppkop-av-dodsbo"
   },
   {
     title: "Tömning",
     alt: "Tömning av dödsboo och hushåll",
     srcImg:
       "https://www.svgrepo.com/show/307953/mover-going-downstairs-stairs-ladder-moving-boxes.svg",
-    srcPath: "https://dodsbojouren.com/tomning-av-dodsbo"
+    srcPath: "https://sheglam.se/tomning-av-dodsbo"
   },
   {
     title: "Värdering",
     alt: "Värdering av dödsbo, lösöre och hushåll",
     srcImg: "https://www.svgrepo.com/show/160931/judge.svg",
-    srcPath: "https://dodsbojouren.com/vardering-av-dodsbo"
+    srcPath: "https://sheglam.se/vardering-av-dodsbo"
   },
   {
     title: "Sanering",
     alt: "sanering av dödsbo och hushåll",
     srcImg: "https://www.svgrepo.com/show/393486/avatar-face-face-mask.svg",
-    srcPath: "https://dodsbojouren.com/sanera-dodsbo"
+    srcPath: "https://sheglam.se/sanera-dodsbo"
   }
 ];
 const MainUseComp = ({ formTitle }) => {

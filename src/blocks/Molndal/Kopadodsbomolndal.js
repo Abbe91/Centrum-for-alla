@@ -69,7 +69,7 @@ const Kopadodsbomolndal = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/kopa-dodsbo-molndal"
+          href="https://sheglam.se/kopa-dodsbo-molndal"
         />
       </Helmet>
       <div className="Nav">

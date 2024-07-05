@@ -24,7 +24,7 @@ const Tommalagenhetgoteborg = ({ videoText }) => {
     metaTitle:
       "Tömning av lägenheter i Göteborg - Professionella och pålitliga service",
     metaContent:
-      "Behöver du hjälp med att tömma en lägenhet i Göteborg? Då är vi på Dödsbo Jouren det självklara valet. Vi tömmer lägenheter i Göteborg med omnejd.",
+      "Behöver du hjälp med att tömma en lägenhet i Göteborg? Då är vi på Sheglam det självklara valet. Vi tömmer lägenheter i Göteborg med omnejd.",
     query: "Tömma lägenhet i Göteborg",
     formTitle: "Tömma lägenhet i Göteborg",
     subTitle2:
@@ -68,7 +68,7 @@ const Tommalagenhetgoteborg = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-lagenhet/tomma-lagenhet-goteborg"
+          href="https://sheglam.se/tomma-lagenhet/tomma-lagenhet-goteborg"
         />
       </Helmet>
       <div className="Nav">

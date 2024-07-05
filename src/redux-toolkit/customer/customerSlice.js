@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   email: "info@dodsbo-jouren.se",
   phone: "0707-19 84 29",
-  business: "Dödsbo Jouren",
+  business: "Sheglam",
   adress: "Magasinsgatan 11",
   zip: "47 132",
   city: "Skärhamn",

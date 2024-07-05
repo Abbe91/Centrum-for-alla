@@ -49,7 +49,7 @@ const Tommabohag = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-bohag"
+          href="https://sheglam.se/tomma-bohag"
         />
       </Helmet>
       <div className="Nav">

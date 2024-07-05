@@ -49,7 +49,7 @@ const Bortforslinghisingen = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling-dodsbo-hisingen"
+          href="https://sheglam.se/bortforsling-dodsbo-hisingen"
         />
       </Helmet>
       <div className="Nav">

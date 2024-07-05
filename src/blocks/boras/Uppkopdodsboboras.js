@@ -65,7 +65,7 @@ const Uppkopdodsboboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/uppkop-dodsbo-boras"
+          href="https://sheglam.se/uppkop-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

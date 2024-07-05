@@ -49,7 +49,7 @@ const HjalpDodsboKungalv = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/hjalp-dodsbo-kungalv"
+          href="https://sheglam.se/hjalp-dodsbo-kungalv"
         />
       </Helmet>
       <div className="Nav">

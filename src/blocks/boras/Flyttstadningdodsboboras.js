@@ -52,7 +52,7 @@ const Flyttstadningdodsboboras = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/flyttstadning-dodsbo-boras"
+          href="https://sheglam.se/flyttstadning-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

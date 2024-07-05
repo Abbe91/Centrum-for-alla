@@ -58,7 +58,7 @@ const KoperDodsbonGoteborg = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/koper-dodsbon-goteborg"
+          content="https://sheglam.se/koper-dodsbon-goteborg"
         />
         <meta property="og:description" content={content.metaContent} />
         <meta
@@ -68,7 +68,7 @@ const KoperDodsbonGoteborg = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/koper-dodsbon-goteborg"
+          href="https://sheglam.se/koper-dodsbon-goteborg"
         />
       </Helmet>
       <div className="Nav">

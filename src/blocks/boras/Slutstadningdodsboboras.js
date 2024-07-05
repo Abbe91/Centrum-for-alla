@@ -50,7 +50,7 @@ const Slutstadningdodsboboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/slutstadning-dodsbo-boras"
+          href="https://sheglam.se/slutstadning-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

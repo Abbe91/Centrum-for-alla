@@ -66,7 +66,7 @@ const Tommadodsboulricehamn = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-ulricehamn"
+          href="https://sheglam.se/tomma-dodsbo-ulricehamn"
         />
       </Helmet>
       <div className="Nav">

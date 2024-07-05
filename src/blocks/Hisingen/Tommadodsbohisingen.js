@@ -50,11 +50,11 @@ const Tommadodsbohisingen = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-hisingen"
+          href="https://sheglam.se/tomma-dodsbo-hisingen"
         />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tomma-dodsbo-hisingen"
+          content="https://sheglam.se/tomma-dodsbo-hisingen"
         />
       </Helmet>
       <div className="Nav">

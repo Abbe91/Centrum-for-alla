@@ -48,7 +48,7 @@ const Varderadodsboulricehamn = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-ulricehamn"
+          href="https://sheglam.se/vardera-dodsbo-ulricehamn"
         />
       </Helmet>
       <div className="Nav">

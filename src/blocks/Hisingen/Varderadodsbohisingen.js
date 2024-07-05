@@ -68,7 +68,7 @@ const Varderadodsbohisingen = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-hisingen"
+          href="https://sheglam.se/vardera-dodsbo-hisingen"
         />
       </Helmet>
       <div className="Nav">

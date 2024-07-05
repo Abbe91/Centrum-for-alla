@@ -66,7 +66,7 @@ const Uppkopdodsboulricehamn = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/uppkop-dodsbo-ulricehamn"
+          href="https://sheglam.se/uppkop-dodsbo-ulricehamn"
         />
       </Helmet>
       <div className="Nav">

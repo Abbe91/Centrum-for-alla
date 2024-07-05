@@ -49,7 +49,7 @@ const services = [
   {
     title: "Tömma hus och lägenheter",
     path: "tomma-bohag",
-    text: "Vi tömmer lägenheteter, hus, dödsbon, förråd och kontor. Dödsbo Jouren tar hand om hela bohag, dödsbo och hushåll, även delar av hem om någon flyttat till ett serviceboende eller liknade. Behöver du hjälp med att tömma ett hus, lägenhet, dödsbo eller kontor i Göteborg? Då är vi på Dödsbo Jouren det självklara valet.",
+    text: "Vi tömmer lägenheteter, hus, dödsbon, förråd och kontor. Sheglam tar hand om hela bohag, dödsbo och hushåll, även delar av hem om någon flyttat till ett serviceboende eller liknade. Behöver du hjälp med att tömma ett hus, lägenhet, dödsbo eller kontor i Göteborg? Då är vi på Sheglam det självklara valet.",
     icon: <HomeWorkIcon />
   },
   {
@@ -61,7 +61,7 @@ const services = [
   {
     title: "Städning av dödsbo och Bohag",
     path: "/stadning-av-dodsbo",
-    text: "Städning av dödsbo eller bohag som flyttstäd är krävande och tar tid. Så låt oss på Dödsbo Jouren sköta den biten åt dig för en bra peng. Vi erbjuder städgaranti på alla våra städtjänster. Med så många års erfarenhet av olika typer av städningar så är vi det självklara valet för städning av dödsbon, lägenheter, hus och kontor. Vi ger dig prisgaranti.",
+    text: "Städning av dödsbo eller bohag som flyttstäd är krävande och tar tid. Så låt oss på Sheglam sköta den biten åt dig för en bra peng. Vi erbjuder städgaranti på alla våra städtjänster. Med så många års erfarenhet av olika typer av städningar så är vi det självklara valet för städning av dödsbon, lägenheter, hus och kontor. Vi ger dig prisgaranti.",
     icon: <DeleteIcon />
   },
   {
@@ -87,7 +87,7 @@ const services = [
     title: "Värdering av dödsbo",
     icon: <FindInPageIcon />,
     path: "vardera-dodsbo",
-    text: "Vi erbjuder kostnadsfri värdering av dödsbo och bohag inom Göteborg, Kungälv, Ale, Stenungsund och Tjörn. Vi har säljkanalerna och egen butiker. Dödsbo Jouren är ett företag som tänker miljösmart och på återanvändning. Vi skänker till behandlingshem, olika typer av boenden, kyrkor, hjälporganisationer och till behövande."
+    text: "Vi erbjuder kostnadsfri värdering av dödsbo och bohag inom Göteborg, Kungälv, Ale, Stenungsund och Tjörn. Vi har säljkanalerna och egen butiker. Sheglam är ett företag som tänker miljösmart och på återanvändning. Vi skänker till behandlingshem, olika typer av boenden, kyrkor, hjälporganisationer och till behövande."
   }
 ];
 

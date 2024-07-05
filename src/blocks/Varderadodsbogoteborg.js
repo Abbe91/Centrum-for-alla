@@ -69,12 +69,12 @@ const Varderadodsbogoteborg = ({ videoText }) => {
         />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/vardera-dodsbo-goteborg"
+          content="https://sheglam.se/vardera-dodsbo-goteborg"
         />
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/vardera-dodsbo-goteborg"
+          href="https://sheglam.se/vardera-dodsbo-goteborg"
         />
       </Helmet>
       <div className="Nav">

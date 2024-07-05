@@ -48,7 +48,7 @@ const HamtardodsboKungsbacka = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/hamtar-dodsbo-kungsbacka"
+          href="https://sheglam.se/hamtar-dodsbo-kungsbacka"
         />
       </Helmet>
       <div className="Nav">

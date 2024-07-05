@@ -67,12 +67,12 @@ const Tommerdodsbokungsbacka = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tommer-dodsbo-kungsbacka"
+          content="https://sheglam.se/tommer-dodsbo-kungsbacka"
         />
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-dodsbo-kungsbacka"
+          href="https://sheglam.se/tommer-dodsbo-kungsbacka"
         />
         <meta
           property="og:image"

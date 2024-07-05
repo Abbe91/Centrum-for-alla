@@ -19,7 +19,7 @@ const Dodsbokopes = ({ videoText }) => {
   const mainquery = "dödsbo köpes";
   const newsData = useSelector(getNewsData);
   const [content, setContent] = useState({
-    metaTitle: "Dödsbo köpes - Få snabb och rättvis hantering | Dödsbo Jouren",
+    metaTitle: "Dödsbo köpes - Få snabb och rättvis hantering | Sheglam",
     metaContent:
       "Vi köper dödsbo och erbjuder enkel och smidig hantering. Vår erfarna personal ger dig ett rättvist och konkurrenskraftigt pris för dödsboet.",
     query: "Dödsbo Köpes",
@@ -37,9 +37,9 @@ const Dodsbokopes = ({ videoText }) => {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Dödsbo Köpes. Dödsbo Jouren vi hjälper dig med städning, flytt, tömning, bortforsling, värdering och uppköp av dödsbo och hushåll samt återvinning och avfallshantering",
+      "Dödsbo Köpes. Sheglam vi hjälper dig med städning, flytt, tömning, bortforsling, värdering och uppköp av dödsbo och hushåll samt återvinning och avfallshantering",
     description:
-      "Dödsbo köpes. Behöver du hjälp med flytt, städning, tömning eller uppköp av dödsbo? Välkommen till vår Dödsbo Jouren där vi erbjuder allt från bortforsling och värdering till uppköp av dödsbo och hushåll. Vi tar hand om både små och stora projekt, från kontor och lägenheter till fastigheter och hus. Kontakta oss idag för en smidig och stressfri lösning. Vi hjälper även till med återvinning och avfallshantering",
+      "Dödsbo köpes. Behöver du hjälp med flytt, städning, tömning eller uppköp av dödsbo? Välkommen till vår Sheglam där vi erbjuder allt från bortforsling och värdering till uppköp av dödsbo och hushåll. Vi tar hand om både små och stora projekt, från kontor och lägenheter till fastigheter och hus. Kontakta oss idag för en smidig och stressfri lösning. Vi hjälper även till med återvinning och avfallshantering",
     image:
       "https://xn--ddsbo-jua.com/wp-content/uploads/2019/07/family-room-382150_640.jpg",
     datePublished: new Date("2023-04-04T09:25:01.340Z").toISOString(),
@@ -67,7 +67,7 @@ const Dodsbokopes = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/dodsbo-kopes"
+          href="https://sheglam.se/dodsbo-kopes"
           hrefLang="sv"
         />
       </Helmet>

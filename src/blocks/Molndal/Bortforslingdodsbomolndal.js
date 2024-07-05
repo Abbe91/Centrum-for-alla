@@ -21,7 +21,7 @@ const Bortforslingdodsbomolndal = ({ videoText }) => {
   const newsData = useSelector(getNewsData);
   const bingNews = useSelector(getBingNews);
   const [content, setContent] = useState({
-    metaTitle: "Effektiv bortforsling av dödsbo i Mölndal - Dödsbo Jouren",
+    metaTitle: "Effektiv bortforsling av dödsbo i Mölndal - Sheglam",
     metaContent:
       "Behöver du hjålp med bortforsling av dödsbo i Mölndal? Vi erbjuder en smidig och professionell lösning för att ta hand om bortforsling av dödsbo i Mölndal.",
     query: "Bortforsling dödsbo Mölndal",
@@ -48,7 +48,7 @@ const Bortforslingdodsbomolndal = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling-dodsbo-molndal"
+          href="https://sheglam.se/bortforsling-dodsbo-molndal"
         />
       </Helmet>
       <div className="Nav">

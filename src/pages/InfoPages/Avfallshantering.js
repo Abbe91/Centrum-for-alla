@@ -66,7 +66,7 @@ const Avfallshantering = () => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/avfallshantering"
+          href="https://sheglam.se/avfallshantering"
         />
       </Helmet>
       <div className="Nav">
@@ -389,7 +389,7 @@ const Avfallshantering = () => {
           <br></br>
           <section>
             <p style={{ fontSize: "0.95rem", margin: "0.2rem 0.5rem" }}>
-              Vi på Dödsbo Jouren erbjuder professionell avfallshanteringstjänst
+              Vi på Sheglam erbjuder professionell avfallshanteringstjänst
               som kan hjälpa dig att återvinna på bästa sätt och minska din
               påverkan på miljön. Vi erbjuder avfallssortering, transport och
               återvinning av olika typer av avfall för att minimera
@@ -404,15 +404,15 @@ const Avfallshantering = () => {
             Hur kan vi hjälpa dig med avfallshantering?
           </h3>
           <p style={{ fontSize: "0.85rem", margin: "0.2rem 0.5rem" }}>
-            Dödsbo Jouren är din bästa partner när det gäller avfallshantering.
+            Sheglam är din bästa partner när det gäller avfallshantering.
             Vi har många års erfarenhet av att hantera avfall i samband med
             dödsbon, och vi kan hjälpa dig att ta hand om allt avfall på ett
             säkert och effektivt sätt. När en älskad person går bort kan det
             vara överväldigande att ta hand om allt avfall som samlas upp. Det
             kan vara allt från kläder, möbler och elektronik till farliga
-            kemikalier och mediciner. Dödsbo Jouren kan hjälpa till att sortera,
+            kemikalier och mediciner. Sheglam kan hjälpa till att sortera,
             transportera och återvinna allt avfall på ett sätt som är säkert för
-            miljön och människor. Vi på Dödsbo Jouren har de rätta verktygen och
+            miljön och människor. Vi på Sheglam har de rätta verktygen och
             expertisen för att hantera alla typer av avfall. Vi kan också
             hantera farligt avfall, såsom mediciner och kemikalier, på ett
             säkert och lagligt sätt. Vi arbetar nära våra kunder för att

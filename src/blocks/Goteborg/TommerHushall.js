@@ -46,7 +46,7 @@ const TommerHushall = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-hushall"
+          href="https://sheglam.se/tommer-hushall"
           hrefLang="sv"
         />
       </Helmet>

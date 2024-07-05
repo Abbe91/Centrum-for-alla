@@ -50,7 +50,7 @@ const Saljadodsboboras = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/salja-dodsbo-boras"
+          href="https://sheglam.se/salja-dodsbo-boras"
         />
       </Helmet>
       <div className="Nav">

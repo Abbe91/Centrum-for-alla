@@ -65,11 +65,11 @@ const Tommerdodsbouddevalla = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tommer-dodsbo-uddevalla"
+          href="https://sheglam.se/tommer-dodsbo-uddevalla"
         />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tommer-dodsbo-uddevalla"
+          content="https://sheglam.se/tommer-dodsbo-uddevalla"
         />
         <meta
           property="og:image"

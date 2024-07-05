@@ -50,7 +50,7 @@ const Stadningavdodsbo = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/stadning-av-dodsbo"
+          href="https://sheglam.se/stadning-av-dodsbo"
         />
       </Helmet>
       <div className="Nav">

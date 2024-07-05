@@ -68,12 +68,12 @@ const Tommadodsbostenungssund = ({ videoText }) => {
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:url"
-          content="https://dodsbojouren.com/tomma-dodsbo-stenungsund"
+          content="https://sheglam.se/tomma-dodsbo-stenungsund"
         />
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-stenungsund"
+          href="https://sheglam.se/tomma-dodsbo-stenungsund"
         />
       </Helmet>
       <div className="Nav">

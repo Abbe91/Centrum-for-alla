@@ -49,7 +49,7 @@ const Stadningavdodsbotrollhatttan = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/stadning-av-dodsbo-trollhattan"
+          href="https://sheglam.se/stadning-av-dodsbo-trollhattan"
         />
       </Helmet>
       <div className="Nav">

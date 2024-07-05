@@ -171,7 +171,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             kan vara en svår uppgift som kräver mycket tid och arbete. Det kan
             vara en känslomässigt påfrestande tid för de efterlevande, och det
             kan vara svårt att veta var man ska börja. Men med rätt hjälp och
-            stöd kan det bli enklare. Vi på Dödsbo Jouren specialiserar oss på
+            stöd kan det bli enklare. Vi på Sheglam specialiserar oss på
             hantering av dödsbo och kan hjälpa dig att ta hand om alla aspekter
             av processen.
           </p>

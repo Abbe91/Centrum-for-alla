@@ -46,7 +46,7 @@ const Bortforsling = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling"
+          href="https://sheglam.se/bortforsling"
           hrefLang="sv"
         />
       </Helmet>

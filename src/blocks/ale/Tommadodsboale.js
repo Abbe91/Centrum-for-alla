@@ -68,7 +68,7 @@ const Tommadodsboale = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/tomma-dodsbo-ale"
+          href="https://sheglam.se/tomma-dodsbo-ale"
         />
       </Helmet>
       <div className="Nav">

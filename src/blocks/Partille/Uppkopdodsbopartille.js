@@ -47,7 +47,7 @@ const Uppkopdodsbopartille = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/uppkop-dodsbo-partille"
+          href="https://sheglam.se/uppkop-dodsbo-partille"
         />
       </Helmet>
       <div className="Nav">

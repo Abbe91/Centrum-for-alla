@@ -41,7 +41,7 @@ const SaljaDodsbo = () => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/salja-dodsbo"
+          href="https://sheglam.se/salja-dodsbo"
         />
       </Helmet>
       <section className={classes.content}>

@@ -69,7 +69,7 @@ const Uppkopdodsbohisingen = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/uppkop-dodsbo-hisingen"
+          href="https://sheglam.se/uppkop-dodsbo-hisingen"
         />
       </Helmet>
       <div className="Nav">

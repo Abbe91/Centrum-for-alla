@@ -47,7 +47,7 @@ const Flyttstadningtrollhattan = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/flyttstadning-trollhattan"
+          href="https://sheglam.se/flyttstadning-trollhattan"
         />
       </Helmet>
       <div className="Nav">

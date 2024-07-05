@@ -71,7 +71,7 @@ const Koperdodsbogoteborg = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://dodsbojouren.com/koper-dodsbo-goteborg"
+          href="https://sheglam.se/koper-dodsbo-goteborg"
         />
       </Helmet>
       <div className="Nav">

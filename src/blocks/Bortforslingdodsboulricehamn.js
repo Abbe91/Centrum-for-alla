@@ -49,7 +49,7 @@ const Bortforslingdodsboulricehamn = ({ videoText }) => {
         <meta name="description" content={content.metaContent} />
         <link
           rel="canonical"
-          href="https://dodsbojouren.com/bortforsling-dodsbo-ulricehamn"
+          href="https://sheglam.se/bortforsling-dodsbo-ulricehamn"
         />
       </Helmet>
       <div className="Nav">
