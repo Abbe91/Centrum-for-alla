@@ -1,0 +1,12 @@
+.erbjuder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e3c148;
+  color: white;
+  width: 94%;
+  margin: 1rem auto;
+  padding: 2rem;
+}

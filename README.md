@@ -1,66 +1,75 @@
-# Random User App
+# Getting Started with Create React App
+# Copyrights, Content Copyright by Göteborg dödsbo tjänster AB
 
-This React app fetches and displays random user information using the Random User API. It includes a button to fetch a new user, a header with a menu, and a card component for displaying user details.
 
-## Technologies Used
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- **React**: A JavaScript library for building user interfaces.
-- **Material-UI**: A popular React UI framework that provides pre-designed components.
-- **Next.js**: A React framework for building server-rendered applications.
+## Available Scripts
 
-## Components
+In the project directory, you can run:
 
-### 1. FetchRandomUserButton
+### `npm start`
 
-This component fetches a random user from the Random User API and displays their information in a Material-UI Card.
-- **File**: `FetchRandomUserButton.tsx`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### 2. Fetch Male and Female Users
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Now, you can fetch random male and female users separately. We've added two new buttons for more customization.
+### `npm test`
 
-- **File**: `FetchFemalUserButton.tsx`
-- **File**: `FetchMalelUserButton.tsx`
-- **Dependencies**:
-  - `@mui/material`: Material-UI components for styling.
-  - `@mui/icons-material`: Material-UI icons for additional visual elements.
-  - `react`: React library for building UI components.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  _ Dark and light mode is on the project 
+### `npm run build`
 
-### 2. Header
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-This component represents the app's header, featuring a Material-UI AppBar with a title and a menu.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- **File**: `Header.tsx`
-- **Dependencies**:
-  - `@mui/material`: Material-UI components for styling.
-  - `react`: React library for building UI components.
-  - `next/navigation`: Navigation utility for Next.js applications.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 3. Home Page
+### `npm run eject`
 
-This is the main page that combines the Header and RandomUserButton components.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- **File**: `page.tsx`
-- **Dependencies**:
-  - `react`: React library for building UI components.
-  - `../app/components/RandomUserButton`: The RandomUserButton component.
-  - `../app/components/Header`: The Header component.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Branches
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- **Main**: The main branch contains the stable and production-ready version of the app.
-- **Dev**: The dev branch is used for development and may include the latest features or updates.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## How to Run
+## Learn More
 
-1. Install dependencies:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   ```bash
-   npm install
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## How to Run
-    npm run dev
+### Code Splitting
 
-## Push it to netlify
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# landningssidorna
+Deploying in https://app.netlify.com/ 
+

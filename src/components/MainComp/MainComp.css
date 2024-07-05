@@ -1,0 +1,190 @@
+.mainComp {
+  height: 560px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #e3c148;
+  color: white;
+  position: relative;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  color: rgb(221, 221, 23);
+}
+.mainComp form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f1f5f9;
+  opacity: 0.95;
+  height: 680px;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: #64748b;
+}
+.mainComp form input[type="text"] {
+  width: 80%;
+  height: 2.4rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.3rem 0;
+}
+
+.mainComp form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  text-align: center;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.mainComp select {
+  background: transparent;
+  border: 1px solid #0369a1;
+  margin: 1rem 0;
+  width: 150px;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: black;
+}
+.mainComp label {
+  font-size: 0.9rem;
+  margin: 1rem 0.5rem;
+}
+.main-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-form-btn {
+  width: 80%;
+  background: #0369a1;
+  color: white;
+  border: none;
+  height: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.mainComp .main-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 2px solid black;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.form-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.main-content-container p {
+  max-width: 330px;
+  line-height: 18px;
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+}
+
+.main-top-main-small {
+  background: linear-gradient(
+      rgba(0.3, 0.3, 0.3, 0.3),
+      rgba(0.3, 0.3, 0.3, 0.3)
+    ),
+    url("https://images.pexels.com/photos/3651376/pexels-photo-3651376.jpeg?auto=compress&cs=tinysrgb&w=1300")
+      no-repeat;
+
+  object-fit: contain;
+  background-position: center;
+  height: 380px;
+  width: 100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 672px) {
+  .mainComp {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mainComp h1 {
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+  .mainComp form {
+    width: 94%;
+  }
+  .main-content-container div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .main-content-container {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 672px) {
+  .mainComp form {
+    margin-right: 1rem;
+  }
+  .main-content-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content-new-container {
+    display: flex;
+  }
+}
+.mainComp-wiw {
+  display: none;
+  width: 50%;
+}
+
+@media screen and (min-width: 850px) {
+  .mainComp-wiw {
+    display: block;
+  }
+  .main-content-container p {
+    font-size: 1rem;
+    line-height: 19px;
+  }
+}

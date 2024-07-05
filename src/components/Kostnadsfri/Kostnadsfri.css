@@ -1,0 +1,114 @@
+.kostandri-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  color: black;
+  position: relative;
+}
+
+.kostandri-cont h1 {
+  line-height: 30px;
+}
+.kostandri-cont p {
+  width: 60%;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+.kostandri-cont form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+.kostandri-cont form input {
+  width: 300px;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem 0;
+}
+.kostandri-cont form button {
+  background: #0369a1;
+  color: white;
+  font-family: 700;
+  width: 300px;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.kostandri-cont form button:hover {
+  opacity: 0.8;
+}
+.kostandri-cont div {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  z-index: 101;
+}
+.kostandri-cont video {
+  height: 500px;
+}
+.video-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background: linear-gradient(
+    rgba(0.3, 0.3, 0.3, 0.3) 100%,
+    rgba(0.3, 0.3, 0.3, 0.3) 100%
+  );
+}
+.video-wrapper {
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .kostandri-cont {
+    height: 600px;
+  }
+  .kostandri-cont p {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .video-wrapper {
+    margin: 3rem 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .video-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .kostandri-cont div {
+    height: 560px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background: #bbe3f7;
+    color: black;
+  }
+  .kostandri-cont h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .kostandri-cont div {
+    position: absolute;
+  }
+  .kostandri-cont h1 {
+    margin-bottom: 0.5rem;
+  }
+}
