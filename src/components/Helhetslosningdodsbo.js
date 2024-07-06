@@ -77,7 +77,7 @@ const Helhetslosningdodsbo = () => {
             style={{ color: "white" }}
             title="tömma dödsbo"
           >
-            tömning av dödsboet
+            tömning av dödsboet i Västra götalanmd
           </a>{" "}
           och sedan städning av dödsboet. Vi gör även luktsaneringar av dödsbo
           eller röksanering av dödsbo. Behöver du hjälp med att tömma ett
