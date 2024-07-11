@@ -3,7 +3,7 @@ import customerSlice from "../customer/customerSlice";
 
 const initialState = {
   videoText:
-    "För att vi skall kunna ge dig ett så ärligt pris som möjligt för ditt bohag, dödsbo, lösöre eller våra tjänster så erbjuder vi ett kostandsfritt besök för "
+    "Vi är mer än glada att hjälpa dig med din förfrågan"
 };
 
 const contentSlice = createSlice({

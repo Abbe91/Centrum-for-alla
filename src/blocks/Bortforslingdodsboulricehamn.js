@@ -4,7 +4,6 @@ import { BsHouseDoor } from "react-icons/bs";
 import { getCustomerData } from "../redux-toolkit/customer/customerSlice";
 import { useSelector } from "react-redux";
 import AboutUs from "../components/AboutUs/AboutUs";
-import Tips from "../components/Tips/Tips";
 import Nav from "../components/Nav/Nav";
 import Erbjuder from "../components/Erbjuder/Erbjuder";
 import Nyheter from "../components/Nyheter/Nyheter";
@@ -79,11 +78,7 @@ const Bortforslingdodsboulricehamn = ({ videoText }) => {
           om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
         />
       </div>
-      {newsData && (
-        <div className="Tips">
-          <Tips query={mainquery.toUpperCase()} newsData={newsData} />
-        </div>
-      )}
+      
       <div className="Tjänster">
         <Erbjuder city={"Ulricehamn"} />
       </div>

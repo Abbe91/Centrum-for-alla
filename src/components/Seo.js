@@ -4,7 +4,6 @@ import { BsHouseDoor } from "react-icons/bs";
 import { getCustomerData } from "../redux-toolkit/customer/customerSlice";
 import { useSelector } from "react-redux";
 import AboutUs from "./AboutUs/AboutUs";
-import Tips from "./Tips/Tips";
 import Nav from "./Nav/Nav";
 import Erbjuder from "./Erbjuder/Erbjuder";
 import { getElement } from "../redux-toolkit/scrollElement/scrollElementSlice";
@@ -21,11 +20,11 @@ const Seo = ({ videoText }) => {
   const bingNews = useSelector(getBingNews);
   const [content, setContent] = useState({
     metaTitle:
-      "App meta title",
+      "SEO meta title",
     metaContent:
-      "App meta content",
-    query: "App",
-    formTitle: "App",
+      "SEO meta content",
+    query: "SEO",
+    formTitle: "SEO",
     subTitle2:
       "Här kan du skriva en subtitle",
     subTitle3: `Subtitle ${mainquery}`
@@ -49,7 +48,7 @@ const Seo = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://sheglam.se/app"
+          href="https://sheglam.se/SEO"
         />
       </Helmet>
       <div className="Nav">
@@ -77,11 +76,7 @@ const Seo = ({ videoText }) => {
           om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
         />
       </div>
-      {newsData && (
-        <div className="Tips">
-          <Tips query={mainquery.toUpperCase()} newsData={newsData} />
-        </div>
-      )}
+     
       <div className="Tjänster">
         <Erbjuder />
       </div>

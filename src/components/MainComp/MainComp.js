@@ -11,7 +11,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const Divider = lazy(() => import("./Divider"));
   const Arbetsprocessen = lazy(() => import("../Arbetsprocessen"));
   const MainUseComp = lazy(() => import("./MainUseComp"));
-  const Helhetslosningdodsbo = lazy(() => import("../Helhetslosningdodsbo"));
+  const Helhetslosningdodsbo = lazy(() => import("../HelhetslosningMarketing"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
   return (

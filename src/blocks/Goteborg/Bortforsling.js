@@ -4,7 +4,6 @@ import { BsHouseDoor } from "react-icons/bs";
 import { getCustomerData } from "../../redux-toolkit/customer/customerSlice";
 import { useSelector } from "react-redux";
 import AboutUs from "../../components/AboutUs/AboutUs";
-import Tips from "../../components/Tips/Tips";
 import Nav from "../../components/Nav/Nav";
 import Erbjuder from "../../components/Erbjuder/Erbjuder";
 import { getElement } from "../../redux-toolkit/scrollElement/scrollElementSlice";
@@ -76,11 +75,7 @@ const Bortforsling = ({ videoText }) => {
           om={`är det självklara valet för hantering av hushåll och dödsbo med 20 års erfarenhet.`}
         />
       </div>
-      {newsData && (
-        <div className="Tips">
-          <Tips query={mainquery.toUpperCase()} newsData={newsData} />
-        </div>
-      )}
+      
       <div className="Tjänster">
         <Erbjuder />
       </div>
