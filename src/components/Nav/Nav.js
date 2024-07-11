@@ -3,6 +3,7 @@ import "./Nav.css";
 import CallIcon from '@material-ui/icons/Call';
 import { useAuth0 } from "@auth0/auth0-react";
 import { navlinks } from "../../utils/data";
+import logo from "../../utils/images/Centrum.png"
 import { AiOutlineBars } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useDispatch } from "react-redux";
@@ -30,10 +31,13 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div className="nav-logo" onClick={() => (window.location.href = "/")}>
-          <h2 className="logo">Centrum</h2>
-          <h2 className="logo">För Alla</h2>
-        </div>
+      <div className="nav-logo" onClick={() => (window.location.href = "/")}>
+        <img
+          src={logo}
+          alt="Centrum För Alla"
+          className="logo"
+        />
+      </div>
      
        <a href={`tel:${customerData.phone}`} style={{display:'flex',alignItems:'center', color:'#eabb12'}}>
        <CallIcon style={{fontSize:'1.2rem'}}/>
