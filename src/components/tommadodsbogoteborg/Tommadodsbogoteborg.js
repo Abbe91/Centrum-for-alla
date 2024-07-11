@@ -4,7 +4,6 @@ import { BsHouseDoor } from "react-icons/bs";
 import { getCustomerData } from "../../redux-toolkit/customer/customerSlice";
 import { useSelector } from "react-redux";
 import AboutUs from "../AboutUs/AboutUs";
-import Tips from "../Tips/Tips";
 import Nav from "../Nav/Nav";
 import Erbjuder from "../Erbjuder/Erbjuder";
 import Kostnadsfri from "../Kostnadsfri/Kostnadsfri";
@@ -98,11 +97,7 @@ const Tommadodsbogoteborg = ({ videoText }) => {
           om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
         />
       </div>
-      {newsData && (
-        <div className="Tips">
-          <Tips query={mainquery.toUpperCase()} newsData={newsData} />
-        </div>
-      )}
+      
       <div className="Tjänster">
         <Erbjuder city={"Göteborg"} />
       </div>

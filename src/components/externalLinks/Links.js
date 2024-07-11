@@ -22,20 +22,16 @@ const useStyles = makeStyles({
 });
 const urls = [
   {
-    path: "https://www.efterlevandeguiden.se/att-borja-med/skota-ett-dodsbo.html",
-    title: "Sköta ett dödsbo"
+    path: "https://www.paloma.se/blogg/guide-till-digital-marknadsforing-for-smaforetagare/",
+    title: "Digital Marknadsföring Guide"
   },
   {
-    path: "https://cityselfstorage.se/blogg/tomma-dodsbo/",
-    title: "Tips för underlätta processen med att tömma ett dödsbo"
+    path: "https://bonzer.se/blogg/saa-skapar-du-en-seo-strategi-som-gynnar-ditt-foretag-2022-guide",
+    title: "SEO Strategier och Taktik"
   },
   {
-    path: "https://www.konsumenternas.se/livssituationer/var-i-livet-befinner-du-dig/ta-hand-om-ett-dodsbo/",
-    title: "Ta hand om ett dödsbo"
-  },
-  {
-    path: "https://lavendla.se/juridik/familjeratt/vad-ar-ett-dodsbo/",
-    title: "Vem har rätt att gå in i ett dödsbo?"
+    path: "https://corporate.visitsweden.com/kunskap/kanaler/digitala-kanaler/sociala-medier-och-inspiration/6-steg-for-att-lyckas-med-att-marknadsfora-i-sociala-medier/",
+    title: "Sociala Medier Marknadsföring Tips"
   }
 ];
 const Links = () => {
@@ -43,7 +39,7 @@ const Links = () => {
   return (
     <div className={classes.root}>
       <p style={{ fontSize: "0.8rem", opacity: "0.75" }}>
-        Bra länkar och information kring dödsboet
+        Bra länkar och information kring Marknadsföring
       </p>
       {urls?.map((url, i) => (
         <div key={i} className={classes.container}>

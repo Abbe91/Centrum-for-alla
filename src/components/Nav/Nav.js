@@ -17,13 +17,13 @@ const Nav = () => {
   const [showNav, setShowNav] = useState(false);
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   const customerData = useSelector(getCustomerData);
+
   const handleClick = (e) => {
     dispatch(addElement(e.currentTarget.innerText));
     if (e.currentTarget.innerText === "Om oss") {
       const value = e.currentTarget.innerText.split("oss")[0];
       dispatch(addElement(value));
     }
-
     setShowNav(false);
   };
 
@@ -120,39 +120,6 @@ const Nav = () => {
               );
             }
           })}
-          {!isAuthenticated && (
-            <button
-              style={{
-                background: "#e3c148",
-                width: "6.5rem",
-                height: "1.8rem",
-                marginTop: "2rem",
-                borderRadius: "5px",
-                fontWeight: "bold"
-              }}
-              onClick={() => loginWithRedirect()}
-            >
-              Logga in
-            </button>
-          )}
-
-          {isAuthenticated && (
-            <button
-              style={{
-                background: "#e3c148",
-                width: "6.5rem",
-                height: "1.8rem",
-                marginTop: "2rem",
-                borderRadius: "5px",
-                fontWeight: "bold"
-              }}
-              onClick={() =>
-                logout({ logoutParams: { returnTo: window.location.origin } })
-              }
-            >
-              Logga ut
-            </button>
-          )}
           {isAuthenticated && (
             <Link
               to="/dashboard-main"

@@ -16,6 +16,12 @@ export const navlinks = [
     id: 12,
     label: "AdsPages",
     path: "/adspages"
+  },
+  
+  {
+    id: 12,
+    label: "MarketingPage",
+    path: "/marketingPage"
   }
 ];
 
