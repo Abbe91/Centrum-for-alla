@@ -50,29 +50,26 @@ const Arbetsprocessen = () => {
             justifyContent: "space-evenly"
           }}
         >
-          <div id="vardering">
+          <div id="analys">
             <div className={classes.rund}>
               <p>1</p>
             </div>
             <p style={{ width: "300px", marginTop: "0.5rem" }}>
-              <strong style={{ color: "white" }}> VÄRDERING:</strong> Vi
-              erbjuder en kostnadsfri värdering av hemmets föremål, dödsboet
-              eller bohaget. Detta är för att kunna ge er ett fast pris för
-              själva{" "}
+              <strong style={{ color: "white" }}> Analys och Strategi:</strong>
+              Vi börjar med en kostnadsfri analys av ditt företag och dina marknadsföringsbehov. Detta inkluderar en genomgång av din nuvarande online-närvaro och en diskussion om dina mål. Syftet med denna analys är att förstå dina specifika behov och att skapa en skräddarsydd strategi som maximera din synlighet och SEO.{" "}
               <a
-                href="/tomma-dodsbo"
+                href="/kontakt"
                 style={{ color: "white" }}
-                title="tömma dödsbo"
+                title="kontakta oss"
               >
-                tömningen av dödsboet
+                Kontakta oss
               </a>{" "}
-              och så att vi även kan ge er ett pris för uppköpet av lösöret vi
-              är intresserade av att köpa upp.
+              för att boka en analys.
             </p>
           </div>
           <div className="ddddd">
             <img
-              src="https://images.pexels.com/photos/4245922/pexels-photo-4245922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               style={{
                 height: "200px",
                 width: "200px",
@@ -81,7 +78,7 @@ const Arbetsprocessen = () => {
                 borderRadius: "50%",
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
               }}
-              alt="värdering av dödsbo"
+              alt="Team som diskuterar vid ett konferensbord"
             />
           </div>
         </section>
@@ -98,27 +95,21 @@ const Arbetsprocessen = () => {
             <div
               className={classes.rund}
               style={{ marginTop: "0.5rem" }}
-              id="bortforsling"
+              id="skapande"
             >
               <p>2</p>
             </div>
-            <p style={{ width: "300px", marginTop: "1rem" }}>
-              <strong style={{ color: "white" }}>
-                Tömning & Bortforsling:
-              </strong>{" "}
-              Vi kommer den dagen vi bestämt tillsammans för att börja sortera i{" "}
-              <a href="/dodsboet" style={{ color: "white" }} title="dödsboet">
-                dödsboet
-              </a>{" "}
-              eller bohaget. När vi sorterat klart börjar vi forsla bort det som
-              vi kan skänka eller det som skall gå till tippen. Efter detta tar
-              vi då det lösöre vi köpt upp som vi kör till vår butik eller
-              lager.
+            <p style={{ width: "300px", marginTop: "0.5rem" }}>
+              <strong style={{ color: "white" }}>Skapande av Hemsida:</strong>
+              När strategin är på plats, skapar vi en anpassad hemsida för ditt företag. Denna sida kommer att spegla din företagsidentitet och inkludera all nödvändig information om dina tjänster. Din hemsida kommer att finnas på alla våra domäner, exempelvis: 
+              - www.goteborgcentrum.se/tjänst/ditt-företag
+              - www.stockholmcentrum.se/tjänst/ditt-företag
+              <a href="/skapande" style={{ color: "white" }} title="skapande av hemsida">Läs mer om vårt arbete</a>.
             </p>
           </div>
           <div className="ddddd">
             <img
-              src="https://images.pexels.com/photos/8770246/pexels-photo-8770246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               style={{
                 height: "200px",
                 width: "200px",
@@ -127,7 +118,7 @@ const Arbetsprocessen = () => {
                 borderRadius: "50%",
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
               }}
-              alt="bortforsling av möbler, skräp och av dödsbo"
+              alt="Webbdesigner vid en dator"
             />
           </div>
         </section>
@@ -148,23 +139,15 @@ const Arbetsprocessen = () => {
             >
               <p>3</p>
             </div>
-            <p style={{ width: "300px", marginTop: "1rem" }}>
-              <strong style={{ color: "white" }}> STÄDNING:</strong> Behöver du
-              även hjälp med att få dödsboet eller bohaget{" "}
-              <a
-                href="/stadning-av-dodsbo"
-                title="städning av dödsbo"
-                style={{ color: "white" }}
-              >
-                städat
-              </a>{" "}
-              så erbjuder vi även den tjänsten för alla våra dödsbon och bohag.
-              Vi gör även saneringar som luktsaneringar av rökande eller annat.
+            <p style={{ width: "300px", marginTop: "0.5rem" }}>
+              <strong style={{ color: "white" }}>Implementering och Optimering:</strong>
+              Vi publicerar din hemsida på över 200 centrumdomäner och säkerställer att den är optimerad för sökmotorer (SEO). Detta innebär att när någon söker efter dina tjänster i olika städer, kommer ditt företag att dyka upp bland de första resultaten. Vi ser även till att varje centrumdomän är anpassad med lokal information och logotyp.
+              <a href="/implementering" style={{ color: "white" }} title="implementering och optimering">Läs mer om vår process</a>.
             </p>
           </div>
           <div className="ddddd">
             <img
-              src="https://cdn.pixabay.com/photo/2021/01/18/16/56/blinds-5928691_1280.jpg"
+              src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               style={{
                 height: "200px",
                 width: "200px",
@@ -173,7 +156,7 @@ const Arbetsprocessen = () => {
                 borderRadius: "50%",
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
               }}
-              alt="städning av dödsbo"
+              alt="Kodning på en datorskärm"
             />
           </div>
         </section>
@@ -189,25 +172,16 @@ const Arbetsprocessen = () => {
             <div className={classes.rund}>
               <p>4</p>
             </div>
-            <p style={{ width: "300px", marginTop: "1rem" }}>
-              <strong style={{ color: "white" }}> BETALNING: </strong>Är
-              föremålen/lösöret av högre värde än kostnaderna för arbetet så
-              kommer vi att betala dig som kund för att få{" "}
-              <a
-                href="/tomma-dodsbo"
-                style={{ color: "white" }}
-                title="tömma dödsbo"
-              >
-                tömma dödsboet
-              </a>
-              . Eller så kan det även bli att vi drar av summan mot det ni skall
-              betala oss.
+            <p style={{ width: "300px", marginTop: "0.5rem" }}>
+              <strong style={{ color: "white" }}>Kontinuerlig Uppföljning och Support:</strong>
+              Efter lansering följer vi upp och analyserar resultaten för att säkerställa att din hemsida presterar optimalt. Vi erbjuder kontinuerlig support och justerar vår strategi vid behov för att säkerställa att du alltid får bästa möjliga resultat.
+              <a href="/support" style={{ color: "white" }} title="kontinuerlig uppföljning och support">Läs mer om vår support</a>.
             </p>
           </div>
 
           <div className="ddddd">
             <img
-              src="https://cdn.pixabay.com/photo/2016/10/20/18/36/money-1756279_1280.jpg"
+              src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               style={{
                 height: "200px",
                 width: "200px",
@@ -216,7 +190,7 @@ const Arbetsprocessen = () => {
                 borderRadius: "50%",
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
               }}
-              alt="vem köper dödsbon"
+              alt="Supportteam som hjälper kunder"
             />
           </div>
         </section>

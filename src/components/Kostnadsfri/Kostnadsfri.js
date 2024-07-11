@@ -33,11 +33,9 @@ const Kostnadsfri = ({ vad, text }) => {
   return (
     <div className="kostandri-cont" style={{ background: "#4890e3" }}>
       <div style={{ background: "#4890e3", color: "white" }}>
-        <h2>Kostnadsfri {vad}</h2>
+        <h2>Kostnadsfritt Enskilt Samtal {vad}</h2>
         <p style={{ fontSize: "0.9rem", lineHeight: "22px" }}>
-          För att vi skall kunna ge dig ett så ärligt pris som möjligt för ditt
-          bohag, dödsbo, lösöre eller våra tjänster så erbjuder vi en
-          kostnadsfri värdering av ditt dödsbo eller bohag.
+        Boka ett kostnadsfritt enskilt samtal med våra marknadsföringsexperter på Centrum för Alla. Få skräddarsydda råd och strategier för att öka din digitala närvaro
         </p>
       </div>
     </div>

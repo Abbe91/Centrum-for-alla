@@ -1,6 +1,7 @@
 import React from "react";
-import image2 from "../utils/images/dödsbo-värdering.png";
+import image2 from "../utils/images/seoimages/digitalMarketing.jpg"; // Make sure you have an image for the consultation section
 import { makeStyles } from "@material-ui/core";
+
 const useStyles = makeStyles({
   root: {
     display: "flex",
@@ -25,12 +26,13 @@ const useStyles = makeStyles({
     }
   }
 });
-const Besok = () => {
+
+const FreeConsultation = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <section style={{ margin: "1rem 0" }}>
-        <h2 style={{ color: "white" }}>Kostnadsfri värdering</h2>
+        <h2 style={{ color: "white" }}>Kostnadsfri One-on-One Samtal</h2>
         <div
           style={{
             margin: "0.7rem auto",
@@ -40,45 +42,20 @@ const Besok = () => {
           }}
         ></div>
         <p className={classes.para}>
-          Vi erbjuder <strong>kostnadsfri</strong>{" "}
-          <a
-            href="/vardering-av-dodsbo"
-            title="värdering av dödsbo"
-            style={{ color: "white" }}
-          >
-            värdering av dödsbo
-          </a>{" "}
-          och bohag inom Göteborg, Kungälv, Ale, Stenungsund och Tjörn. Vi har
-          säljkanalerna och egen butiker. Sheglam är ett företag som
-          tänker miljösmart och på återanvändning. Vi skänker till
-          behandlingshem, olika typer av boenden, kyrkor,{" "}
-          <strong>hjälporganisationer</strong> och till behövande. Vi har valt
-          att skänka 100 kronor per uppdrag till olika hjälporganisationer.
-          Efter att vi har{" "}
-          <a
-            href="/tomma-dodsbo"
-            style={{ color: "white" }}
-            title="tömma dödsbo"
-          >
-            tömma dödsboet
-          </a>{" "}
-          inklusive förråd, källare och övriga utrymmen så gör vi en noggrann{" "}
-          <a
-            href="/flyttstadning-av-bohag"
-            title="flyttstädning av bohag"
-            style={{ color: "white" }}
-          >
-            flyttstädning av bohaget
-          </a>{" "}
-          , dödsboet eller huset. Söker du en uppköpare av dödsbon kan du vända
-          dig till oss.
+          Vi på Centrum för Alla erbjuder <strong>kostnadsfria</strong> one-on-one samtal
+          för att hjälpa dig med alla dina marknadsföringsbehov. Oavsett om du
+          behöver hjälp med digital marknadsföring, SEO optimering, sociala medier,
+          eller innehållsskapande, så finns vi här för att stödja dig. Under samtalet
+          kommer vi att diskutera dina mål och behov för att skapa en skräddarsydd
+          strategi som maximerar din digitala närvaro. Boka ett samtal med oss idag
+          för att få en offert och börja din resa mot framgång.
         </p>
       </section>
       <section style={{ margin: "1rem 0", borderRadius: "50%" }}>
-        <img src={image2} className="besok-img" loading="lazy" alt="house" />
+        <img src={image2} className="besok-img" loading="lazy" alt="consultation" />
       </section>
     </div>
   );
 };
 
-export default Besok;
+export default FreeConsultation;

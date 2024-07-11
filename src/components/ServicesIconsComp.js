@@ -4,42 +4,32 @@ import { ArrowForwardIos } from "@material-ui/icons";
 
 const services = [
   {
-    title: "Värdera dödsbo",
-
-    path: "/vardera-dodsbo"
+    title: "Digital Marknadsföring",
+    path: "digital-marknadsforing",
   },
   {
-    title: "Tömning",
-
-    path: "/tommer-hushall"
+    title: "SEO Optimering",
+    path: "seo-optimering",
   },
   {
-    title: "Bortforsling",
-    path: "/bortforsling"
+    title: "Sociala Medier Hantering",
+    path: "sociala-medier",
   },
   {
-    title: "Städning",
-
-    path: "/flyttstadning"
+    title: "Innehållsskapande",
+    path: "innehallsskapande",
   },
   {
-    title: "Uppköp dödsbo",
-
-    path: "uppkop-av-dodsbo"
+    title: "Webbdesign och Utveckling",
+    path: "webbdesign",
   },
   {
-    title: "Sälja dödsbo",
-
-    path: "/salja-dodsbo/salja-dodsbo"
+    title: "Email Marknadsföring",
+    path: "email-marknadsforing",
   },
   {
-    title: "Sanera dödsbo",
-
-    path: "/sanera-dodsbo"
-  },
-  {
-    title: "Flytta",
-    path: "/bohagsflytt"
+    title: "Kostnadsfri Rådgivning",
+    path: "kostnadsfri-radgivning",
   }
 ];
 
@@ -93,12 +83,13 @@ const ServicesIconsComp = () => {
             fontSize: "0.8rem"
           }}
         >
-          Vi förstår att det kan vara en känslomässigt svår och stressig tid när
-          man behöver ta hand om ett dödsbo eller ett hushåll som behöver
-          tömmas. Vår målsättning är att göra hela processen så smidig och
-          stressfri som möjligt för dig. Vi har lång erfarenhet och är experter
-          på att hantera alla slags situationer när det gäller dödsbon och
-          hushåll.
+           Vi på Centrum för Alla erbjuder ett brett utbud av digitala
+        marknadsföringstjänster för att hjälpa ditt företag växa online. Oavsett
+        om du behöver förbättra din synlighet på webben, optimera din webbplats
+        för sökmotorer (SEO), hantera dina sociala medier, skapa engagerande
+        innehåll, utveckla en attraktiv webbdesign, genomföra effektiv
+        e-postmarknadsföring eller bara behöver kostnadsfri rådgivning – vi är
+        här för att hjälpa dig.
         </p>
       </section>
 

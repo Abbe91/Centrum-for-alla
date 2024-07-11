@@ -20,7 +20,7 @@ const LottieDoneComp = () => {
           </a>{" "}
           och{" "}
           <a
-            href="/tomma-bohag"
+            href="/app"
             title="tömma bohag och hushåll"
             style={{ color: "inherit" }}
           >

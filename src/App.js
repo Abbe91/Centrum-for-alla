@@ -36,7 +36,6 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 const Tommadodsbogoteborg = lazy(() =>
   import("./components/tommadodsbogoteborg/Tommadodsbogoteborg")
 );
-const Tommabohag = lazy(() => import("./components/Tommabohag"));
 const Varderadodsbogoteborg = lazy(() =>
   import("./blocks/Varderadodsbogoteborg")
 );
@@ -64,7 +63,7 @@ const Uppkopdodsboulricehamn = lazy(() =>
   import("./blocks/Uppkopdodsboulricehamn")
 );
 const Hjalpdodsbogoteborg = lazy(() => import("./blocks/Hjalpadodsbogoteborg"));
-const Besok = lazy(() => import("./components/Besok"));
+const FreeConsultation = lazy(() => import("./components/Besok"));
 const BortforslingDodsboKungalv = lazy(() =>
   import("./blocks/kungalv/BortforslingDodsboKungalv")
 );
@@ -146,7 +145,7 @@ const Stadningavdodsbo = lazy(() => import("./blocks/Stadningavdodsbo"));
 //
 const Oppetider = lazy(() => import("./components/Oppetider"));
 const Recensioner = lazy(() => import("./components/Recensioner"));
-const Seo = lazy(() => import("./components/SEO/Seo"));
+const Seo = lazy(() => import("./components/Seo"));
 const Arbetsprocessen = lazy(() => import("./components/Arbetsprocessen"));
 const ImagesServicesComponent = lazy(() =>
   import("./components/ImagesServicesComponent")
@@ -355,6 +354,7 @@ const Tommerhemgoteborg = lazy(() =>
   import("./blocks/Goteborg/Tommerhemgoteborg")
 );
 const Bortforsling = lazy(() => import("./blocks/Goteborg/Bortforsling"));
+const Adspages = lazy(() => import("./components/AdsPages"));
 const Billigflyttfirmagoteborg = lazy(() =>
   import("./blocks/flytt/Billigflyttfirmagoteborg")
 );
@@ -462,8 +462,12 @@ const App = () => {
               }
             />
             <Route
-              path="/tomma-bohag"
-              element={<Tommabohag videoText={contentData?.videoText} />}
+              path="/seo"
+              element={<Seo videoText={contentData?.videoText} />}
+            />
+            <Route
+              path="/adspages"
+              element={<Adspages videoText={contentData?.videoText} />}
             />
             <Route
               path="/bortforsling"
@@ -1208,7 +1212,7 @@ const App = () => {
           </Routes>
           <Partners />
           <ImagesServicesComponent />
-          <Besok />
+          <FreeConsultation />
           <SeoServiceComponent />
           <Oppetider />
           <ServicesIconsComp />

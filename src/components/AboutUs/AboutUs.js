@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./AboutUs.css";
 import { getCustomerData } from "../../redux-toolkit/customer/customerSlice";
 import { useSelector } from "react-redux";
+
 const AboutUs = ({ query, oss, om }) => {
   const customerData = useSelector(getCustomerData);
   const [readMore, setReadMore] = useState(false);
@@ -28,7 +29,7 @@ const AboutUs = ({ query, oss, om }) => {
         >
           Vi på <strong>{customerData.business}</strong> {om}
         </p>
-        <h5>Vi köper, tömmer, städar och säljer dödsbon och hushåll.</h5>
+        <h5>Vi erbjuder en omfattande digital marknadsföringslösning.</h5>
         <p
           style={{
             maxWidth: "800px",
@@ -40,46 +41,18 @@ const AboutUs = ({ query, oss, om }) => {
             transition: "all 0.3s linear"
           }}
         >
-          När du behöver hjälp med att sälja ditt dödsbo,{" "}
-          <a
-            href="/tomma-dodsbo"
-            style={{ color: "white" }}
-            title="tömma dödsbo"
-          >
-            tömma dödsbo
-          </a>
-          , städa dödsbo eller att vi köper från{" "}
-          <a href="/dodsboet" style={{ color: "white" }} title="dödsboet">
-            dödsboet
+          När ditt företag behöver förbättra sin online-närvaro och synlighet, kan du lita på oss. Vi erbjuder skräddarsydda digitala marknadsföringstjänster som inkluderar strategiutveckling, webbdesign, SEO-optimering, och mycket mer. Kontakta oss för en kostnadsfri konsultation och låt oss hjälpa dig att nå nya höjder med din digitala marknadsföring. För mer information om våra tjänster, besök vår sida om{" "}
+          <a href="/tjanster" style={{ color: "white" }} title="våra tjänster">
+            våra tjänster
           </a>{" "}
-          så kan du kontakta oss. Vi ger dig kostnadsfri{" "}
+          eller läs mer om{" "}
           <a
-            href="/vardering-av-dodsbo"
-            title="värdering av dödsbo"
+            href="/tjanst/digital-marknadsforing"
             style={{ color: "white" }}
+            title="digital marknadsföring"
           >
-            värdering
-          </a>{" "}
-          och en offert som du kan ta ställning till. Om du bestämmer dig för
-          att låta oss{" "}
-          <a
-            href="/uppkop-av-dodsbo"
-            style={{ color: "white" }}
-            title="uppköp av dödsbo"
-          >
-            köpa ditt dödsbo
-          </a>{" "}
-          kan du även få hjälp av oss med att{" "}
-          <a
-            href="/tomma-dodsbo"
-            style={{ color: "white" }}
-            title="tömma dödsbo"
-          >
-            tömma dödsboet
-          </a>{" "}
-          och sedan få dödsboet städat. Vi samarbetar med många auktionsfirmor
-          och kan hjälpa er med att sälja lösöre som är av större värde. Vi kan
-          även vara behjälpliga med bouppteckningen av dödsboet.
+            digital marknadsföring
+          </a>.
         </p>
 
         <div className="aboutUs-contact">
@@ -111,7 +84,7 @@ const AboutUs = ({ query, oss, om }) => {
                 margin: "0.2rem 0"
               }}
             >
-              556469-5194
+              0000-000
             </p>
           </div>
         </div>

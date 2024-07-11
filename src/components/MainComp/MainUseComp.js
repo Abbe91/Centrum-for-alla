@@ -3,66 +3,42 @@ import TableOfConent from "../toc/TableOfConent";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 export const items = [
   {
-    title: "Bortforsling",
-    alt: "bortforsling av dödsbo och möbler",
-    srcImg: "https://www.svgrepo.com/show/85909/furniture.svg",
-    srcPath: "https://sheglam.se/bortforsling-dodsbo"
+    title: "SEO",
+    alt: "SEO",
+    srcImg: "https://www.svgrepo.com/show/478722/seo-1.svg",
+    srcPath: "https://sheglam.se/seo"
   },
   {
-    title: "Dödsbo",
-    alt: "Värderar dödsbo, tömmer dödsbo",
-    srcImg: "https://www.svgrepo.com/show/490798/house.svg",
-    srcPath: "https://sheglam.se"
+    title: "Marknadsföreing",
+    alt: "Allt inom Digital marknadsföreing",
+    srcImg: "https://www.svgrepo.com/show/500399/marketing.svg",
+    srcPath: "https://sheglam.se/marknadsforeing"
   },
   {
-    title: "Städning",
-    alt: "Flyttstädning och städning av dödsbo",
-    srcImg: "https://www.svgrepo.com/show/287614/cleaning-mop.svg",
-    srcPath: "https://sheglam.se/flyttstadning"
+    title: "PPC",
+    alt: "PPC (Pay-Per-Click) Reklam",
+    srcImg: "https://www.svgrepo.com/show/383712/pay-per-click-hand-link.svg",
+    srcPath: "https://sheglam.se/ppc"
   },
   {
-    title: "Flytt",
-    alt: "Bohagsflytt och trasnport",
-    srcImg: "https://www.svgrepo.com/show/270968/truck.svg",
-    srcPath: "https://sheglam.se/bohagsflytt"
+    title: "Sociala Medier",
+    alt: "Sociala Medier",
+    srcImg: "https://www.svgrepo.com/show/234827/social-media.svg",
+    srcPath: "https://sheglam.se/social-media"
   },
   {
-    title: "Återvinning",
-    alt: "återvinning och återvinningstjänster",
-    srcImg: "https://www.svgrepo.com/show/230586/recycling-bin-recycle-bin.svg",
-    srcPath: "https://sheglam.se/atervinning"
+    title: "Innehålls marknadsföring",
+    alt: "Innehållsmarknadsföring",
+    srcImg: "https://www.svgrepo.com/show/430120/content-marketing-communication.svg",
+    srcPath: "https://sheglam.se/Innehallsmarknadsforing"
   },
   {
-    title: "Avfall",
-    alt: "avfallshantering och avfallstjänster",
-    srcImg: "https://www.svgrepo.com/show/484065/trash-can.svg",
-    srcPath: "https://sheglam.se/avfallshantering"
+    title: "Webbdesign och Utveckling",
+    alt: "Webbdesign och Utveckling",
+    srcImg: "https://www.svgrepo.com/show/202392/development.svg",
+    srcPath: "https://sheglam.se/webbdesign-och-utveckling"
   },
-  {
-    title: "Uppköp",
-    alt: "Uppköp av lösöre och dödsbo",
-    srcImg: "https://www.svgrepo.com/show/480209/painting-1.svg",
-    srcPath: "https://sheglam.se/uppkop-av-dodsbo"
-  },
-  {
-    title: "Tömning",
-    alt: "Tömning av dödsboo och hushåll",
-    srcImg:
-      "https://www.svgrepo.com/show/307953/mover-going-downstairs-stairs-ladder-moving-boxes.svg",
-    srcPath: "https://sheglam.se/tomning-av-dodsbo"
-  },
-  {
-    title: "Värdering",
-    alt: "Värdering av dödsbo, lösöre och hushåll",
-    srcImg: "https://www.svgrepo.com/show/160931/judge.svg",
-    srcPath: "https://sheglam.se/vardering-av-dodsbo"
-  },
-  {
-    title: "Sanering",
-    alt: "sanering av dödsbo och hushåll",
-    srcImg: "https://www.svgrepo.com/show/393486/avatar-face-face-mask.svg",
-    srcPath: "https://sheglam.se/sanera-dodsbo"
-  }
+  
 ];
 const MainUseComp = ({ formTitle }) => {
   const [showInneHall, setshowInneHall] = useState(false);
@@ -80,7 +56,7 @@ const MainUseComp = ({ formTitle }) => {
             {formTitle}
           </h1>
           <h2 style={{ marginBottom: "0.5rem", fontSize: "1.2rem" }}>
-            Detta kan vi hjälpa dig med
+            Vad kan vi hjälpa dig med
           </h2>
           <p
             style={{
@@ -91,91 +67,51 @@ const MainUseComp = ({ formTitle }) => {
             }}
           >
             <a
-              href="/atervinning"
-              title="återvinning"
+              href="/seo"
+              title="SEO"
               style={{ color: "inherit" }}
             >
-              Återvinning
+              SEO
             </a>{" "}
             och{" "}
             <a
-              href="/avfallshantering"
-              title="avfallshantering"
+              href="/marknadsforeing"
+              title="Allt inom Digital marknadsföreing"
               style={{ color: "inherit" }}
             >
-              Avfallshantering
+              Allt inom Digital marknadsföreing
             </a>
             .{" "}
             <a
-              href="/uppkop-av-dodsbo"
-              title="uppköp av dödsbo, bohag och hushåll"
+              href="/PPC"
+              title="PPC (Pay-Per-Click) Reklam"
               style={{ color: "inherit" }}
             >
-              Uppköp
+              PPC (Pay-Per-Click) Reklam
             </a>
             ,{" "}
             <a
-              href="/vardera-dodsbo"
-              title="värdering av dödsbo, bohag och hushåll"
+              href="/social-media"
+              title="Sociala Medier"
               style={{ color: "inherit" }}
             >
-              värdering
+              Sociala Medier
             </a>
             ,{" "}
             <a
-              href="/tomma-dodsbo"
-              title="tömma dödsbo"
+              href="/Innehallsmarknadsforing"
+              title="Innehållsmarknadsföring"
               style={{ color: "inherit" }}
             >
-              tömning
+              Innehållsmarknadsföring
             </a>
             ,{" "}
             <a
-              href="/bortforsling-dodsbo"
-              title="bortforsling av möbler och dödsbo"
+              href="/webbdesign-och-utveckling"
+              title="Webbdesign och Utveckling"
               style={{ color: "inherit" }}
             >
-              bortforsling
-            </a>
-            ,{" "}
-            <a
-              href="/sanera-dodsbo"
-              title="sanering av dödsbo"
-              style={{ color: "inherit" }}
-            >
-              sanering
-            </a>
-            ,{" "}
-            <a
-              href="/bohagsflytt"
-              title="bohagsflytt"
-              style={{ color: "inherit" }}
-            >
-              flytt
-            </a>{" "}
-            och{" "}
-            <a
-              href="/stadning-av-dodsbo"
-              title="städning av dödsbo"
-              style={{ color: "inherit" }}
-            >
-              städning
-            </a>{" "}
-            av{" "}
-            <a
-              href="/tomma-dodsbo"
-              title="tömma dödsbo"
-              style={{ color: "inherit" }}
-            >
-              dödsbon
-            </a>{" "}
-            och{" "}
-            <a
-              href="/tomma-bohag"
-              title="tömma bohag"
-              style={{ color: "inherit" }}
-            >
-              bohag
+              Webbdesign och Utveckling
             </a>
             .
           </p>

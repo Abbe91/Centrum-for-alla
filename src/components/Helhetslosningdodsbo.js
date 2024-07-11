@@ -58,33 +58,25 @@ const Helhetslosningdodsbo = () => {
 
   return (
     <div className={classes.root} id="helhet">
-      <section className={classes.sec1}>
-        <h2 className={classes.title}>Helhetslösning för dödsbo</h2>
-        <p className={classes.paragraph}>
-          Vår helhetslösning erbjuder professionell service för rensning,
-          försäljning och avveckling av abonnemang samt juridisk rådgivning. Vi
-          kan hjälpa till med allt som behövs för att göra processen smidig och
-          enkel för dig. Kontakta oss idag för en kostnadsfri konsultation
-          angående dödsbo och dödsbo tömning. Ett dödsbo är mer krävande än vad
-          man tror. Idag ställs det ju många krav på sortering och avfall av
-          dödsbon. Vi på Sheglam tar hela ansvaret från att sortera{" "}
-          <a href="/dodsboet" style={{ color: "white" }} title="dödsboet">
-            dödsboet
-          </a>
-          , bortforsling av dödsboet,{" "}
-          <a
-            href="/tomma-dodsbo"
-            style={{ color: "white" }}
-            title="tömma dödsbo"
-          >
-            tömning av dödsboet i Västra götalanmd
-          </a>{" "}
-          och sedan städning av dödsboet. Vi gör även luktsaneringar av dödsbo
-          eller röksanering av dödsbo. Behöver du hjälp med att tömma ett
-          dödsbo?
-        </p>
-      </section>
-    </div>
+  <section className={classes.sec1}>
+    <h2 className={classes.title}>Helhetslösning för digital marknadsföring</h2>
+    <p className={classes.paragraph}>
+      Vår helhetslösning erbjuder skräddarsydda digitala marknadsföringstjänster för att maximera din synlighet och tillväxt online. Vi tar hand om allt från strategi och skapande av webbsidor till implementering och kontinuerlig optimering för att säkerställa att ditt företag når sin fulla potential på över 200 centrumdomäner över hela Sverige. Kontakta oss idag för att diskutera hur vi kan hjälpa dig att stärka din digitala närvaro och locka fler kunder till ditt företag. För mer information om våra tjänster, besök vår sida om{" "}
+      <a href="/tjanster" style={{ color: "white" }} title="våra tjänster">
+        våra tjänster
+      </a>{" "}
+      eller läs mer om{" "}
+      <a
+        href="/tjanst/helhetslosning-digital-marknadsforing"
+        style={{ color: "white" }}
+        title="helhetslösning för digital marknadsföring"
+      >
+        helhetslösning för digital marknadsföring
+      </a>.
+    </p>
+  </section>
+</div>
+
   );
 };
 

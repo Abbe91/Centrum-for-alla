@@ -14,26 +14,26 @@ import { getNewsData, getBingNews } from "../redux-toolkit/news/newsSlice";
 import LottieBooking from "../LottieAnimation/LottieBooking";
 import booking from "../utils/animation/booking.json";
 import BookingModal from "../components/BookingModal";
-const Tommabohag = ({ videoText }) => {
+const Adspages = ({ videoText }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const mainquery = "Tömma bohag";
+  const mainquery = "AdsPages";
   const newsData = useSelector(getNewsData);
   const bingNews = useSelector(getBingNews);
   const [content, setContent] = useState({
     metaTitle:
-      "Säker och effektiv bohagstömning - Vi tar hand om allt från början till slut",
+      "AdsPages meta title",
     metaContent:
-      "Tömma bohag. Behöver du hjälp med att tömma ett bohag? Kontakta oss för en stressfri och smidig tömning av ert bohag,",
-    query: "Tömma bohag",
-    formTitle: "Tömma bohag",
+      "AdsPages meta content",
+    query: "AdsPages",
+    formTitle: "AdsPages",
     subTitle2:
-      "Din auktoriserade hanterare av dödsbo, bohag, uppköp, tömning, sanering, flytt, städ, bortforsling, värdering och försäljning av dödsbo.",
-    subTitle3: `Behöver du professionell hjälp med ${mainquery}`
+      "Här kan du skriva en subtitle",
+    subTitle3: `Subtitle ${mainquery}`
   });
   const customerData = useSelector(getCustomerData);
 
   const services =
-    "uppköp, tömning, sanering, luktsanering, flytt, städning, bortforsling, värdering och försäljning av dödsbo.";
+    "att skapar anpassade hemsidor och publicerar dem på över 200 centrumdomäner över hela Sverige, vilket förbättrar din SEO och ökar din synlighet. Vi erbjuder också kontinuerlig uppföljning och support för att säkerställa att din hemsida alltid presterar optimalt.";
   const element = useSelector(getElement);
   useEffect(() => {
     document
@@ -49,14 +49,14 @@ const Tommabohag = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://sheglam.se/tomma-bohag"
+          href="https://sheglam.se/app"
         />
       </Helmet>
       <div className="Nav">
         <Nav />
       </div>
       <div className="Hem">
-        <MainComp
+      <MainComp
           query={content.query}
           formTitle={content.formTitle}
           icon={<BsHouseDoor />}
@@ -65,18 +65,18 @@ const Tommabohag = ({ videoText }) => {
           subTitle3={content.subTitle3}
           text={`Behöver du hjälp med ${mainquery}? Då är vi på ${customerData.business} det självklara valet. Vi är en firma som verkligen kan allt kring ${mainquery}. Vi kan också hjälpa dig med ${services}. Vi erbjuder en full helhetslösning med målet att ge det bästa valet för dig och din plånbok. Som kund hos har du allt samlat hos ett och samma företag.`}
           subTitle4={`Helhetslösning för ${mainquery}`}
-          text1={`Vårt företag har varit i branschen i över 20år. Vi har flera samarbeten med auktionsfirmor, olika typer va hjälp boenden, och hjälp organisationer. Vi skänker lösöre och möbler samt sorterar och och värnar om miljön`}
+          text1={`Centrum för Alla erbjuder omfattande digitala marknadsföringstjänster för lokala företag.`}
           subTitle5={"Våra tjänster"}
           text2={`Vi kan hjälpa dig med ${services}`}
         />
       </div>
-
-      <div className="Om">
+    <div className="Om">
         <AboutUs
           query={mainquery.toUpperCase()}
-          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig ${mainquery}?`}
-          om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
+          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
+          om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
+
       </div>
       {newsData && (
         <div className="Tips">
@@ -89,11 +89,10 @@ const Tommabohag = ({ videoText }) => {
 
       <div className="booking-lottie">
         <div className="booking-content">
-          <h2>Hjälp {mainquery}?</h2>
+          <h2>Hjälp med {mainquery}?</h2>
           <h4>
             Vi erbjuder helt kostnadfritt besök/genomgång för att kunna hjälpa
-            dig som kund med att {mainquery}. Besöket/genomgången tar ca 45min
-            och du som kund får en offert på plats om hur vi kan hjälpa dig
+            dig som kund med {mainquery}. 
             <strong style={{ fontWeight: "700" }}> {mainquery}.</strong>
           </h4>
           <button
@@ -112,7 +111,7 @@ const Tommabohag = ({ videoText }) => {
 
       <div className="Kostnadsfri">
         <Kostnadsfri
-          vad={"Värdering"}
+          vad={"Marknadsföring"}
           mainquery={mainquery}
           text={`${videoText}${mainquery}.`}
         />
@@ -121,4 +120,4 @@ const Tommabohag = ({ videoText }) => {
   );
 };
 
-export default Tommabohag;
+export default Adspages;

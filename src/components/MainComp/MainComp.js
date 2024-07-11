@@ -27,7 +27,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             maxWidth: "330px"
           }}
         >
-          Bästa alternativet för dig, miljön och plånboken
+          Vi hjälper dig att nå alla dina mål
         </h4>
 
         <div
@@ -59,7 +59,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
                   padding: "0.5rem"
                 }}
                 {...params}
-                placeholder="Vad behöver du hjälp med?"
+                placeholder="Hur kan vi hjälpa dig"
                 margin="normal"
                 variant="standard"
                 InputProps={{
@@ -122,21 +122,21 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
           >
             Behöver du hjälp med att{" "}
             <a
-              href="/tomma-dodsbo"
-              title="tömma dödsbo"
+              href="/analys"
+              title="analys"
               style={{ color: "inherit" }}
             >
-              tömma ditt dödsbo
+              Analys och Strategi
             </a>{" "}
-            eller hushåll eller få ditt dödsbo{" "}
+            och Kontinuerlig Uppföljning och Suppor{" "}
             <a
-              href="/vardera-dodsbo"
-              title="värdera dödsbo"
+              href="/kontinuerlig"
+              title="kontinuerlig"
               style={{ color: "inherit" }}
             >
-              värderat
+               vi erbjuda våra kunder en oslagbar fördel när det gäller sökmotoroptimering (SEO) och online-marknadsföring.
             </a>{" "}
-            ? Vi hjälper dig med hela processen för ditt dödsbo och bohag.{" "}
+            (SEO) och online-marknadsföring.{" "}
           </p>
         </div>
 
@@ -151,7 +151,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             flexDirection: "column"
           }}
         >
-          <h4 style={{ marginLeft: "0.5rem" }}>Dödsbo är krävande</h4>
+          <h4 style={{ marginLeft: "0.5rem" }}>Skapande av Hemsida</h4>
           <p
             style={{
               maxWidth: "500px",
@@ -162,18 +162,13 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             {/* {text1} */}
             Att ta hand om ett{" "}
             <a
-              href="/tomma-dodsbo"
-              title="tömma dödsbo"
+              href="/hemsida"
+              title="Hemsida"
               style={{ color: "inherit" }}
             >
-              dödsbo
+              Hemsida
             </a>{" "}
-            kan vara en svår uppgift som kräver mycket tid och arbete. Det kan
-            vara en känslomässigt påfrestande tid för de efterlevande, och det
-            kan vara svårt att veta var man ska börja. Men med rätt hjälp och
-            stöd kan det bli enklare. Vi på Sheglam specialiserar oss på
-            hantering av dödsbo och kan hjälpa dig att ta hand om alla aspekter
-            av processen.
+            Vi skapar en anpassad hemsida för ditt företag som speglar din företagsidentitet och inkluderar all nödvändig information om dina tjänster.
           </p>
         </div>
         <div
@@ -187,7 +182,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
           }}
           id="wecando"
         >
-          <h4 style={{ marginLeft: "0.5rem" }}>Vad kan vi göra</h4>
+          <h4 style={{ marginLeft: "0.5rem" }}>Varför Välja Oss?</h4>
           <p
             style={{
               maxWidth: "500px",
@@ -196,35 +191,30 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             }}
           >
             {/* {text1} */}
-            Vi erbjuder en mängd olika tjänster, inklusive{" "}
+            Unikt Nätverk av Domäner: Med vårt omfattande nätverk av över 200 centrumdomäner får ditt företag en betydande SEO-fördel.{" "}
             <a
               href="/vardera-dodsbo"
               title="värdera dödsbo"
               style={{ color: "inherit" }}
             >
-              värdering
+              Skräddarsydda Lösningar: Vi anpassar våra tjänster efter dina specifika behov och mål.
             </a>{" "}
-            av tillgångar,{" "}
             <a
               href="/bortforsling-dodsbo"
               title="bortforsling av dödsbo"
               style={{ color: "inherit" }}
             >
-              bortforsling
+              Expertis och Erfarenhet: 
             </a>{" "}
-            av skräp,{" "}
+            Vårt team har den erfarenhet och kunskap som krävs för att hjälpa ditt företag att lyckas online.{" "}
             <a
               href="/tommer-hushall"
               title="tömmer hushåll, bohag och dödsbo"
               style={{ color: "inherit" }}
             >
-              tömning av fastigheter
+              Kontinuerlig Support:
             </a>{" "}
-            , uppköp av egendom, städning och sanering. Vi förstår att varje
-            dödsbo är unikt och att det kan finnas olika behov beroende på
-            situationen. Därför är våra tjänster flexibla och anpassningsbara
-            för att möta dina specifika behov. Vi arbetar alltid med respekt och
-            omsorg för att underlätta denna svåra tid för de efterlevande.
+            Vi erbjuder långsiktig support och uppföljning för att säkerställa att din digitala närvaro fortsätter att växa och utvecklas.
           </p>
         </div>
         <div
@@ -238,7 +228,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             flexDirection: "column"
           }}
         >
-          <h4 style={{ marginLeft: "0.5rem" }}>Välutbildad personal</h4>
+          <h4 style={{ marginLeft: "0.5rem" }}>Vår Vision</h4>
           <p
             style={{
               maxWidth: "500px",
@@ -247,36 +237,8 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             }}
           >
             {/* {text1} */}
-            Vår erfarna personal är välutbildad och kunnig inom alla aspekter av
-            hantering av dödsbo. Vi har de verktyg och resurser som krävs för
-            att göra processen så smidig och effektiv som möjligt. Oavsett om du
-            behöver hjälp med{" "}
-            <a
-              href="/vardera-dodsbo"
-              title="värdera dödsbo"
-              style={{ color: "inherit" }}
-            >
-              värdering av egendom
-            </a>{" "}
-            ,{" "}
-            <a
-              href="/bortforsling-dodsbo"
-              title="bortforsling av dödsbo"
-              style={{ color: "inherit" }}
-            >
-              bortforsling av skräp
-            </a>{" "}
-            eller{" "}
-            <a
-              href="/flyttstadning"
-              title="flyttstädning  av dödsbo, hushåll, hus och hem"
-              style={{ color: "inherit" }}
-            >
-              städning av fastigheter
-            </a>{" "}
-            , så kan vi hjälpa till. Vi erbjuder konkurrenskraftiga priser och
-            högkvalitativ service för att se till att varje kund får den hjälp
-            de behöver.
+            Vår vision är att stärka lokala företag genom att ge dem de verktyg och resurser de behöver för att nå sin fulla potential online. Vi tror att varje företag, oavsett storlek eller bransch, förtjänar att synas och höras i den digitala världen. Genom att skapa anpassade hemsidor och publicera dem på våra centrumdomäner, hjälper vi våra kunder att bli mer synliga för sina potentiella kunder och att växa sin verksamhet.{" "}
+            
           </p>
         </div>
       </section>
@@ -288,33 +250,27 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
 export default MainComp;
 const servicesArray = [
   {
-    title: "Bortforsling"
+    title: "Webbdesign"
   },
   {
-    title: "Tömning"
+    title: "Sökmotoroptimering (SEO)"
   },
   {
-    title: "Värdering"
+    title: "Digital marknadsföring"
   },
   {
-    title: "Städa"
+    title: "Sociala medier hantering"
   },
   {
-    title: "Flyttstäda"
+    title: "E-postmarknadsföring"
   },
   {
-    title: "Flytta"
+    title: "PPC-annonsering (Pay-per-click)"
   },
   {
-    title: "Återvinning"
+    title: "Innehållsstrategi"
   },
   {
-    title: "Avfallshantering"
-  },
-  {
-    title: "Uppköp av lösöre"
-  },
-  {
-    title: "Uppköp av dödsbo"
+    title: "Webbanalys"
   }
 ];

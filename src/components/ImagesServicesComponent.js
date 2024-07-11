@@ -1,12 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import dodsbokopes from "../utils/images/seoimages/dödsbo-köpes.jpg";
-import dodsbosaljes from "../utils/images/seoimages/dödsbo-säljes.jpg";
-import dodsboanmalan from "../utils/images/seoimages/dödsboanmälan.jpg";
-import foretagkoperbohag from "../utils/images/seoimages/företag-köper-bohag.jpg";
-import stadningavdodsbo from "../utils/images/seoimages/städning-av-dödsbo.jpg";
-import tomningavdodsbo from "../utils/images/seoimages/tömning-av-dödsbo.jpg";
-import varderadodsbo from "../utils/images/värdera-dödsbo.jpg";
+import digitalMarketing from "../utils/images/seoimages/digitalMarketing.jpg";
+import seoOptimization from "../utils/images/seoimages/seoOptimization.jpg";
+import socialMedia from "../utils/images/seoimages/socialMedia.jpg";
+import webDevelopment from "../utils/images/seoimages/webDevelopment.jpg";
+import contentCreation from "../utils/images/seoimages/contentCreation.jpg";
+import emailMarketing from "../utils/images/seoimages/emailMarketing.jpg";
+import ppcAdvertising from "../utils/images/seoimages/ppcAdvertising.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const useStyles = makeStyles({
   root: {
@@ -38,30 +38,15 @@ const useStyles = makeStyles({
   }
 });
 const images = [
-  { url: dodsbokopes, text: "Dödsbo köpes", path: "/dodsbo-kopes" },
-  {
-    url: varderadodsbo,
-    text: "Värdera dödsbo",
-    path: "/vardera-dodsbo"
-  },
-  {
-    url: stadningavdodsbo,
-    text: "Städning av dödsbo",
-    path: "/stadning-av-dodsbo"
-  },
-  {
-    url: tomningavdodsbo,
-    text: "Tömning av dödsbo",
-    path: "/tomning-av-dodsbo"
-  },
-  { url: dodsbosaljes, text: "Dödsbo säljes", path: "/salja-dodsbo" },
-  { url: dodsboanmalan, text: "Dödsboanmälan", path: "/dodsboanmalan" },
-  {
-    url: foretagkoperbohag,
-    text: "Företag köper bohag",
-    path: "/foretag-som-koper-bohag"
-  }
+  { url: digitalMarketing, text: "Digital Marknadsföring", path: "/digital-marknadsforing" },
+  { url: seoOptimization, text: "SEO Optimering", path: "/seo-optimering" },
+  { url: socialMedia, text: "Sociala Medier", path: "/sociala-medier" },
+  { url: webDevelopment, text: "Webbutveckling", path: "/webbutveckling" },
+  { url: contentCreation, text: "Innehållsskapande", path: "/innehallsskapande" },
+  { url: emailMarketing, text: "E-postmarknadsföring", path: "/e-postmarknadsforing" },
+  { url: ppcAdvertising, text: "PPC Annonsering", path: "/ppc-annonsering" }
 ];
+
 const ImagesServicesComponent = () => {
   const classes = useStyles();
   return (
@@ -83,5 +68,6 @@ const ImagesServicesComponent = () => {
     </div>
   );
 };
+
 
 export default ImagesServicesComponent;
