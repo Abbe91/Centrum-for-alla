@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import HomeWorkIcon from "@material-ui/icons/HomeWork";
-import LocalShippingIcon from "@material-ui/icons/LocalShipping";
-import DeleteIcon from "@material-ui/icons/Delete";
-import WarningIcon from "@material-ui/icons/Warning";
-import AllInboxIcon from "@material-ui/icons/AllInbox";
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
-import FindInPageIcon from "@material-ui/icons/FindInPage";
+import SearchIcon from "@material-ui/icons/Search";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import CreateIcon from "@material-ui/icons/Create";
+import WebIcon from "@material-ui/icons/Web";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
 const useStyles = makeStyles({
   root: {
     height: "460px",
@@ -47,50 +47,48 @@ const useStyles = makeStyles({
 });
 const services = [
   {
-    title: "Tömma hus och lägenheter",
-    path: "tomma-bohag",
-    text: "Vi tömmer lägenheteter, hus, dödsbon, förråd och kontor. Sheglam tar hand om hela bohag, dödsbo och hushåll, även delar av hem om någon flyttat till ett serviceboende eller liknade. Behöver du hjälp med att tömma ett hus, lägenhet, dödsbo eller kontor i Göteborg? Då är vi på Sheglam det självklara valet.",
+    title: "Digital Marknadsföring",
+    path: "digital-marknadsforing",
+    text: "Vi hjälper ditt företag att synas online genom strategisk digital marknadsföring. Vårt team kan skapa och genomföra kampanjer som ökar din synlighet, driver trafik till din hemsida och förbättrar din konverteringsgrad.",
     icon: <HomeWorkIcon />
   },
   {
-    title: "Bortforsling av bohag och dödsbo",
-    path: "bortforsling-dodsbo",
-    text: "Vi erbjuder hjälp med bortforsling av möbler och skräp och vi kan oftast hjälpa dig redan samma dag. Du behöver bara visa oss det du vill forsla bort så vi hjälper vi dig. Vi utför dagligen bortforsling av möbler men det våra kunder oftast behöver hjälp med är till exempel bortforsling av gammal säng, bortforsling av soffa, bortforsling av vitvaror, bortforsling av tvättmaskin med mera.",
-    icon: <LocalShippingIcon />
+    title: "SEO Optimering",
+    path: "seo-optimering",
+    text: "Vi erbjuder omfattande SEO-tjänster för att förbättra din hemsidas ranking på sökmotorer. Vår expertis inom sökordsoptimering, teknisk SEO och innehållsstrategi säkerställer att ditt företag syns högre i sökresultaten.",
+    icon: <SearchIcon />
   },
   {
-    title: "Städning av dödsbo och Bohag",
-    path: "/stadning-av-dodsbo",
-    text: "Städning av dödsbo eller bohag som flyttstäd är krävande och tar tid. Så låt oss på Sheglam sköta den biten åt dig för en bra peng. Vi erbjuder städgaranti på alla våra städtjänster. Med så många års erfarenhet av olika typer av städningar så är vi det självklara valet för städning av dödsbon, lägenheter, hus och kontor. Vi ger dig prisgaranti.",
-    icon: <DeleteIcon />
+    title: "Sociala Medier Hantering",
+    path: "sociala-medier",
+    text: "Vår tjänst för sociala medier hantering hjälper dig att engagera din publik och bygga ett starkt varumärke på plattformar som Facebook, Instagram, LinkedIn och Twitter. Vi skapar och publicerar relevant innehåll samt hanterar interaktioner med dina följare.",
+    icon: <FacebookIcon />
   },
   {
-    title: "Sanering av dödsbo och bohag",
-    path: "sanera-dodsbo",
-    icon: <WarningIcon />,
-    text: "Har du rökt inomhus eller att huset har odör? Då kan vi hjälpa dig med luktsanering av ditt dödsbo eller bohag. Vi kan hjälpa er med all typ av dödsbo och bohag sanering. Det rätt vanligt att vi sanerar dödsbon speciellt om det är en hyresbostad eller bostad som skall säljas. Tveka inte att kontakta oss om du har frågor kring sanering av dödsbon eller bohag."
+    title: "Innehållsskapande",
+    path: "innehallsskapande",
+    icon: <CreateIcon />,
+    text: "Vi skapar engagerande och relevant innehåll för din hemsida, blogg, nyhetsbrev och sociala medier. Våra tjänster inkluderar copywriting, grafisk design och videoproduktion som hjälper ditt företag att kommunicera effektivt med din målgrupp."
   },
   {
-    title: "Bohagsflyttar",
-    path: "bohagsflytt",
-    icon: <AllInboxIcon />,
-    text: "Behöver du hjälp med flytt av ditt bohag? Vi utför dagligen privatflyttar i hela Västra Götaland med goda resultat och riktigt nöjda kunder. Oavsett vilka delar du behöver hjälp med under din flytt så finns erfarna och proffsiga personal på plats för att tillgodose dina behov. Vår tjänst bohagsflytt  vänder sig till både hus- och lägenhetsboende."
-  },
-
-  {
-    title: "Uppköp av lösöre",
-    path: "uppkop-av-dodsbo",
-    icon: <MonetizationOnIcon />,
-    text: "Har du lösöre som möbler, kläder, elektronik, serviser, tavlor eller annat så kan vi hjälpa dig med att köpa upp. Vi erbjuder kostnasdfri värdering av bohag, dödsbo och lösöre. Vi samarbetar med en rad auktionsfiror både fysiska och online där vi kan hjälpa dig att sälja lösöre av större värde. Ni kan också maila oss bilder på lösöre som vi kan kika på och ger er en offert."
+    title: "Webbdesign och Utveckling",
+    path: "webbdesign",
+    icon: <WebIcon />,
+    text: "Vi designar och utvecklar professionella, användarvänliga hemsidor som speglar ditt företags identitet. Våra webbplatser är optimerade för alla enheter och utformade för att ge bästa möjliga användarupplevelse."
   },
   {
-    title: "Värdering av dödsbo",
-    icon: <FindInPageIcon />,
-    path: "vardera-dodsbo",
-    text: "Vi erbjuder kostnadsfri värdering av dödsbo och bohag inom Göteborg, Kungälv, Ale, Stenungsund och Tjörn. Vi har säljkanalerna och egen butiker. Sheglam är ett företag som tänker miljösmart och på återanvändning. Vi skänker till behandlingshem, olika typer av boenden, kyrkor, hjälporganisationer och till behövande."
+    title: "Email Marknadsföring",
+    path: "email-marknadsforing",
+    icon: <EmailIcon />,
+    text: "Med vår email marknadsföringstjänst kan du nå ut till dina kunder direkt i deras inkorg. Vi skapar och skickar målgruppsanpassade nyhetsbrev, kampanjer och uppföljningsmeddelanden som ökar din kundlojalitet och försäljning."
+  },
+  {
+    title: "Kostnadsfri Rådgivning",
+    icon: <PhoneIcon />,
+    path: "kostnadsfri-radgivning",
+    text: "Vi erbjuder kostnadsfri rådgivning för att diskutera dina marknadsföringsbehov och mål. Boka en tid med oss för att få skräddarsydda råd och en plan som hjälper ditt företag att växa och nå nya höjder."
   }
 ];
-
 const SeoServiceComponent = () => {
   const classes = useStyles();
   const [active, setactive] = useState(false);

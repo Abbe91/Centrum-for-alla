@@ -31,8 +31,8 @@ const Nav = () => {
     <>
       <nav>
         <div className="nav-logo" onClick={() => (window.location.href = "/")}>
-          <h2 className="logo">Dödsbo</h2>
-          <h2 className="logo">Jouren</h2>
+          <h2 className="logo">Centrum</h2>
+          <h2 className="logo">För Alla</h2>
         </div>
      
        <a href={`tel:${customerData.phone}`} style={{display:'flex',alignItems:'center', color:'#eabb12'}}>
@@ -123,7 +123,7 @@ const Nav = () => {
           {!isAuthenticated && (
             <button
               style={{
-                background: "#4890e3",
+                background: "#e3c148",
                 width: "6.5rem",
                 height: "1.8rem",
                 marginTop: "2rem",
@@ -139,7 +139,7 @@ const Nav = () => {
           {isAuthenticated && (
             <button
               style={{
-                background: "#4890e3",
+                background: "#e3c148",
                 width: "6.5rem",
                 height: "1.8rem",
                 marginTop: "2rem",
@@ -157,7 +157,7 @@ const Nav = () => {
             <Link
               to="/dashboard-main"
               style={{
-                background: "#4890e3",
+                background: "#e3c148",
                 width: "7.5rem",
                 height: "2rem",
                 marginTop: "0.5rem",

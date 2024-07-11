@@ -1,42 +1,41 @@
 import React from "react";
 import LottieBooking from "../LottieAnimation/LottieBooking";
 import partners from "../utils/animation/partners.json";
+
 const Partners = () => {
   return (
     <div className="partners">
       <section>
-        <h2 style={{ color: "black" }}>Dödsbo & Bohag</h2>
+        <h2 style={{ color: "black" }}>Marknadsföring & Digital Närvaro</h2>
         <h4 style={{ margin: "0.5rem 0" }}>- Partners -</h4>
         <ul>
           <p style={{ margin: "1rem 0" }}>
-            Vi samarbetar med en rad partners för att kunna ge dig en så
-            heltäckande tjänst som möjligt för ditt dödsbo eller bohag. Bland
-            våra samarbetspartners finns:
+            Vi på <strong>Centrum för Alla</strong> samarbetar med en rad partners för att kunna erbjuda dig en heltäckande tjänst inom marknadsföring och digital närvaro. Bland våra samarbetspartners finns:
           </p>
           <li
             style={{ color: "#4890e3", fontWeight: "bold", margin: "0.5rem 0" }}
           >
-            - Begravningsbyrå
+            - DigitalTech.se
           </li>
           <li
             style={{ color: "#4890e3", fontWeight: "bold", margin: "0.5rem 0" }}
           >
-            - Auktionsverk
+            - Webbutveckling och Design
           </li>
           <li
             style={{ color: "#4890e3", fontWeight: "bold", margin: "0.5rem 0" }}
           >
-            - Onlineauktioner
+            - Sociala Medier Marknadsföring
           </li>
           <li
             style={{ color: "#4890e3", fontWeight: "bold", margin: "0.5rem 0" }}
           >
-            - Mäklare
+            - SEO och SEM Experter
           </li>
           <li
             style={{ color: "#4890e3", fontWeight: "bold", margin: "0.5rem 0" }}
           >
-            - Hjälporganisationer
+            - Innehållsskapare och Copywriters
           </li>
         </ul>
       </section>

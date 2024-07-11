@@ -55,11 +55,7 @@ const Recensioner = () => {
       <section className={classes.contentContainer}>
         <h2 style={{ margin: "1rem 0" }}>Längst erfarenhet</h2>
         <p style={{ lineHeight: "26px", marginBottom: "1rem" }}>
-          Vi på Sheglam är det självklara valet för hantering av bohag och
-          dödsbo med över 50 års erfarenhet tillsammans är vi helt övetygade om
-          att vi kan erbjuda dig det bästa upplägget för ditt bohag, dödsbo och
-          din plånbok. Vårt upptagningsområde sträcker sig över hela Västra
-          Götaland.
+        Upptäck vad våra kunder säger om oss! Vi är stolta över att ha levererat pålitliga och professionella tjänster som har gjort verklig skillnad för våra kunder. Läs deras berättelser och upplevelser nedan
         </p>
       </section>
       <section className={classes.reviews}>

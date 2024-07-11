@@ -8,201 +8,72 @@ import { AiOutlineCreditCard } from "react-icons/ai";
 export const navlinks = [
   {
     id: 2,
-    label: "Tömning",
-    path: "/tomma-bohag"
+    label: "Seo",
+    path: "/seo"
   },
+  
   {
-    id: 3,
-    label: "Värdering",
-    path: "/vardera-dodsbo"
-  },
-  {
-    id: 4,
-    label: "Städning",
-    path: "/stadning-av-dodsbo"
-  },
-  {
-    id: 5,
-    label: "Flytt",
-    path: "/bohagsflytt"
-  },
-  {
-    id: 6,
-    label: "Uppköp",
-    path: "/uppkop-av-dodsbo"
-  },
-  {
-    id: 7,
-    label: "Bortforsling",
-    path: "/bortforsling-dodsbo"
-  },
-  {
-    id: 8,
-    label: "Återvinning",
-    path: "/atervinning"
-  },
-  {
-    id: 9,
-    label: "Avfallshantering",
-    path: "/avfallshantering"
-  },
-  {
-    id: 10,
-    label: "Återvinningsstation",
-    path: "/atervinningsstation"
-  },
-  {
-    id: 11,
-    label: "Återvinningscentral",
-    path: "/atervinningscentral"
-  }
-];
-export const erbjuder = [
-  {
-    id: 22,
-    title: "Dödsbo Hantering",
-    icon: <BiHomeAlt />
-  },
-  {
-    id: 55,
-    title: "Värdering av Dödsbo och Bohag",
-    icon: <AiOutlineCalculator />
-  },
-  {
-    id: 33,
-    title: "Flytt & Packning",
-    icon: <FaTruckMoving />
-  },
-  {
-    id: 43,
-    title: "Städning, Flyttstäd & Sanering",
-    icon: <MdCleaningServices />
-  },
-  {
-    id: 51,
-    title: "Uppköp & Försäljning",
-    icon: <AiOutlineCreditCard />
+    id: 12,
+    label: "AdsPages",
+    path: "/adspages"
   }
 ];
 
-export const customerReviews = [
+export const customerReviews =[
   {
-    id: 144444,
-    service: "Tömning av dödsbo",
-    kund: "Marie Lindqvist",
-    path: "/tomning-av-dodsbo",
+    id: 1,
+    service: "Digital Marknadsföring",
+    customer: "Anna Svensson",
+    path: "/digital-marknadsforing",
     comment:
-      "Jag fick hjälp med at tömma mammas dödsbo och sedan städas dödsboet. Vi är jättenöjda med deras helhetslösning"
+      "Centrum för alla har gjort ett fantastiskt jobb med vår digitala marknadsföring. De har ökat vår synlighet och våra försäljningar har skjutit i höjden. Kan inte rekommendera dem nog!"
   },
   {
-    id: 221,
-    service: "Uppköp av dödsbo",
-    kund: "Liselott Andersson",
-    path: "/uppkop-av-dodsbo",
+    id: 2,
+    service: "SEO Optimering",
+    customer: "Erik Andersson",
+    path: "/seo-optimering",
     comment:
-      "De kom ut på en kostnadsfri värdering för uppköp av vårt dödsbo. Sheglam köpte en hel del av oss och resten forsla dom bort och skänkte. Tack för hjälpen med vårt dödsbo."
+      "Tack vare Centrum för alla har vårt företags webbplats rankats högre på Google och vi har fått fler besökare och kunder. Otroligt nöjda med resultatet!"
   },
   {
-    id: 222,
-    service: "Försäljning av dödsbo",
-    kund: "Bosse Eriksson",
-    path: "/salja-dodsbo-goteborg",
+    id: 3,
+    service: "Sociala Medier Hantering",
+    customer: "Maria Karlsson",
+    path: "/sociala-medier",
     comment:
-      "Jag fick hjälp med att sälja lösöre ur mitt dödsbo och det gick hur bra som helst. Sheglams helhetslösning passade mig perfekt när de sedan tömde dch städade dödsboet."
+      "Vi har sett en stor ökning av engagemang och följare på våra sociala medier sedan vi började samarbeta med Centrum för alla. De är mycket kompetenta och proaktiva."
   },
   {
-    id: 243,
-    service: "Bohagsflytt",
-    kund: "Jasem Hossan",
-    path: "/bohagsflytt",
+    id: 4,
+    service: "Innehållsskapande",
+    customer: "Johan Persson",
+    path: "/innehallsskapande",
     comment:
-      "Kanon! Packning, Flytt och flyttstädning av vårt hus. Proffsigt, smidigt och billigt då vi fick äntliigen nyttja vår rut. Bohagsflytten gick hur bra som helst."
+      "Centrum för alla har hjälpt oss att producera högkvalitativt innehåll som verkligen resoneras med vår målgrupp. Vi är väldigt nöjda med deras kreativitet och professionalitet."
   },
   {
-    id: 435,
-    service: "Flyttstädning",
-    kund: "Petra Dahl",
-    path: "/flyttstadning",
+    id: 5,
+    service: "Webbdesign och Utveckling",
+    customer: "Sara Lindqvist",
+    path: "/webbdesign",
     comment:
-      "Vi fick hjälp med att flyttstäda vårt bohag och Sheglam forslade bort lite gammla möbler vi hade i förrådet. Enkelt och prisvärt."
+      "Vår nya webbplats som designades och utvecklades av Centrum för alla ser fantastisk ut och fungerar felfritt. Tack för er fantastiska arbete!"
   },
   {
-    id: 5777,
-    service: "Bortforsling av dödsbo",
-    kund: "Kirsten Abbasi",
-    path: "/bortforsling-dodsbo-goteborg",
+    id: 6,
+    service: "Email Marknadsföring",
+    customer: "Anders Berg",
+    path: "/email-marknadsforing",
     comment:
-      "Sheglam hjälpte oss med att sortera och forsla bort vårt dödsbo. Vi fick lite avdrag på priset då de köpte lite lösöre ur dödsboet. Jag rekommenderar Sheglam starkt."
+      "Centrum för alla har hjälpt oss att skapa och skicka effektiva e-postkampanjer som har ökat vår konverteringsgrad. Vi uppskattar deras strategiska och analytiska tillvägagångssätt."
   },
   {
-    id: 6777775,
-    service: "Städning av dödsbo",
-    kund: "John Pettersson",
-    path: "/stadning-av-dodsbo",
+    id: 7,
+    service: "Kostnadsfri Rådgivning",
+    customer: "Emma Nilsson",
+    path: "/kostnadsfri-radgivning",
     comment:
-      "Städningen av vårt dödsbo gick utmärkt. Vi fick ett bra pris för städet och det slängde lite gammla prylar åt oss. Bra firma verkligen."
-  },
-  {
-    id: 7456,
-    service: "Sälja dödsbo Göteborg",
-    kund: "Ali Hussein",
-    path: "/salja-dodsbo-goteborg",
-    comment:
-      "Vi ville sälja vårt dödsbo i Göteborg och Sheglam hjälpte oss med en helhetslösning där de köpte upp lösöre ur dödsboet, tömde dödsboet, forslade bort dödsboet och sedan slutstädade."
-  },
-  {
-    id: 8688,
-    service: "Tömma dödsbo Göteborg",
-    kund: "Lisa Magnusson",
-    path: "/tomma-dodsbo-goteborg",
-    comment:
-      "De tömde vårt dödsbo i Göteborg vilket gick utmärkt. Sheglam gav oss även en liten slant för våra gammla prylar."
-  },
-  {
-    id: 996986,
-    service: "Städning av dödsbo Göteborg",
-    kund: "Britt Marie",
-    path: "/stada-dodsbo-goteborg",
-    comment:
-      "Trevliga killar som gjorde ett jättebra jobb med att städa vårt dödsbo i Göteborg."
-  },
-  {
-    id: 15460,
-    service: "Uppköp av dödsbo Göteborg",
-    kund: "Tony Sloth",
-    path: "/uppkop-dodsbo-goteborg",
-    comment:
-      "Vi fick en kostnadsfri värdering och sedan gjord de ett uppköp av vårt dödsbo i Göteborg."
-  },
-  {
-    id: 146461,
-    service: "Dödsbo uppköpare",
-    kund: "Liselott Thor",
-    path: "/uppkop-dodsbo-goteborg",
-    comment:
-      "Sheglam hjälpte oss med att köpa upp lösöre ur vårt dödsbo. De köpte en hel del."
-  },
-  {
-    id: 166462,
-    service: "Köper dödsbo Göteborg",
-    kund: "Per-Olof Andersson",
-    path: "/uppkop-dodsbo-goteborg",
-    comment: "Bra firma i Göteborg som köper dödsbo och tömmer samt städar"
-  },
-  {
-    id: 166463,
-    service: "Flyttstädning i Göteborg",
-    kund: "Janne Jansson",
-    path: "/flyttstadning-i-goteborg",
-    comment:
-      "Vi fick hjälp med att röja vårt dödsbo och sen gjorde Sheglam flyttstädning av dödsboet. Enkel kommunikation och smidigt."
-  },
-  {
-    id: 166466868,
-    service: "Röja dödsbo i Göteborg",
-    kund: "Karl Einersson",
-    path: "/roja-dodsbo-goteborg",
-    comment:
-      "Röjning av dödsboet gick som vi ville. Sheglam skötte allt trots att vi inte kunde vara på plats. Pålitligt företag och rekommenderar dem starkt. "
+      "Vi fick värdefulla råd och rekommendationer från Centrum för alla under vårt första möte. De är mycket kunniga och hjälpte oss att förstå hur vi kan förbättra vår digitala närvaro."
   }
 ];

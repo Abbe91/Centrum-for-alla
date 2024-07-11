@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  email: "info@dodsbo-jouren.se",
-  phone: "0707-19 84 29",
-  business: "Sheglam",
-  adress: "Magasinsgatan 11",
-  zip: "47 132",
-  city: "Skärhamn",
+  email: "info@allacentrum.se",
+  phone: "07000000",
+  business: "Centrum för alla",
+  adress: "hella Sverige",
+  zip: "12345",
+  city: "Stockholm",
   coords: { lat: 57.71674387891259, lng: 11.947577329191638 },
   weatherData: [],
   searchTerms: [
-    "Dödsbo Hantering",
-    "Flytt",
-    "Städning",
-    "Värdering",
-    "Uppköp",
-    "Sanering"
+    "Webbdesign",
+    "Sökmotoroptimering ",
+    "Digital marknadsföring",
+    "Sociala medier hantering",
+    "E-postmarknadsföring",
+    "PPC-annonsering (Pay-per-click)"
   ]
 };
 

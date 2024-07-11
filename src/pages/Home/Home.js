@@ -16,31 +16,31 @@ import BookingModal from "../../components/BookingModal";
 
 const Home = ({ videoText }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const mainquery = "dödsbo eller hushåll";
+  const mainquery = "Marknadsföring";
   const newsData = useSelector(getNewsData);
   const [content, setContent] = useState({
     metaTitle:
-      "Få hjälp med tömning, städning och uppköp av dödsbon och hushåll.",
+      "Effektiv Marknadsföring för Alla Centrum i Sverige | Centrum för Alla",
     metaContent:
-      "Få professionell hjälp med tömning, städning och uppköp av dödsbon - Vi erbjuder allt från värdering till försäljning och bortforsling av hushållsartiklar.",
-    query: "dödsbo eller hushåll",
-    formTitle: "Tömma dödsbo",
+      "Centrum för Alla erbjuder professionella marknadsföringstjänster för företag i hela Sverige. Öka din synlighet och nå dina kunder snabbt med våra skräddarsydda strategier.",
+    query: "Effektiv Marknadsföring",
+    formTitle: "Boka en kostnadsfri konsultation",
     subTitle2:
-      "Din auktoriserade dödsbo hanterare av dödsbo, bohag, uppköp, försäljning, tömning, bortforsling, sanering, flytt och städ",
+      "Öka Din Digitala Närvaro med Centrum för Alla",
     subTitle3: `Behöver du hjälp med ditt ${mainquery}?`
   });
   const customerData = useSelector(getCustomerData);
   const services =
-    "uppköp, bortforsling, sanering, flytt, städning och försäljning av dödsbon och hushåll.";
+    "Webbdesign, Sökmotoroptimering , Digital marknadsföring, Sociala medier hantering, E-postmarknadsföring, PPC-annonsering (Pay-per-click), Innehållsstrategi, Webbanalys";
 
   const articleStructuredData = {
     "@context": "https://schema.org",
-    "@type": "RecyclingCenter",
-    name: "Sheglam",
+    "@type": "Centrum för alla",
+    name: "Centrum för alla",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Hisingsgatan 10",
-      addressLocality: "Göteborg",
+      streetAddress: "Alla i Sverige",
+      addressLocality: "Stockhgolm",
       addressRegion: "Sweden",
       postalCode: "41702",
       addressCountry: "SE"
@@ -51,7 +51,7 @@ const Home = ({ videoText }) => {
       longitude: "11.94740491088092"
     },
     url: "www.sheglam.se",
-    telephone: "+46317539060",
+    telephone: "+467200000",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -70,7 +70,7 @@ const Home = ({ videoText }) => {
     ],
     priceRange: "1000kr-20000kr",
     image: [
-      "https://images.pexels.com/photos/3651376/pexels-photo-3651376.jpeg?auto=compress&cs=tinysrgb&w=1300"
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   };
   return (
@@ -104,7 +104,7 @@ const Home = ({ videoText }) => {
           subTitle3={content.subTitle3}
           text={`Vi är en firma som verkligen kan allt kring ${mainquery}. Vi kan också hjälpa dig med ${services}. Vi erbjuder en full helhetslösning med målet att ge det bästa valet för dig och din plånbok. Som kund hos har du allt samlat hos ett och samma företag.`}
           subTitle4={`Helhetslösning för ${mainquery}`}
-          text1={`Vårt företag har varit i branschen i över 20år. Vi har flera samarbeten med auktionsfirmor, olika typer va hjälp boenden, och hjälp organisationer. Vi skänker lösöre och möbler samt sorterar och och värnar om miljön`}
+          text1={`Centrum för Alla hjälper ditt företag att öka sin digitala närvaro med över 20 års erfarenhet. Vi erbjuder strategi, hemsideskapande, SEO-optimering och kontinuerlig support.`}
           subTitle5={"Våra tjänster"}
           text2={`Vi kan hjälpa dig med ${services}`}
         />
@@ -113,27 +113,26 @@ const Home = ({ videoText }) => {
       <div className="Om">
         <AboutUs
           query={mainquery.toUpperCase()}
-          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig med ditt ${mainquery}?`}
-          om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
+          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
+          om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
-      </div>
-      <div className="Tjänster">
-        <Erbjuder />
+
       </div>
       {newsData && (
         <div className="Tips">
           <Tips query={mainquery.toUpperCase()} newsData={newsData} />
         </div>
       )}
+      <div className="Tjänster">
+        <Erbjuder />
+      </div>
 
       <div className="booking-lottie">
         <div className="booking-content">
-          <h2>Hjälp {mainquery}?</h2>
+          <h2>Hjälp med {mainquery}?</h2>
           <h4>
             Vi erbjuder helt kostnadfritt besök/genomgång för att kunna hjälpa
-            dig som kund med ditt {mainquery}. Besöket/genomgången tar ca 45min
-            och du som kund får en offert på plats om hur vi kan hjälpa dig med
-            ditt
+            dig som kund med {mainquery}. 
             <strong style={{ fontWeight: "700" }}> {mainquery}.</strong>
           </h4>
           <button
@@ -152,7 +151,7 @@ const Home = ({ videoText }) => {
 
       <div className="Kostnadsfri">
         <Kostnadsfri
-          vad={"genomgång"}
+          vad={"Värdering"}
           mainquery={mainquery}
           text={`${videoText}${mainquery}.`}
         />

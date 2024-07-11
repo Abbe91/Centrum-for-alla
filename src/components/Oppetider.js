@@ -1,26 +1,44 @@
+
 import React from "react";
-import { Grid, Card, Typography, makeStyles, Box } from "@material-ui/core";
-import LottieBooking from "../LottieAnimation/LottieBooking";
-import clock from "../utils/animation/dodsbo-goteborg-dodsbojouren.json";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Box } from "@material-ui/core";
+import Lottie from "react-lottie";
+import animationData from "../utils/animation/opening-hours.json";
 
 const useStyles = makeStyles({
-  divider: {
-    width: "120px",
-    height: "2px",
-    background: "#0369a1",
-    margin: "1rem 0.2rem"
-  },
   root: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    padding: "2rem",
+    background: "#4890e3",
+    justifyContent: "space-evenly",
+    color: "white",
     alignItems: "center",
-    letterSpacing: "1px",
-    lineHeight: "35px",
     textAlign: "center",
-    marginBottom: "2rem"
+    "@media screen and (max-width: 800px)": {
+      flexDirection: "column"
+    }
+  },
+  divider: {
+    margin: "0.7rem auto",
+    width: "45%",
+    background: "#0369a1",
+    height: "1px"
   }
 });
+
+const LottieBooking = ({ lotti, height, width }) => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: lotti,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+  return <Lottie options={defaultOptions} height={height} width={width} />;
+};
+
 const Oppetider = () => {
   const classes = useStyles();
   return (
@@ -38,7 +56,7 @@ const Oppetider = () => {
         <li>Lördag 10:00-20:00</li>
         <li>Söndag 10:00-20:00</li>
       </ul>
-      <LottieBooking lotti={clock} height={300} width={300} />
+      <LottieBooking lotti={animationData} height={300} width={300} />
     </div>
   );
 };
