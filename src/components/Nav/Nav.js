@@ -40,8 +40,8 @@ const Nav = () => {
       </div>
      
        <a href={`tel:${customerData.phone}`} style={{display:'flex',alignItems:'center', color:'#eabb12'}}>
-       <CallIcon style={{fontSize:'1.2rem'}}/>
-       <p style={{marginLeft:'0.3rem',fontSize:'0.8rem'}}>Ring</p>
+       <CallIcon style={{fontSize:'1.2rem', color: 'black',}}/>
+       <p style={{marginLeft:'0.3rem',fontSize:'0.8rem', color: 'black'}}>Ring</p>
           </a>
     
         <div className="navbar" onClick={() => setShowNav(!showNav)}>
