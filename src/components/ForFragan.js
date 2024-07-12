@@ -26,7 +26,7 @@ const Forfragan = () => {
   };
 
   return (
-    <div style={{ height: '800px', maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{ height: '800px', maxWidth: '900px', margin: '0 auto', marginTop: '150px' }}>
       <Nav />
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '1rem' }}>
         <h2>Contact Admin</h2>

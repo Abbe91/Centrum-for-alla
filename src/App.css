@@ -42,6 +42,12 @@ input[type="color"] {
   scrollbar-width: none;
   background: #ffffff;
 }
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
 .App::-webkit-scrollbar {
   display: none;
 }
