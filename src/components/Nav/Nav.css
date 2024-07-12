@@ -1,13 +1,19 @@
 nav {
+  position: absolute; /* Positioning nav bar over the hero section */
+  top: 25px; /* Align it at the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
   height: 5rem;
-  background: transparent;
-  color: black;
-  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent */
+  color: #333;
+  width: 80%; /* Not taking the whole width */
+  border-radius: 10px; /* Adding some rounding to the corners */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   z-index: 101;
 }
 
@@ -20,47 +26,64 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
-  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  visibility: hidden; /* Hide when closed */
+  opacity: 0; /* Transparent when closed */
 }
+
 .show-nav {
-  transition: all 0.3s linear;
   transform: translateX(0%);
+  visibility: visible; /* Show when open */
+  opacity: 1; /* Fully visible when open */
+  width: 100%;
+  
 }
+
 .nav-links {
   display: flex;
+  gap: 1rem;
 }
+
 .nav-links button {
   background: transparent;
-  border: navajowhite;
-  color: black;
-  font-size: 0.9rem;
+  border: none;
+  color: #333;
+  font-size: 1rem;
   font-weight: 700;
   margin-right: 0.75rem;
   opacity: 0.8;
+  transition: all 0.3s ease-in-out;
 }
+
 .nav-links button:hover {
   opacity: 1;
   transform: scale(1.1);
 }
+
 nav .navbar {
   margin-right: 0.5rem;
   font-size: 2rem;
   cursor: pointer;
 }
+
 .nav-logo img {
-  width: 150px;
-  height: 120px;
+  width: 110px;
+  height: auto;
 }
+
 .top-nav {
   height: 2rem;
 }
+
 .user-contact {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 .user-contact div {
   display: flex;
   flex-direction: row;
@@ -70,50 +93,58 @@ nav .navbar {
   font-size: 0.8rem;
   cursor: pointer;
   color: #64748b;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
 }
+
 .user-contact a {
   display: flex;
   align-items: center;
   color: #64748b;
   margin-right: 0.3rem;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
 }
+
 .user-contact a:hover {
   transform: scale(1.1);
 }
+
 .nav-menu button {
   background: transparent;
   border: none;
-  color: black;
+  color: #333;
   margin: 0.5rem 0;
   font-size: 1rem;
+  transition: border-bottom 0.3s ease-in-out;
 }
+
 .nav-menu-link:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #333;
 }
+
 .nav-menu button:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #333;
 }
+
 .nav-btn-close {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links-div {
-  border-bottom: 1px solid rgb(245, 243, 243);
+  border-bottom: 1px solid #f5f3f3;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s linear;
-  color: black;
+  transition: border-bottom 0.3s ease-in-out;
+  color: #333;
 }
+
 .nav-links-div button {
-  color: black;
+  color: #333;
 }
+
 .nav-links-div:hover {
-  border-bottom: 3px solid rgb(184, 182, 182);
-  transition: all 0.3s linear;
+  border-bottom: 3px solid #b8b6b6;
 }
 
 @media screen and (max-width: 1200px) {
@@ -121,12 +152,14 @@ nav .navbar {
     display: none;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .navbar {
     display: none;
   }
 }
-.call-to-action-phone-latest{
+
+.call-to-action-phone-latest {
   display: flex;
   align-items: center;
   color: #eabb12;
