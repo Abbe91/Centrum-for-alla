@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TableOfConent from "../toc/TableOfConent";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "./MainUseComp.css";
 export const items = [
   {
     title: "SEO",
@@ -46,129 +47,39 @@ const MainUseComp = ({ formTitle }) => {
   return (
     <>
       <div className="mainComp" style={{ height: showInneHall && "1500px" }}>
-        <section style={{ maxWidth: "600px", marginBottom: "2rem" }}>
-          <h1
-            style={{
-              opacity: "0",
-              borderBottom: "1px solid white"
-            }}
-          >
-            {formTitle}
-          </h1>
-          <h2 style={{ marginBottom: "0.5rem", fontSize: "1.2rem" }}>
-            Vad kan vi hjälpa dig med
-          </h2>
-          <p
-            style={{
-              maxWidth: "90%",
-              margin: "0 auto",
-              fontSize: "1rem",
-              letterSpacing: "1px"
-            }}
-          >
-            <a
-              href="/seo"
-              title="SEO"
-              style={{ color: "inherit" }}
-            >
-              SEO
-            </a>{" "}
-            och{" "}
-            <a
-              href="/marknadsforeing"
-              title="Allt inom Digital marknadsföreing"
-              style={{ color: "inherit" }}
-            >
-              Allt inom Digital marknadsföreing
-            </a>
-            .{" "}
-            <a
-              href="/PPC"
-              title="PPC (Pay-Per-Click) Reklam"
-              style={{ color: "inherit" }}
-            >
-              PPC (Pay-Per-Click) Reklam
-            </a>
-            ,{" "}
-            <a
-              href="/social-media"
-              title="Sociala Medier"
-              style={{ color: "inherit" }}
-            >
-              Sociala Medier
-            </a>
-            ,{" "}
-            <a
-              href="/Innehallsmarknadsforing"
-              title="Innehållsmarknadsföring"
-              style={{ color: "inherit" }}
-            >
-              Innehållsmarknadsföring
-            </a>
-            ,{" "}
-            <a
-              href="/webbdesign-och-utveckling"
-              title="Webbdesign och Utveckling"
-              style={{ color: "inherit" }}
-            >
-              Webbdesign och Utveckling
-            </a>
-            .
+        <section className="mainComp-header">
+          <h1 className="mainComp-title">{formTitle}</h1>
+          <h2 className="mainComp-subtitle">Vad kan vi hjälpa dig med</h2>
+          <p className="mainComp-description">
+            <a href="/seo" title="SEO">SEO</a> och 
+            <a href="/marknadsforeing" title="Allt inom Digital marknadsföreing"> Allt inom Digital marknadsföreing</a>.
+            <a href="/PPC" title="PPC (Pay-Per-Click) Reklam"> PPC (Pay-Per-Click) Reklam</a>,
+            <a href="/social-media" title="Sociala Medier"> Sociala Medier</a>,
+            <a href="/Innehallsmarknadsforing" title="Innehållsmarknadsföring"> Innehållsmarknadsföring</a>,
+            <a href="/webbdesign-och-utveckling" title="Webbdesign och Utveckling"> Webbdesign och Utveckling</a>.
           </p>
         </section>
-        <section
-          style={{
-            display: "flex",
-            maxWidth: "700px",
-            justifyContent: "center",
-            flexWrap: "wrap"
-          }}
-        >
+        <section className="mainComp-content">
           {items?.map((el, i) => {
             return (
-              <div
-                key={i}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  margin: "1.5rem 1.5rem"
-                }}
-              >
+              <div key={i} className="mainComp-item">
                 <LazyLoadImage
                   alt={el.alt}
                   height={"60px"}
                   src={el.srcImg}
                   width={"60px"}
-                  style={{
-                    background: "white",
-                    borderRadius: "50%",
-                    padding: "0.8rem"
-                  }}
+                  className="mainComp-img"
                 />
-                <a
-                  href={el.srcPath}
-                  title={el.alt}
-                  style={{
-                    fontSize: "0.8rem",
-                    color: "white",
-                    maxWidth: "100px",
-                    marginTop: "0.3rem",
-                    fontWeight: "bold",
-                    letterSpacing: "0.5px"
-                  }}
-                >
+                <a href={el.srcPath} title={el.alt} className="mainComp-link">
                   {el.title}
                 </a>
               </div>
             );
           })}
         </section>
-        <TableOfConent
-          showInneHall={showInneHall}
-          setshowInneHall={setshowInneHall}
-        />
+        <TableOfConent showInneHall={showInneHall} setshowInneHall={setshowInneHall} />
       </div>
+
     </>
   );
 };

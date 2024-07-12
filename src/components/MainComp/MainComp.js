@@ -17,19 +17,8 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   return (
     <section className="root">
       <div className="main-top-main-small">
-        <h4
-          style={{
-            margin: "0rem 0.5rem",
-            color: "white",
-            fontSize: "1.6rem",
-            padding: "0.5rem",
-            borderRadius: "3px",
-            maxWidth: "330px"
-          }}
-        >
-          Vi hjälper dig att nå alla dina mål
-        </h4>
-
+        <h1 class="hero-title">Vi hjälper dig att nå dina mål</h1>
+        <h4 class="hero-content">Centrum för alla tar din marknadsföring till nästa nivå</h4>
         <div
           style={{
             width: "330px",

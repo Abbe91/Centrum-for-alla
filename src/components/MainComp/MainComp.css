@@ -1,5 +1,4 @@
 .mainComp {
-  height: 560px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,9 @@
   color: white;
   position: relative;
 }
-
+.mainComp h1{
+  opacity: 1 !important;
+}
 .roboto {
   font-family: "Roboto", sans-serif;
   color: rgb(221, 221, 23);
@@ -114,23 +115,29 @@ input:focus {
 }
 
 .main-top-main-small {
-  background: linear-gradient(
-      rgba(0.3, 0.3, 0.3, 0.3),
-      rgba(0.3, 0.3, 0.3, 0.3)
-    ),
-    url("https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-      no-repeat; 
-
-  object-fit: contain;
-  background-position: center;
-  height: 990px;
-  width: 100%;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  position: relative;
   display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  display: flex;
   align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradient background */
 }
+
+.hero-title, .hero-content {
+  margin: 0.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  
+}
+
+
 
 @media screen and (max-width: 672px) {
   .mainComp {
@@ -173,10 +180,11 @@ input:focus {
   .content-new-container {
     display: flex;
   }
-}
+
 .mainComp-wiw {
   display: none;
   width: 50%;
+}
 }
 
 @media screen and (min-width: 850px) {
@@ -187,4 +195,9 @@ input:focus {
     font-size: 1rem;
     line-height: 19px;
   }
+  
+  
 }
+
+
+
