@@ -326,9 +326,10 @@ input:focus {
 }
 
 @media screen and (max-width: 800px) {
+  
   .hero-section {
     flex-direction: column; /* Change layout to column for mobile */
-    height: auto; /* Adjust height for mobile */
+    height: 90vh; /* Adjust height for mobile */
   }
 
   .hero-content {
