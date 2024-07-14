@@ -1,5 +1,5 @@
 import React from "react";
-import image2 from "../utils/images/seoimages/digitalMarketing.jpg"; // Make sure you have an image for the consultation section
+import image2 from "../utils/images/seoimages/digitalMarketing.webp"; // Make sure you have an image for the consultation section
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({

@@ -1,0 +1,58 @@
+.faqRoot {
+    padding: 0 1rem;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b );
+  }
+  
+  .root {
+    width: 100%;
+  }
+  
+  .heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .accordion {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .accordion:before {
+    display: none;
+  }
+  
+  .accordion:last-child {
+    margin-bottom: 0;
+  }
+  
+  .accordionSummary {
+    background-color: #ad7b54;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .accordionSummary:hover {
+    background-color: rgb(155, 121, 155);
+  }
+  
+  .accordionDetails {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .title {
+    margin-left: 0.5rem;
+    text-align: center;
+    color: #f8f3f3;
+  }
+  
+  .contentText {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+  

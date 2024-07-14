@@ -1,73 +1,30 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
-import digitalMarketing from "../utils/images/seoimages/digitalMarketing.jpg";
-import seoOptimization from "../utils/images/seoimages/seoOptimization.jpg";
-import socialMedia from "../utils/images/seoimages/socialMedia.jpg";
-import webDevelopment from "../utils/images/seoimages/webDevelopment.jpg";
-import contentCreation from "../utils/images/seoimages/contentCreation.jpg";
-import emailMarketing from "../utils/images/seoimages/emailMarketing.jpg";
-import ppcAdvertising from "../utils/images/seoimages/ppcAdvertising.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-const useStyles = makeStyles({
-  root: {
-    background: "white",
-    height: "400px",
-    width: "100%",
-    display: "flex",
-    flexDirection: "row",
-    overflowX: "scroll",
-    alignItems: "center"
-  },
-  imageContainer: {
-    margin: "0.5rem 0.5rem"
-  },
-  btn: {
-    width: "100%",
-    height: "2rem",
-    background: "#4890e3",
-    fontWeight: "bold",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    margin: "0.5rem auto",
-    padding: "0.3rem"
-  },
-  images: {
-    backgroundPosition: "center",
-    objectFit: "cover"
-  }
-});
-const images = [
-  { url: digitalMarketing, text: "Digital Marknadsföring", path: "/digital-marknadsforing" },
-  { url: seoOptimization, text: "SEO Optimering", path: "/seo-optimering" },
-  { url: socialMedia, text: "Sociala Medier", path: "/sociala-medier" },
-  { url: webDevelopment, text: "Webbutveckling", path: "/webbutveckling" },
-  { url: contentCreation, text: "Innehållsskapande", path: "/innehallsskapande" },
-  { url: emailMarketing, text: "E-postmarknadsföring", path: "/e-postmarknadsforing" },
-  { url: ppcAdvertising, text: "PPC Annonsering", path: "/ppc-annonsering" }
-];
+import useStyles from "./HelhetslosningMarketing"; // Import styles from the separate file
 
-const ImagesServicesComponent = () => {
-  const classes = useStyles();
+const Helhetslosningdodsbo = () => {
+  const classes = useStyles(); // Use useStyles to get styles
+
   return (
-    <div className={classes.root}>
-      {images?.map((image, i) => (
-        <div key={i} className={classes.imageContainer}>
-          <LazyLoadImage
-            src={image.url}
-            alt={image.text}
-            height={"200px"}
-            width={"200px"}
-            className={classes.images}
-          />
-          <a href={image.path} title={image.text}>
-            <button className={classes.btn}>{image.text}</button>
-          </a>
-        </div>
-      ))}
+    <div className={classes.root} id="helhet">
+      <section className={classes.sec1}>
+        <h2 className={classes.title}>Helhetslösning för digital marknadsföring</h2>
+        <p className={classes.paragraph}>
+          Vår helhetslösning erbjuder skräddarsydda digitala marknadsföringstjänster för att maximera din synlighet och tillväxt online. Vi tar hand om allt från strategi och skapande av webbsidor till implementering och kontinuerlig optimering för att säkerställa att ditt företag når sin fulla potential på över 200 centrumdomäner över hela Sverige. Kontakta oss idag för att diskutera hur vi kan hjälpa dig att stärka din digitala närvaro och locka fler kunder till ditt företag. För mer information om våra tjänster, besök vår sida om{" "}
+          <a href="/tjanster" style={{ color: "white" }} title="våra tjänster">
+            våra tjänster
+          </a>{" "}
+          eller läs mer om{" "}
+          <a
+            href="/tjanst/helhetslosning-digital-marknadsforing"
+            style={{ color: "white" }}
+            title="helhetslösning för digital marknadsföring"
+          >
+            helhetslösning för digital marknadsföring
+          </a>.
+        </p>
+      </section>
     </div>
   );
 };
 
-
-export default ImagesServicesComponent;
+export default Helhetslosningdodsbo;

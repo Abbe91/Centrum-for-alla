@@ -9,6 +9,7 @@
   .mainComp-header {
     max-width: 600px;
     margin: 0 auto 2rem auto;
+    margin-top: 80px;
   }
   
   .mainComp-title {

@@ -56,7 +56,10 @@ input[type="color"] {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: #f8fafc;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .poppins {
   font-family: "Poppins", sans-serif;
@@ -78,6 +81,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   text-align: start;
+  background: linear-gradient(to bottom, #feb47b, #ff7e5f); 
 }
 .booking-modal {
   height: 100%;
@@ -157,7 +161,6 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin: 2rem 0;
   background: rgb(248, 247, 247);
   padding: 1.5rem;
 }
