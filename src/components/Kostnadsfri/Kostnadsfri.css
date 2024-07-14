@@ -8,6 +8,8 @@
   height: 450px;
   color: black;
   position: relative;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b); 
+
 }
 
 .kostandri-cont h1 {
@@ -34,7 +36,6 @@
   margin: 0.5rem 0;
 }
 .kostandri-cont form button {
-  background: #0369a1;
   color: white;
   font-family: 700;
   width: 300px;

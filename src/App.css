@@ -78,6 +78,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   text-align: start;
+  background: linear-gradient(to bottom, #feb47b, #ff7e5f); 
 }
 .booking-modal {
   height: 100%;
