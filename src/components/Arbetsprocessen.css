@@ -1,0 +1,116 @@
+.background {
+    background: linear-gradient(to bottom, #feb47b, #ff7e5f);
+    color: white;
+    padding: 2rem 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .section, .sectionReversed {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  .sectionReversed {
+    flex-direction: row-reverse;
+  }
+  
+  .roundNumber {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  .textContent {
+    width: 300px;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .imageContent {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-top: 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transform: perspective(1000px) rotateY(10deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .imageContent:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.29);
+  }
+  
+  .linkText {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Desktop View */
+  @media (min-width: 768px) {
+    .textContent {
+      width: 400px;
+    }
+  
+    .section, .sectionReversed {
+      width: 70%;
+    }
+  
+    .section .textContent, .sectionReversed .textContent {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  
+    .imageContent {
+      margin-top: 0;
+    }
+  }
+  
+  /* Media Queries for Mobile View */
+  @media (max-width: 767px) {
+    .section, .sectionReversed {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .section .textContent, .sectionReversed .textContent {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  
+    .imageContent {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
