@@ -253,3 +253,76 @@ input:focus {
 
 
 
+
+
+
+
+
+.hero-section {
+  padding-top: 190px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d3752; /* Background color for the hero section */
+  height: 70vh;
+}
+
+.hero-content {
+  width: 65%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .hero-points {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero-content .search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content .search-bar .search-input {
+    height: 3rem;
+    border-radius: 5px;
+    background-color: white;
+    width: 450px; /* Adjusted to 80% */
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+
+}
+
+.hero-content .search-bar button {
+  background: #4890e3;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}

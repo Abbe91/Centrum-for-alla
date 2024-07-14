@@ -7,6 +7,8 @@ import { useDispatch } from "react-redux";
 import Faq from "../faq/Faq";
 import { MdArrowForwardIos } from "react-icons/md";
 import { setServices } from "../../redux-toolkit/snabbkollenSlice";
+import Marketing from "../../utils/images/seoimages/hero3-img-with-vec.png"
+
 const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const Divider = lazy(() => import("./Divider"));
   const Arbetsprocessen = lazy(() => import("../Arbetsprocessen"));
@@ -16,17 +18,15 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const navigate = useNavigate();
   return (
     <section className="root">
-      <div className="main-top-main-small">
-        <h1 class="hero-title">Vi hjälper dig att nå dina mål</h1>
-        <h4 class="hero-content">Centrum för alla tar din marknadsföring till nästa nivå</h4>
-        <div
-          style={{
-            width: "330px",
-            display: "flex",
-            alignItems: "center",
-            position: "relative"
-          }}
-        >
+      <div className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-title">Vi hjälper dig att nå dina mål</h1>
+        <div className="hero-points">
+          <p>- Punkt 1: Skräddarsydd strategi</p>
+          <p>- Punkt 2: Optimerad marknadsföring</p>
+          <p>- Punkt 3: Kontinuerlig support</p>
+        </div>
+        <div className="search-bar">
           <Autocomplete
             onChange={(e) => {
               e.preventDefault();
@@ -40,13 +40,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
             options={servicesArray.map((option) => option.title)}
             renderInput={(params) => (
               <TextField
-                style={{
-                  backgroundColor: "white",
-                  width: "330px",
-                  height: "3rem",
-                  borderRadius: "5px",
-                  padding: "0.5rem"
-                }}
+                className="search-input"
                 {...params}
                 placeholder="Hur kan vi hjälpa dig"
                 margin="normal"
@@ -59,24 +53,15 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
               />
             )}
           />
-          <button
-            onClick={() => navigate("/forfragan")}
-            style={{
-              position: "absolute",
-              right: "2%",
-              background: "#4890e3",
-              border: "none",
-              color: "black",
-              height: "2.2rem",
-              borderRadius: "3px",
-              top: "30%",
-              width: "3rem"
-            }}
-          >
+          <button onClick={() => navigate("/forfragan")}>
             <MdArrowForwardIos style={{ fontSize: "1rem" }} />
           </button>
         </div>
       </div>
+      <div className="hero-image">
+        <img src={Marketing} alt="Hero" />
+      </div>
+    </div>
       <MainUseComp formTitle={formTitle} />
       <Divider />
       <Arbetsprocessen />
