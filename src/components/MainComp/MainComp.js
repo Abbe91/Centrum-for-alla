@@ -82,155 +82,88 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
       <Arbetsprocessen />
       <Faq city={city} />
       <section className="content-new-container">
-        <div
-          style={{
-            margin: "0rem 0.5rem",
-            background: "white",
-            height: "300px",
-            justifyContent: "center",
-            display: "flex",
-            flexDirection: "column"
-          }}
-        >
-          <h4 style={{ marginLeft: "0.5rem" }}>{subTitle5}</h4>
-          <p
-            style={{
-              maxWidth: "500px",
-              fontSize: "0.9rem",
-              marginLeft: "0.5rem"
-            }}
+      <div>
+        <h4>{subTitle5}</h4>
+        <p>
+          {text2} Behöver du hjälp med att{" "}
+          <a href="/analys" title="analys" style={{ color: "inherit" }}>
+            Analys och Strategi
+          </a>{" "}
+          och Kontinuerlig Uppföljning och Support{" "}
+          <a
+            href="/kontinuerlig"
+            title="kontinuerlig"
+            style={{ color: "inherit" }}
           >
-            {text2}
-          </p>
-          <p
-            style={{
-              maxWidth: "500px",
-              fontSize: "0.9rem",
-              marginLeft: "0.5rem"
-            }}
-          >
-            Behöver du hjälp med att{" "}
-            <a
-              href="/analys"
-              title="analys"
-              style={{ color: "inherit" }}
-            >
-              Analys och Strategi
-            </a>{" "}
-            och Kontinuerlig Uppföljning och Suppor{" "}
-            <a
-              href="/kontinuerlig"
-              title="kontinuerlig"
-              style={{ color: "inherit" }}
-            >
-               vi erbjuda våra kunder en oslagbar fördel när det gäller sökmotoroptimering (SEO) och online-marknadsföring.
-            </a>{" "}
-            (SEO) och online-marknadsföring.{" "}
-          </p>
-        </div>
+            vi erbjuda våra kunder en oslagbar fördel när det gäller
+            sökmotoroptimering (SEO) och online-marknadsföring.
+          </a>{" "}
+          (SEO) och online-marknadsföring.
+        </p>
+      </div>
 
-        <div
-          style={{
-            margin: "1rem 0.5rem",
-            background: "#4890e3",
-            height: "300px",
-            justifyContent: "center",
-            display: "flex",
-            color: "white",
-            flexDirection: "column"
-          }}
-        >
-          <h4 style={{ marginLeft: "0.5rem" }}>Skapande av Hemsida</h4>
-          <p
-            style={{
-              maxWidth: "500px",
-              fontSize: "0.9rem",
-              marginLeft: "0.5rem"
-            }}
+      <div>
+        <h4>Skapande av Hemsida</h4>
+        <p>
+          {/* {text1} */}
+          Att ta hand om ett{" "}
+          <a href="/hemsida" title="Hemsida" style={{ color: "inherit" }}>
+            Hemsida
+          </a>{" "}
+          Vi skapar en anpassad hemsida för ditt företag som speglar din
+          företagsidentitet och inkluderar all nödvändig information om dina
+          tjänster.
+        </p>
+      </div>
+
+      <div id="wecando">
+        <h4>Varför Välja Oss?</h4>
+        <p>
+          {/* {text1} */}
+          Unikt Nätverk av Domäner: Med vårt omfattande nätverk av över 200
+          centrumdomäner får ditt företag en betydande SEO-fördel.{" "}
+          <a
+            href="/vardera-dodsbo"
+            title="värdera dödsbo"
+            style={{ color: "inherit" }}
           >
-            {/* {text1} */}
-            Att ta hand om ett{" "}
-            <a
-              href="/hemsida"
-              title="Hemsida"
-              style={{ color: "inherit" }}
-            >
-              Hemsida
-            </a>{" "}
-            Vi skapar en anpassad hemsida för ditt företag som speglar din företagsidentitet och inkluderar all nödvändig information om dina tjänster.
-          </p>
-        </div>
-        <div
-          style={{
-            margin: "1.2rem 0.5rem",
-            background: "white",
-            height: "300px",
-            justifyContent: "center",
-            display: "flex",
-            flexDirection: "column"
-          }}
-          id="wecando"
-        >
-          <h4 style={{ marginLeft: "0.5rem" }}>Varför Välja Oss?</h4>
-          <p
-            style={{
-              maxWidth: "500px",
-              fontSize: "0.9rem",
-              marginLeft: "0.5rem"
-            }}
+            Skräddarsydda Lösningar: Vi anpassar våra tjänster efter dina
+            specifika behov och mål.
+          </a>{" "}
+          <a
+            href="/bortforsling-dodsbo"
+            title="bortforsling av dödsbo"
+            style={{ color: "inherit" }}
           >
-            {/* {text1} */}
-            Unikt Nätverk av Domäner: Med vårt omfattande nätverk av över 200 centrumdomäner får ditt företag en betydande SEO-fördel.{" "}
-            <a
-              href="/vardera-dodsbo"
-              title="värdera dödsbo"
-              style={{ color: "inherit" }}
-            >
-              Skräddarsydda Lösningar: Vi anpassar våra tjänster efter dina specifika behov och mål.
-            </a>{" "}
-            <a
-              href="/bortforsling-dodsbo"
-              title="bortforsling av dödsbo"
-              style={{ color: "inherit" }}
-            >
-              Expertis och Erfarenhet: 
-            </a>{" "}
-            Vårt team har den erfarenhet och kunskap som krävs för att hjälpa ditt företag att lyckas online.{" "}
-            <a
-              href="/tommer-hushall"
-              title="tömmer hushåll, bohag och dödsbo"
-              style={{ color: "inherit" }}
-            >
-              Kontinuerlig Support:
-            </a>{" "}
-            Vi erbjuder långsiktig support och uppföljning för att säkerställa att din digitala närvaro fortsätter att växa och utvecklas.
-          </p>
-        </div>
-        <div
-          style={{
-            margin: "1.2rem 0.5rem",
-            background: "#4890e3",
-            color: "white",
-            height: "300px",
-            justifyContent: "center",
-            display: "flex",
-            flexDirection: "column"
-          }}
-        >
-          <h4 style={{ marginLeft: "0.5rem" }}>Vår Vision</h4>
-          <p
-            style={{
-              maxWidth: "500px",
-              fontSize: "0.9rem",
-              marginLeft: "0.5rem"
-            }}
+            Expertis och Erfarenhet: Vårt team har den erfarenhet och kunskap
+            som krävs för att hjälpa ditt företag att lyckas online.
+          </a>{" "}
+          <a
+            href="/tommer-hushall"
+            title="tömmer hushåll, bohag och dödsbo"
+            style={{ color: "inherit" }}
           >
-            {/* {text1} */}
-            Vår vision är att stärka lokala företag genom att ge dem de verktyg och resurser de behöver för att nå sin fulla potential online. Vi tror att varje företag, oavsett storlek eller bransch, förtjänar att synas och höras i den digitala världen. Genom att skapa anpassade hemsidor och publicera dem på våra centrumdomäner, hjälper vi våra kunder att bli mer synliga för sina potentiella kunder och att växa sin verksamhet.{" "}
-            
-          </p>
-        </div>
-      </section>
+            Kontinuerlig Support: Vi erbjuder långsiktig support och uppföljning
+            för att säkerställa att din digitala närvaro fortsätter att växa
+            och utvecklas.
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Vår Vision</h4>
+        <p>
+          {/* {text1} */}
+          Vår vision är att stärka lokala företag genom att ge dem de verktyg
+          och resurser de behöver för att nå sin fulla potential online. Vi
+          tror att varje företag, oavsett storlek eller bransch, förtjänar att
+          synas och höras i den digitala världen. Genom att skapa anpassade
+          hemsidor och publicera dem på våra centrumdomäner, hjälper vi våra
+          kunder att bli mer synliga för sina potentiella kunder och att växa
+          sin verksamhet.
+        </p>
+      </div>
+    </section>
       <Helhetslosningdodsbo />
     </section>
   );
