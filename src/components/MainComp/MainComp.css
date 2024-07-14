@@ -255,19 +255,18 @@ input:focus {
 
 
 
-
-
-
 .hero-section {
   padding-top: 190px;
   display: flex;
   justify-content: space-between;
   background-color: #1d3752; /* Background color for the hero section */
   height: 70vh;
+  flex-direction: row; /* Default layout for larger screens */
 }
 
 .hero-content {
   width: 65%;
+  padding-right: 2rem;
 }
 
 .hero-content h1 {
@@ -292,14 +291,13 @@ input:focus {
 }
 
 .hero-content .search-bar .search-input {
-    height: 3rem;
-    border-radius: 5px;
-    background-color: white;
-    width: 450px; /* Adjusted to 80% */
-    border-radius: 5px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-
+  height: 3rem;
+  border-radius: 5px;
+  background-color: white;
+  width: 450px; /* Adjusted to 80% */
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
 }
 
 .hero-content .search-bar button {
@@ -325,4 +323,41 @@ input:focus {
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section {
+    flex-direction: column; /* Change layout to column for mobile */
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 1rem; /* Add bottom padding for spacing */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content .search-bar .search-input {
+  height: 3rem;
+  border-radius: 5px;
+  background-color: white;
+  width: 250px; /* Adjusted to 80% */
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  }
+
+  .hero-image {
+    width: 100%;
+    padding-top: 1rem; /* Add top padding for spacing */
+  }
+
+  .hero-image img {
+    width: 100%;
+    border-radius: 0; /* Reset border radius for mobile */
+  }
 }
