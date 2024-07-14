@@ -1,12 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import digitalMarketing from "../utils/images/seoimages/digitalMarketing.jpg";
-import seoOptimization from "../utils/images/seoimages/seoOptimization.jpg";
+import digitalMarketing from "../utils/images/seoimages/digitalMarketing.webp";
+import seoOptimization from "../utils/images/seoimages/seoOptimization.webp";
 import socialMedia from "../utils/images/seoimages/socialMedia.jpg";
 import webDevelopment from "../utils/images/seoimages/webDevelopment.jpg";
-import contentCreation from "../utils/images/seoimages/contentCreation.jpg";
-import emailMarketing from "../utils/images/seoimages/emailMarketing.jpg";
-import ppcAdvertising from "../utils/images/seoimages/ppcAdvertising.jpg";
+import contentCreation from "../utils/images/seoimages/contentCreation.webp";
+import emailMarketing from "../utils/images/seoimages/emailMarketing.webp";
+import ppcAdvertising from "../utils/images/seoimages/ppcAdvertising.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const useStyles = makeStyles({
   root: {

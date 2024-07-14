@@ -1,0 +1,27 @@
+.divider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); 
+  }
+  
+  .divider-image {
+    object-fit: contain;
+    width: 340px;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .divider-heading {
+    margin-bottom: 0.5rem;
+  }
+  
+  .divider-paragraph {
+    font-size: 0.9rem;
+    max-width: 440px;
+    margin-bottom: 0.5rem;
+  }
+  
