@@ -329,7 +329,7 @@ input:focus {
   
   .hero-section {
     flex-direction: column; /* Change layout to column for mobile */
-    height: 90vh; /* Adjust height for mobile */
+    height: 100%; /* Adjust height for mobile */
   }
 
   .hero-content {
