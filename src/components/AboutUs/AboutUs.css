@@ -1,8 +1,8 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  background: #4890e3;
-  margin: 1rem 0.5rem;
+  background: linear-gradient(to bottom, #feb47b, #ff7e5f); 
+ 
   align-items: center;
   text-align: center;
   justify-content: space-between;
