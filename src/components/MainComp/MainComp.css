@@ -291,6 +291,7 @@ input:focus {
 }
 
 .hero-content .search-bar .search-input {
+  top: -4px;
   height: 3rem;
   border-radius: 5px;
   background-color: white;
@@ -343,13 +344,14 @@ input:focus {
   }
 
   .hero-content .search-bar .search-input {
-  height: 3rem;
-  border-radius: 5px;
-  background-color: white;
-  width: 250px; /* Adjusted to 80% */
-  border-radius: 5px;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+    top: -4px;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: white;
+    width: 250px; /* Adjusted to 80% */
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
   }
 
   .hero-image {
