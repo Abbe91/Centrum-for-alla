@@ -13,6 +13,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const Divider = lazy(() => import("./Divider"));
   const Arbetsprocessen = lazy(() => import("../Arbetsprocessen"));
   const MainUseComp = lazy(() => import("./MainUseComp"));
+  const LogoAnimation = lazy(() => import("./LogoAnimation"));
   const Helhetslosningdodsbo = lazy(() => import("../HelhetslosningMarketing"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -62,6 +63,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
         <img src={Marketing} alt="Hero" />
       </div>
     </div>
+      <LogoAnimation />
       <MainUseComp formTitle={formTitle} />
       <Divider />
       <Arbetsprocessen />
