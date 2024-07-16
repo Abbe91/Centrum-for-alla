@@ -22,9 +22,9 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
       <div className="hero-content">
         <h1 className="hero-title">Vi hjälper dig att nå dina mål</h1>
         <div className="hero-points">
-          <p>- Punkt 1: Skräddarsydd strategi</p>
-          <p>- Punkt 2: Optimerad marknadsföring</p>
-          <p>- Punkt 3: Kontinuerlig support</p>
+          <p>- Skräddarsydd strategi</p>
+          <p>- Optimerad marknadsföring</p>
+          <p>- Kontinuerlig support</p>
         </div>
         <div className="search-bar">
           <Autocomplete
