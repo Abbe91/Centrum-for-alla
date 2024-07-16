@@ -129,15 +129,13 @@ input:focus {
 
 .hero-title, .hero-content {
   margin: 0.5rem;
-  font-size: 2rem;
-  padding: 0.5rem;
+  padding: 1rem; 
   border-radius: 5px;
-  color: white;
+  color: #2c3e50;
   text-align: center;
-  
 }
 
-.hero-title{
+.hero-title {
   font-size: 5rem;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -145,29 +143,33 @@ input:focus {
   display: inline-block;
   animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
   border-right: 4px solid;
-  background: linear-gradient(to bottom, #dcdfdf, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+}
+
+.hero-points {
+  margin-top: 1rem; /* Added margin for separation from hero-title */
+
+}
+
+.hero-points p {
+  margin: 0.5rem 0; /* Adjusted margin for better spacing */
+  text-align: center;
+  font-size: 2.2rem; /* Font size remains the same */
+  color: #0f161d; /* Text color adjusted for readability */
+  line-height: 1.5; /* Increased line height for better readability */
 }
 
 @keyframes typing {
   from {
     width: 0;
   }
-  to {
-    width: 100%;
-  }
 }
 
 @keyframes blink {
-  from, to {
+  50% {
     border-color: transparent;
   }
-  50% {
-    border-color: white;
-  }
 }
-
 
 .content-new-container {
   display: flex;
@@ -329,7 +331,7 @@ input:focus {
 }
 
 .hero-content .search-bar button {
-  background: #4890e3;
+  background: #00a7ac;
   border: none;
   color: white;
   border-radius: 3px;

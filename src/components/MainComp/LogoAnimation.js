@@ -37,13 +37,54 @@ const LogoAnimation = () => {
         ref={(el) => (scrollerRefs.current[0] = el)}
       >
         <ul className="tag-list scroller__inner">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>SSG</li>
-          <li>webdev</li>
-          <li>animation</li>
-          <li>UI/UX</li>
+        <li>Mode och kläder</li>
+        <li>Elektronik</li>
+        <li>Livsmedel och dryck</li>
+        <li>Skönhet och kosmetika</li>
+        <li>Gym och fitnesscenter</li>
+        <li>Spa och skönhetssalonger</li>
+        <li>Apotek och hälsokostbutiker</li>
+        <li>Medicinska kliniker och tandläkare</li>
+        <li>Fastighetsmäklare</li>
+        <li>Fastighetsutvecklare</li>
+        <li>Fastighetsförvaltning</li>
+        <li>Kommersiella fastigheter</li>
+        <li>Skolor och universitet</li>
+        <li>Onlinekurser och utbildningsplattformar</li>
+        <li>Yrkesutbildningar</li>
+        <li>Språkskolor</li>
+        <li>Hotell och resorts</li>
+        <li>Resebyråer</li>
+        <li>Turistattraktioner</li>
+        <li>Flygbolag</li>
+        <li>Film- och tv-produktion</li>
+        <li>Musikevenemang och konserter</li>
+        <li>Teater och liveuppträdanden</li>
+        <li>Spel och e-sport</li>
+        <li>Restauranger och caféer</li>
+        <li>Cateringföretag</li>
+        <li>Matleveransservice</li>
+        <li>Barer och nattklubbar</li>
+        <li>Programvaruföretag</li>
+        <li>IT-tjänster och support</li>
+        <li>Startups inom tech</li>
+        <li>Webb- och apputveckling</li>
+        <li>Banker och kreditinstitut</li>
+        <li>Försäkringsbolag</li>
+        <li>Investeringsrådgivning</li>
+        <li>Bokförings- och revisionsföretag</li>
+        <li>Bilförsäljning och leasing</li>
+        <li>Bilverkstäder och servicecenter</li>
+        <li>Tillbehör och reservdelar</li>
+        <li>Biltvätt och detailing</li>
+        <li>Konsultföretag</li>
+        <li>HR-tjänster</li>
+        <li>Juridiska tjänster</li>
+        <li>Logistik och transport</li>
+        <li>Möbelbutiker</li>
+        <li>Inredningsdesign</li>
+        <li>Bygg- och renoveringsföretag</li>
+        <li>Trädgårdsarbete och landskapsarkitektur</li>
         </ul>
       </div>
 
