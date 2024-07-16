@@ -86,3 +86,7 @@
     color: #ffd700; /* Highlight color on hover */
   }
   
+  .table-of-contnet{
+    color: #ffd700;
+    display: none;
+  }
