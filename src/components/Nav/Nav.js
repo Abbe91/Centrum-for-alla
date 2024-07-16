@@ -3,7 +3,7 @@ import "./Nav.css";
 import CallIcon from '@material-ui/icons/Call';
 import { useAuth0 } from "@auth0/auth0-react";
 import { navlinks } from "../../utils/data";
-import logo from "../../utils/images/Centrum.png"
+import logo from "../../utils/images/logo-centrum-for-alla.webp"
 import { AiOutlineBars } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useDispatch } from "react-redux";
