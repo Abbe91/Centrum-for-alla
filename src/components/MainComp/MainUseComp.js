@@ -77,7 +77,7 @@ const MainUseComp = ({ formTitle }) => {
             );
           })}
         </section>
-        <TableOfConent showInneHall={showInneHall} setshowInneHall={setshowInneHall} />
+          <TableOfConent margin-top={"60px"} showInneHall={showInneHall} setshowInneHall={setshowInneHall} />
       </div>
 
     </>

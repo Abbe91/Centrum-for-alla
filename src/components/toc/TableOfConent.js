@@ -12,8 +12,9 @@ const TableOfConent = ({ showInneHall, setshowInneHall }) => {
         }}
         onClick={() => setshowInneHall(!showInneHall)}
       >
-        <h3>INNEHÅLL</h3>
-        <IoIosArrowDown />
+        <h3>INNEHÅLL
+          <IoIosArrowDown />
+        </h3>
       </div>
       <ul style={{ display: showInneHall ? "block" : "none" }}>
         <h3
