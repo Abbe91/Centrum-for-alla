@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import Faq from "../faq/Faq";
 import { MdArrowForwardIos } from "react-icons/md";
 import { setServices } from "../../redux-toolkit/snabbkollenSlice";
-import Marketing from "../../utils/images/seoimages/hero3-img-with-vec.png"
+import HeroImage from "../../utils/images/seoimages/hero-img.png"
 
 const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const Divider = lazy(() => import("./Divider"));
@@ -23,9 +23,9 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
       <div className="hero-content">
         <h1 className="hero-title">Vi hjälper dig att nå dina mål</h1>
         <div className="hero-points">
-          <p>- Skräddarsydd strategi</p>
-          <p>- Optimerad marknadsföring</p>
-          <p>- Kontinuerlig support</p>
+          <p>. Skräddarsydd strategi</p>
+          <p>. Optimerad marknadsföring</p>
+          <p>. Kontinuerlig support</p>
         </div>
         <div className="search-bar">
           <Autocomplete
@@ -60,7 +60,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
         </div>
       </div>
       <div className="hero-image">
-        <img src={Marketing} alt="Hero" />
+        <img src={HeroImage} alt="Hero" />
       </div>
     </div>
       <LogoAnimation />

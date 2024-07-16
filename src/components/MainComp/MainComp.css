@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  background-color: #4890e3;
+  background-color: #243030;
   color: white;
   position: relative;
 }
@@ -137,6 +137,38 @@ input:focus {
   
 }
 
+.hero-title{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  border-right: 4px solid;
+  background: linear-gradient(to bottom, #dcdfdf, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
 .content-new-container {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +221,7 @@ input:focus {
     max-width: 100%;
     margin: 1rem;
   }
+  
 }
 
 @media screen and (max-width: 672px) {
@@ -247,21 +280,15 @@ input:focus {
     font-size: 1rem;
     line-height: 19px;
   }
-  
-  
 }
-
-
-
-
 
 .hero-section {
   padding-top: 190px;
   display: flex;
   justify-content: space-between;
-  background-color: #1d3752; /* Background color for the hero section */
-  height: 70vh;
-  flex-direction: row; /* Default layout for larger screens */
+  background: linear-gradient(to bottom, #00a7ac, white); 
+  height: 75vh;
+  flex-direction: row; 
 }
 
 .hero-content {
@@ -274,10 +301,10 @@ input:focus {
   margin-bottom: 1rem;
 }
 
-.hero-content .hero-points {
-  margin-bottom: 1rem;
+.hero-points {
   font-size: 1rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 .hero-content .search-bar {
@@ -324,6 +351,7 @@ input:focus {
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
+  width: 850px;
 }
 
 @media screen and (max-width: 800px) {
@@ -340,7 +368,7 @@ input:focus {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-content .search-bar .search-input {

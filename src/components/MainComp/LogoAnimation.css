@@ -1,12 +1,10 @@
-
-.logoanimation h1 {
+.logoanimation h2 {
     font-size: 2rem;
     color: #2c3e50;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 1.5rem;
     font-family: 'Arial', sans-serif;
     padding: 0.5rem 0;
-    display: inline-block;
     align-items: center;
     text-align: center;
   }
@@ -67,6 +65,7 @@
     --clr-primary-400: hsl(215, 25%, 27%);
     --clr-primary-800: hsl(217, 33%, 17%);
     --clr-primary-900: hsl(218, 33%, 9%);
+    --tw-gradient-stops: #00a7ac, #0c0c0c;
   }
   
 
@@ -88,4 +87,9 @@
     width: 120px;
     height: 120px;
 }
-  
+
+.logo-title{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

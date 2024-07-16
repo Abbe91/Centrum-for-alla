@@ -29,7 +29,7 @@ const LogoAnimation = () => {
 
   return (
     <div className="logoanimation">
-      <h1>Samarbetar med 3200+ internationellt kända företag.</h1>
+      <h2 className="logo-title">Samarbetar med 3200+ internationellt kända företag.</h2>
 
       <div
         className="scroller"
