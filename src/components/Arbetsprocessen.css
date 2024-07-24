@@ -1,8 +1,9 @@
 .background {
-    background: linear-gradient(to bottom, #feb47b, #ff7e5f);
-    color: white;
+  background: linear-gradient(to top, #00a7ac, white);
     padding: 2rem 0;
     font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .title {
@@ -11,6 +12,11 @@
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .flexContainer {

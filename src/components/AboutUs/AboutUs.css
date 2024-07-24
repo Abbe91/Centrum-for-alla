@@ -1,7 +1,7 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #feb47b, #ff7e5f); 
+  background: linear-gradient(to bottom, #00a7ac, white); 
  
   align-items: center;
   text-align: center;

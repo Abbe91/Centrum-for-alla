@@ -1,6 +1,5 @@
 .faqRoot {
     padding: 0 1rem;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b );
   }
   
   .root {
@@ -28,10 +27,12 @@
   }
   
   .accordionSummary {
-    background-color: #ad7b54;
     color: #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
+    background: linear-gradient(to right, #00a7ac, #0c0c0c);
+    font-size: large;
+    box-shadow: 0 0.5rem 1rem -0.25rem rgba(0, 0, 0, 0.2);
   }
   
   .accordionSummary:hover {

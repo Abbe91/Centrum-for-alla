@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     display: "flex",
     padding: "3rem",
     flexDirection: "row",
-    background: "linear-gradient(to bottom, #ff7e5f, #feb47b )", // Updated background
+    background: "linear-gradient(to top, #00a7ac, white)", // Updated background
     color: "white",
     justifyContent: "space-evenly",
     "@media screen and (max-width: 800px)": {

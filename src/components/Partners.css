@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background: linear-gradient(to top, #ff7e5f, #feb47b); 
+    background: linear-gradient(to bottom, #00a7ac, white); 
   }
   
   .partners section {

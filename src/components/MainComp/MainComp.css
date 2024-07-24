@@ -124,7 +124,7 @@ input:focus {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradient background */
+  background: linear-gradient(to top, #00a7ac, white); /* Gradient background */
 }
 
 .hero-title, .hero-content {
@@ -176,7 +176,6 @@ input:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background: linear-gradient(to bottom, #feb47b, #ff7e5f );
   padding: 50px;
 }
 
@@ -228,7 +227,6 @@ input:focus {
 
 @media screen and (max-width: 672px) {
   .mainComp {
-    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
