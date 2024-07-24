@@ -7,7 +7,9 @@ const useStyles = makeStyles({
     padding: "3rem",
     flexDirection: "row",
     background: "linear-gradient(to top, #00a7ac, white)", // Updated background
-    color: "white",
+    fontFamily:" 'Arial', sans-serif",
+    color: "#2c3e50",
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
     justifyContent: "space-evenly",
     "@media screen and (max-width: 800px)": {
       flexDirection: "column",
