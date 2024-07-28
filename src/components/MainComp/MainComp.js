@@ -14,7 +14,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
   const Arbetsprocessen = lazy(() => import("../Arbetsprocessen"));
   const MainUseComp = lazy(() => import("./MainUseComp"));
   const LogoAnimation = lazy(() => import("./LogoAnimation"));
-  const Helhetslosningdodsbo = lazy(() => import("../HelhetslosningMarketing"));
+  const Helhetslosning = lazy(() => import("../HelhetslosningMarketing"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
   return (
@@ -151,7 +151,7 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
         </p>
       </div>
     </section>
-      <Helhetslosningdodsbo />
+      <Helhetslosning />
     </section>
   );
 };

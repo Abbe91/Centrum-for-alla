@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     flexWrap: "wrap"
   },
   btn: {
-    background: "#4890e3",
+    background: "#00a7ac",
     color: "white",
     border: "none",
     fontSize: "0.7rem",

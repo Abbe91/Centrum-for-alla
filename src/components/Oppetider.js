@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     padding: "2rem",
-    background: "#4890e3",
+    backgroundColor: "#00a7ac",
     justifyContent: "space-evenly",
     color: "white",
     alignItems: "center",

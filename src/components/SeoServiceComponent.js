@@ -17,13 +17,15 @@ const useStyles = makeStyles({
     alignItems: "center",
     textAlign: "center",
     margin: "3rem 0",
-    transition: "all 0.3s linear"
+    transition: "all 0.3s linear",
+    backgroundColor: "#00a7ac",
   },
   card: {
     height: "380px",
     width: "400px",
     margin: "0.5rem 0.5rem",
     textAlign: "center",
+    backgroundColor: "white",
     borderRadius: "5px",
     display: "flex",
     flexDirection: "column",
