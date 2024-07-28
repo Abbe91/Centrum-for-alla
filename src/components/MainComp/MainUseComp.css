@@ -20,7 +20,7 @@
   
   .mainComp-subtitle {
     margin-bottom: 1rem; 
-    font-size: 1.5rem; 
+    font-size: 2.5rem;
   }
   
   .mainComp-description {
@@ -63,9 +63,7 @@
   }
   
   .mainComp-img {
-    background: #ffffff;
     border-radius: 50%;
-    padding: 0.8rem;
     margin-bottom: 0.5rem;
   }
   

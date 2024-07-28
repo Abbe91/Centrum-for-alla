@@ -5,27 +5,26 @@ import "./Partners.css";
 
 const Partners = () => {
   return (
-    <div className="partners">
-      <section>
-        <h2>Marknadsföring & Digital Närvaro</h2>
-        <h4>- Partners -</h4>
-        <ul>
+    <div className="partners-container">
+      <h2 className="partners-title">Marknadsföring & Digital Närvaro</h2>
+      <div className="partners">
+        <section className="partners-content">
+          <h4>- Partners -</h4>
           <p>
-            Vi på <strong>Centrum för Alla</strong> samarbetar med en rad
-            partners för att kunna erbjuda dig en heltäckande tjänst inom
-            marknadsföring och digital närvaro. Bland våra samarbetspartners
-            finns:
+            Vi på <strong>Centrum för Alla</strong> samarbetar med en rad partners för att kunna erbjuda dig en heltäckande tjänst inom marknadsföring och digital närvaro. Bland våra samarbetspartners finns:
           </p>
-          <li>- DigitalTech.se</li>
-          <li>- Webbutveckling och Design</li>
-          <li>- Sociala Medier Marknadsföring</li>
-          <li>- SEO och SEM Experter</li>
-          <li>- Innehållsskapare och Copywriters</li>
-        </ul>
-      </section>
-      <section className="lottie-container">
-        <LottieBooking lotti={partners} height={300} width={400} />
-      </section>
+          <ul>
+            <li>- DigitalTech.se</li>
+            <li>- Webbutveckling och Design</li>
+            <li>- Sociala Medier Marknadsföring</li>
+            <li>- SEO och SEM Experter</li>
+            <li>- Innehållsskapare och Copywriters</li>
+          </ul>
+        </section>
+        <section className="lottie-container">
+          <LottieBooking lotti={partners} height={300} width={400} />
+        </section>
+      </div>
     </div>
   );
 };

@@ -30,7 +30,7 @@
     color: #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
-    background: linear-gradient(to right, #00a7ac, #0c0c0c);
+    background: linear-gradient(to right, #00a7ac, #575656);
     font-size: large;
     box-shadow: 0 0.5rem 1rem -0.25rem rgba(0, 0, 0, 0.2);
   }
@@ -49,6 +49,7 @@
     margin-left: 0.5rem;
     text-align: center;
     color: #f8f3f3;
+    font-size: 2.5rem;
   }
   
   .contentText {

@@ -1,5 +1,5 @@
 nav {
-  position: absolute; /* Positioning nav bar over the hero section */
+  position: absolute;
   top: 25px; /* Align it at the top */
   left: 50%;
   transform: translateX(-50%); /* Center it horizontally */

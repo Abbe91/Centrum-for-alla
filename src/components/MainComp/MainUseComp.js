@@ -6,37 +6,37 @@ export const items = [
   {
     title: "SEO",
     alt: "SEO",
-    srcImg: "https://www.svgrepo.com/show/478722/seo-1.svg",
+    srcImg: "https://www.svgrepo.com/show/261947/seo-search.svg",
     srcPath: "https://sheglam.se/seo"
   },
   {
     title: "Marknadsföreing",
     alt: "Allt inom Digital marknadsföreing",
-    srcImg: "https://www.svgrepo.com/show/500399/marketing.svg",
+    srcImg: "https://www.svgrepo.com/show/261950/megaphone.svg",
     srcPath: "https://sheglam.se/marknadsforeing"
   },
   {
     title: "PPC",
     alt: "PPC (Pay-Per-Click) Reklam",
-    srcImg: "https://www.svgrepo.com/show/383712/pay-per-click-hand-link.svg",
+    srcImg: "https://www.svgrepo.com/show/261927/location-finder.svg",
     srcPath: "https://sheglam.se/ppc"
   },
   {
     title: "Sociala Medier",
     alt: "Sociala Medier",
-    srcImg: "https://www.svgrepo.com/show/234827/social-media.svg",
+    srcImg: "https://www.svgrepo.com/show/261962/video-player.svg",
     srcPath: "https://sheglam.se/social-media"
   },
   {
     title: "Innehålls marknadsföring",
     alt: "Innehållsmarknadsföring",
-    srcImg: "https://www.svgrepo.com/show/430120/content-marketing-communication.svg",
+    srcImg: "https://www.svgrepo.com/show/261934/browsers-internet.svg",
     srcPath: "https://sheglam.se/Innehallsmarknadsforing"
   },
   {
     title: "Webbdesign och Utveckling",
     alt: "Webbdesign och Utveckling",
-    srcImg: "https://www.svgrepo.com/show/202392/development.svg",
+    srcImg: "https://www.svgrepo.com/show/261960/laptop.svg",
     srcPath: "https://sheglam.se/webbdesign-och-utveckling"
   },
   

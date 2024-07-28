@@ -6,11 +6,12 @@ const useStyles = makeStyles({
     display: "flex",
     padding: "3rem",
     flexDirection: "row",
-    background: "linear-gradient(to top, #00a7ac, white)", // Updated background
+    background: "linear-gradient(to top, #00a7ac, #00a7ac)", // Updated background
     fontFamily:" 'Arial', sans-serif",
     color: "#2c3e50",
     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
     justifyContent: "space-evenly",
+    
     "@media screen and (max-width: 800px)": {
       flexDirection: "column",
       textAlign: "center"
@@ -29,7 +30,7 @@ const useStyles = makeStyles({
   },
   title: {
     marginBottom: "0.5rem",
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     "@media screen and (max-width: 800px)": {
       fontSize: "1.3rem"
     }
