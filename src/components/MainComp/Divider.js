@@ -8,8 +8,8 @@ const Divider = () => {
       <img
         className="divider-image"
         src={Marketing}
-        alt="tömma lägenheter"
-        title="tömma lägenheter"
+        alt="marketing"
+        title="marketing"
       />
       <section>
         <h2 className="divider-heading">Få hjälp av proffsen!</h2>
