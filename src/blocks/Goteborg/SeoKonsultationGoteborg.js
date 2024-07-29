@@ -13,7 +13,7 @@ import LottieBooking from "../../LottieAnimation/LottieBooking";
 import booking from "../../utils/animation/booking.json";
 import BookingModal from "../../components/BookingModal";
 
-const SeoKonsultation = ({ videoText }) => {
+const SeoKonsultationGoteborg = ({ videoText }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const mainquery = "SEO konsultation";
   const newsData = useSelector(getNewsData);
@@ -154,4 +154,4 @@ const SeoKonsultation = ({ videoText }) => {
   );
 };
 
-export default SeoKonsultation;
+export default SeoKonsultationGoteborg;

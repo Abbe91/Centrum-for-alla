@@ -23,12 +23,12 @@ const ExternaLankar = () => {
       <section></section>
       <a
         rel="noreferrer"
-        href="https://xn--svenskalnkar-ncb.com/foretag-tjanster"
+        href="https://digitaltech.se"
         target="_blank"
         title="svenskalänkar"
         className={classes.links}
       >
-        Svenskalänkar.com
+        Digitaltech.se
       </a>
       <a
         rel="noreferrer"

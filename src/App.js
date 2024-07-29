@@ -8,6 +8,7 @@ import "./App.css"; // Make sure this import is present
 import Partners from "./components/Partners";
 import Links from "./internalLinks/Links";
 import SeoServiceComponent from "./components/SeoServiceComponent";
+import SeoKonsultationUddevalla from "./blocks/Uddevalla/SeoKonsultationUddevalla";
 
 const MarketingPage = lazy(() => import("./pages/InfoPages/MarketingPage"));
 
@@ -16,7 +17,7 @@ const ServicesIconsComp = lazy(() => import("./components/ServicesIconsComp"));
 const Error = lazy(() => import("./pages/Error/Error"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
-const SeoKonsultation = lazy(() => import("./blocks/Goteborg/SeoKonsultation"));
+const SeoKonsultationGoteborg = lazy(() => import("./blocks/Goteborg/SeoKonsultationGoteborg"));
 const FreeConsultation = lazy(() => import("./components/FreeConsultation"));
 const ExternaLankar = lazy(() =>
   import("./components/externalLinks/ExternaLankar")
@@ -24,12 +25,8 @@ const ExternaLankar = lazy(() =>
 const Oppetider = lazy(() => import("./components/Oppetider"));
 const Recensioner = lazy(() => import("./components/Recensioner"));
 const Seo = lazy(() => import("./components/Seo"));
-const Arbetsprocessen = lazy(() => import("./components/Arbetsprocessen"));
-const ImagesServicesComponent = lazy(() =>
-  import("./components/ImagesServicesComponent")
-);
-const Helhetslosning = lazy(() =>
-  import("./components/HelhetslosningMarketing")
+const Uddevalla = lazy(() =>
+  import("./blocks/Uddevalla/Uddevalla")
 );
 const BookingModal = lazy(() => import("./components/BookingModal"));
 const Adspages = lazy(() => import("./components/AdsPages"));
@@ -62,11 +59,12 @@ const App = () => {
             <Route path="/boka" element={<BookingModal />} />
             <Route path="/seo" element={<Seo videoText={contentData?.videoText} />} />
             <Route path="/adspages" element={<Adspages videoText={contentData?.videoText} />} />
-            <Route path="/goteborg/seo-konsultation" element={<SeoKonsultation videoText={contentData?.videoText} />} />
+            <Route path="/uddevalla" element={<Uddevalla videoText={contentData?.videoText} />} />
+            <Route path="/goteborg/seo-konsultation" element={<SeoKonsultationGoteborg videoText={contentData?.videoText} />} />
+            <Route path="/uddevalla/seo-konsultation" element={<SeoKonsultationUddevalla videoText={contentData?.videoText} />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Partners />
-          <ImagesServicesComponent />
           <FreeConsultation />
           <SeoServiceComponent />
           <Oppetider />
@@ -74,6 +72,7 @@ const App = () => {
           <Recensioner />
           <Footer />
           <Links />
+          <ExternaLankar />
         </Router>
       </Suspense>
     </div>
