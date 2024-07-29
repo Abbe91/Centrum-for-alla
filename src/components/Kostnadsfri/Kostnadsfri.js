@@ -32,7 +32,7 @@ const Kostnadsfri = ({ vad, text }) => {
 
   return (
     <div className="kostandri-cont">
-      <div style={{ color: "white" }}>
+      <div>
         <h2>Kostnadsfritt Enskilt Samtal {vad}</h2>
         <p style={{ fontSize: "0.9rem", lineHeight: "22px" }}>
         Boka ett kostnadsfritt enskilt samtal med våra marknadsföringsexperter på Centrum för Alla. Få skräddarsydda råd och strategier för att öka din digitala närvaro

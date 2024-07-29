@@ -117,11 +117,6 @@ const Home = ({ videoText }) => {
         />
 
       </div>
-      
-      <div className="Tjänster">
-        <Erbjuder />
-      </div>
-
       <div className="booking-lottie">
         <div className="booking-content">
           <h2>Hjälp med {mainquery}?</h2>
@@ -143,7 +138,11 @@ const Home = ({ videoText }) => {
           <BookingModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
         )}
       </div>
-
+      
+      <div className="Tjänster">
+        <Erbjuder
+        city={"Göteborg"} />
+      </div>
       <div className="Kostnadsfri">
         <Kostnadsfri
           vad={"Värdering"}

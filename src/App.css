@@ -160,30 +160,7 @@ button {
   justify-content: space-evenly;
 }
 
-.partners {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  background: rgb(248, 247, 247);
-  padding: 1.5rem;
-}
-.partners p {
-  max-width: 340px;
-}
-.partners section {
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-  width: 440px;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 5px;
-  background: white;
-}
+
 .ddddd {
   display: none;
 }
@@ -231,17 +208,19 @@ button {
 }
 
 #erbjuder-cont h4 {
-  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: white;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 #erbjuder-cont p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 13px;
   font-weight: 400;
   line-height: 1.45;
-  color: white;
   max-width: 536px;
   line-height: 24px;
 }
@@ -269,7 +248,7 @@ button {
   width: 12rem;
   height: 2.2rem;
   border: none;
-  background: #bbe3f7;
+  background: #00a7ac;
   margin-top: 0.5rem;
   border-radius: 5px;
   font-weight: bold;

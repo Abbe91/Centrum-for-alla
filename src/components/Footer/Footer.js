@@ -34,7 +34,7 @@ const Footer = () => {
         
         <div
         style={{
-          background: "#4890e3",
+          background: "#00a7ac",
           color: "white",
           height: "300px",
           textAlign: "center",

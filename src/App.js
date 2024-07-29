@@ -37,7 +37,7 @@ const Arbetsprocessen = lazy(() => import("./components/Arbetsprocessen"));
 const ImagesServicesComponent = lazy(() =>
   import("./components/ImagesServicesComponent")
 );
-const Helhetslosningdodsbo = lazy(() =>
+const Helhetslosning = lazy(() =>
   import("./components/HelhetslosningMarketing")
 );
 const Bortforslingdodsbo = lazy(() =>

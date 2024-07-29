@@ -1,5 +1,5 @@
 import React from "react";
-import Marketing from "../../utils/images/seoimages/marketing.png"
+import Marketing from "../../utils/images/marketing.jpg"
 import "./Divider.css"; // Make sure to create this CSS file and import it
 
 const Divider = () => {

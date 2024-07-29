@@ -1,51 +1,118 @@
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.partners-title {
+  color: #007f83;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .partners {
-    display: flex;
+  display: flex;
+  justify-content: center; /* Changed to center */
+  align-items: center;
+  width: 100%;
+}
+
+.partners-content {
+  max-width: 48%;
+  text-align: center;
+  margin-right: 1rem; /* Added to reduce gap */
+}
+
+.partners h4 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.partners p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.partners li {
+  color: #00a7ac;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  margin-left: 1rem; /* Added to reduce gap */
+}
+
+.partners section {
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partners section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 35px -5px rgb(0 0 0 / 0.1),
+              0 12px 14px -6px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 1024px) {
+  .partners {
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    background: linear-gradient(to bottom, #00a7ac, white); 
   }
-  
-  .partners section {
+
+  .partners-content, .lottie-container {
     width: 100%;
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .partners h2 {
-    color: black;
-    font-size: 1.8rem;
+    max-width: 100%;
     margin-bottom: 1rem;
+    margin-right: 0; /* Reset margin */
+    margin-left: 0;  /* Reset margin */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    padding: 1rem;
+  }
+
+  .partners-title {
+    font-size: 1.8rem;
+  }
+
   .partners h4 {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.3rem;
   }
-  
+
   .partners p {
-    margin: 1rem 0;
     font-size: 1rem;
-    line-height: 1.5;
   }
-  
-  .partners ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
+
   .partners li {
-    color: #4890e3;
-    font-weight: bold;
-    margin: 0.5rem 0;
     font-size: 1rem;
   }
-  
-  .lottie-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+}

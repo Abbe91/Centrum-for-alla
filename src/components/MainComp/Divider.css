@@ -6,14 +6,13 @@
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    background: linear-gradient(to bottom, #00a7ac, white);
     color: #2c3e50;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .divider-image {
     object-fit: contain;
-    width: 340px;
+    width: 640px;
     height: 300px;
     margin-bottom: 1rem;
   }
@@ -21,6 +20,7 @@
   .divider-heading {
     margin-bottom: 0.5rem;
     color: #2c3e50;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
@@ -30,3 +30,13 @@
     margin-bottom: 0.5rem;
   }
   
+  @media screen and (max-width: 800px) {
+  
+    .divider-image {
+      object-fit: contain;
+      width: 340px;
+      height: 300px;
+      margin-bottom: 1rem;
+    
+    }
+  }

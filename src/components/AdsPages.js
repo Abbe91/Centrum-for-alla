@@ -79,7 +79,8 @@ const Adspages = ({ videoText }) => {
       </div>
       
       <div className="Tjänster">
-        <Erbjuder />
+        <Erbjuder
+        city={"uddevalla"} />
       </div>
 
       <div className="booking-lottie">

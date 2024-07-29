@@ -1,5 +1,4 @@
 .background {
-  background: linear-gradient(to top, #00a7ac, white);
     padding: 2rem 0;
     font-family: 'Arial', sans-serif;
     color: #2c3e50;
@@ -10,7 +9,7 @@
     text-align: center;
     padding-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #2c3e50;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -76,7 +75,7 @@
   }
   
   .linkText {
-    color: white;
+    color: #00a7ac;
     text-decoration: underline;
     font-weight: bold;
   }
