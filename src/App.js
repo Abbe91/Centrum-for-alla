@@ -10,22 +10,13 @@ import Links from "./internalLinks/Links";
 import SeoServiceComponent from "./components/SeoServiceComponent";
 
 const MarketingPage = lazy(() => import("./pages/InfoPages/MarketingPage"));
-const Uppkopdodsbogoteborg = lazy(() =>
-  import("./components/uppkopdodsbogoteborg/Uppkopdodsbogoteborg")
-);
+
 const ForFragan = lazy(() => import("./components/ForFragan"));
 const ServicesIconsComp = lazy(() => import("./components/ServicesIconsComp"));
 const Error = lazy(() => import("./pages/Error/Error"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
-const Tommadodsbogoteborg = lazy(() =>
-  import("./components/tommadodsbogoteborg/Tommadodsbogoteborg")
-);
-const Bortforslingdodsboulricehamn = lazy(() =>
-  import("./blocks/Bortforslingdodsboulricehamn")
-);
-const Bortforsling = lazy(() => import("./blocks/Goteborg/Bortforsling"));
-const Dodsbofirma = lazy(() => import("./blocks/Goteborg/Dodsbofirma"));
+const SeoKonsultation = lazy(() => import("./blocks/Goteborg/SeoKonsultation"));
 const FreeConsultation = lazy(() => import("./components/FreeConsultation"));
 const ExternaLankar = lazy(() =>
   import("./components/externalLinks/ExternaLankar")
@@ -40,20 +31,8 @@ const ImagesServicesComponent = lazy(() =>
 const Helhetslosning = lazy(() =>
   import("./components/HelhetslosningMarketing")
 );
-const Bortforslingdodsbo = lazy(() =>
-  import("./components/Bortforslingdodsbo")
-);
 const BookingModal = lazy(() => import("./components/BookingModal"));
 const Adspages = lazy(() => import("./components/AdsPages"));
-const Koperdodsbouddevalla = lazy(() =>
-  import("./blocks/uddevalla/Koperdodsbouddevalla")
-);
-const Bortforslingdodsbogoteborg = lazy(() =>
-  import("./blocks/Bortforslingdodsbogoteborg")
-);
-const Tommerdodsbouddevalla = lazy(() =>
-  import("./blocks/uddevalla/Tommerdodsbouddevalla")
-);
 
 const App = () => {
   const contentData = useSelector(getContentData);
@@ -83,14 +62,7 @@ const App = () => {
             <Route path="/boka" element={<BookingModal />} />
             <Route path="/seo" element={<Seo videoText={contentData?.videoText} />} />
             <Route path="/adspages" element={<Adspages videoText={contentData?.videoText} />} />
-            <Route path="/bortforsling" element={<Bortforsling videoText={contentData?.videoText} />} />
-            <Route path="/bortforsling-dodsbo-goteborg" element={<Bortforslingdodsbogoteborg videoText={contentData?.videoText} />} />
-            <Route path="/bortforsling-dodsbo-ulricehamn" element={<Bortforslingdodsboulricehamn videoText={contentData?.videoText} />} />
-            <Route path="/koper-dodsbo-uddevalla" element={<Koperdodsbouddevalla videoText={contentData?.videoText} />} />
-            <Route path="/tommer-dodsbo-uddevalla" element={<Tommerdodsbouddevalla videoText={contentData?.videoText} />} />
-            <Route path="/tomma-dodsbo-goteborg" element={<Tommadodsbogoteborg videoText={contentData?.videoText} />} />
-            <Route path="/uppkop-dodsbo-goteborg" element={<Uppkopdodsbogoteborg videoText={contentData?.videoText} />} />
-            <Route path="/dodsbofirma" element={<Dodsbofirma videoText={contentData?.videoText} />} />
+            <Route path="/goteborg/seo-konsultation" element={<SeoKonsultation videoText={contentData?.videoText} />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Partners />

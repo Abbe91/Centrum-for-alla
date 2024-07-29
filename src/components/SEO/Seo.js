@@ -82,25 +82,15 @@ const Seo = () => {
         <div className={classes.content} key={i}>
           <Card key={local.id} className={classes.card}>
             <h5 style={{ marginBottom: "0.4rem" }}>
-              Säljer, köper, värderar, röjer, tömmer och städar dödsbo i{" "}
+            Marknadsföring & Digital Närvaro i{" "}
               {local.city}.
             </h5>
             <p style={{ fontSize: "0.75rem", lineHeight: "22px" }}>
-              Välkommen till oss på Sheglam i {local.city} ! Vi hjälper er
-              gärna om ni har ett behov av att få ett dödsbo värderat i{" "}
-              {local.city}, dödsbo uppköpt i {local.city}, dödsbo tömt i{" "}
-              {local.city}, dödsbo bortforslat i {local.city} eller städa dödsbo
-              i {local.city}. Vi gör dödsbo röjningar inom hela {local.city} och
-              dess närområden. Vi underlättar för er så att ni istället kan
-              fokusera på annat medans vi tar hand om ert dödsbo i {local.city}.
-              När vi åtar oss dessa uppdrag med dödsbon i {local.city} så kommer
-              vi oftast ut på plats och tittar vilket gör det enklare då vi
-              lättare kan få en bild av omfattningen av dödsboet eller bohaget
-              så att det blir enklare att lämna ett förslag eller en offert. Vi
-              anpassar oss givetvis efter er och ni bestämmer så klart i vilken
-              omfattning ni vill anlita oss. Vi köper dödsbon, tömmer dödsbon,
-              röjningar av dödsbon, bortforsling av dödsbon, städar dödsbon,
-              flytt till boende, sanering av dödsbon och bohagsflytt.
+              Välkommen till oss på Centrum för alla i {local.city} ! Vi börjar med en kostnadsfri analys av ditt företag och dina marknadsföringsbehov. Detta inkluderar en genomgång av din nuvarande online-närvaro och en diskussion om dina mål. Syftet med denna analys är att förstå dina specifika behov och att skapa en skräddarsydd strategi som maximera din synlighet och SEO. Kontakta oss för att boka en analys. Vi hjälper dig i{" "}
+              {local.city}, allt inom marknadföreing i {local.city}, SEO i{" "}
+              {local.city}, Digital Marknadsföring i {local.city} eller Webbdesign och Utveckling
+              i {local.city}. Vi gör Email Marknadsföring inom hela {local.city} och
+              dess närområden. i på Centrum för Alla erbjuder kostnadsfria one-on-one samtal för att hjälpa dig med alla dina marknadsföringsbehov. Oavsett om du behöver hjälp med digital marknadsföring, SEO optimering, sociala medier, eller innehållsskapande, så finns vi här för att stödja dig. Under samtalet kommer vi att diskutera dina mål och behov för att skapa en skräddarsydd strategi som maximerar din digitala närvaro. Boka ett samtal med oss idag för att få en offert och börja din resa mot framgång.
             </p>
           </Card>
         </div>

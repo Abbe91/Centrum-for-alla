@@ -13,17 +13,17 @@ import LottieBooking from "../../LottieAnimation/LottieBooking";
 import booking from "../../utils/animation/booking.json";
 import BookingModal from "../../components/BookingModal";
 
-const Home = ({ videoText }) => {
+const SeoKonsultation = ({ videoText }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const mainquery = "Marknadsföring";
+  const mainquery = "SEO konsultation";
   const newsData = useSelector(getNewsData);
   const [content, setContent] = useState({
     metaTitle:
-      "Effektiv Marknadsföring för Alla Centrum i Sverige | Centrum för Alla",
+      "Effektiv SEO konsultation för Alla Centrum i Sverige | Centrum för Alla",
     metaContent:
-      "Centrum för Alla erbjuder professionella marknadsföringstjänster för företag i hela Sverige. Öka din synlighet och nå dina kunder snabbt med våra skräddarsydda strategier.",
-    query: "Effektiv Marknadsföring",
-    formTitle: "Boka en kostnadsfri konsultation",
+      "Centrum för Alla erbjuder professionella SEO konsultation för företag i hela Sverige. Öka din synlighet och nå dina kunder snabbt med våra skräddarsydda strategier.",
+    query: "Effektiv SEO konsultation",
+    formTitle: "Boka en kostnadsfri SEO konsultation",
     subTitle2:
       "Öka Din Digitala Närvaro med Centrum för Alla",
     subTitle3: `Behöver du hjälp med ditt ${mainquery}?`
@@ -33,7 +33,7 @@ const Home = ({ videoText }) => {
     "Webbdesign, Sökmotoroptimering , Digital marknadsföring, Sociala medier hantering, E-postmarknadsföring, PPC-annonsering (Pay-per-click), Innehållsstrategi, Webbanalys";
 
   const articleStructuredData = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/goteborg/seo-konsultation",
     "@type": "Centrum för alla",
     name: "Centrum för alla",
     address: {
@@ -82,7 +82,7 @@ const Home = ({ videoText }) => {
         <meta charSet="utf-8" />
         <title>{content.metaTitle}</title>
         <meta name="description" content={content.metaContent} />
-        <meta property="og:url" content="https://sheglam.se" />
+        <meta property="og:url" content="https://sheglam.se/goteborg/seo-konsultation" />
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:image"
@@ -112,7 +112,7 @@ const Home = ({ videoText }) => {
       <div className="Om">
         <AboutUs
           query={mainquery.toUpperCase()}
-          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
+          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro med ${mainquery}?`}
           om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
 
@@ -154,4 +154,4 @@ const Home = ({ videoText }) => {
   );
 };
 
-export default Home;
+export default SeoKonsultation;

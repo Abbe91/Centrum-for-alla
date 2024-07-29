@@ -110,24 +110,24 @@ const MainComp = ({ subTitle5, text2, city, formTitle }) => {
           Unikt Nätverk av Domäner: Med vårt omfattande nätverk av över 200
           centrumdomäner får ditt företag en betydande SEO-fördel.{" "}
           <a
-            href="/vardera-dodsbo"
-            title="värdera dödsbo"
+            href="/skraddarsydda-losningar"
+            title="Skräddarsydda Lösningar"
             style={{ color: "inherit" }}
           >
             Skräddarsydda Lösningar: Vi anpassar våra tjänster efter dina
             specifika behov och mål.
           </a>{" "}
           <a
-            href="/bortforsling-dodsbo"
-            title="bortforsling av dödsbo"
+            href="/expertis-och-erfarenhet"
+            title="Expertis och Erfarenhet"
             style={{ color: "inherit" }}
           >
             Expertis och Erfarenhet: Vårt team har den erfarenhet och kunskap
             som krävs för att hjälpa ditt företag att lyckas online.
           </a>{" "}
           <a
-            href="/tommer-hushall"
-            title="tömmer hushåll, bohag och dödsbo"
+            href="/kontinuerlig-support"
+            title="kontinuerlig-support"
             style={{ color: "inherit" }}
           >
             Kontinuerlig Support: Vi erbjuder långsiktig support och uppföljning

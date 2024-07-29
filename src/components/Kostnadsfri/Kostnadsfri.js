@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./Kostnadsfri.css";
 import emailjs from "@emailjs/browser";
 
-const Kostnadsfri = ({ vad, text }) => {
+const Kostnadsfri = ({ vad, mainquery, text }) => {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const form = useRef();
@@ -35,7 +35,7 @@ const Kostnadsfri = ({ vad, text }) => {
       <div>
         <h2>Kostnadsfritt Enskilt Samtal {vad}</h2>
         <p style={{ fontSize: "0.9rem", lineHeight: "22px" }}>
-        Boka ett kostnadsfritt enskilt samtal med våra marknadsföringsexperter på Centrum för Alla. Få skräddarsydda råd och strategier för att öka din digitala närvaro
+        Boka ett kostnadsfritt enskilt samtal med våra {mainquery} på Centrum för Alla. Få skräddarsydda råd och strategier för att öka din digitala närvaro
         </p>
       </div>
     </div>

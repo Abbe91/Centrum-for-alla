@@ -71,9 +71,9 @@ const Seo = ({ videoText }) => {
       </div>
     <div className="Om">
         <AboutUs
-          query={mainquery.toUpperCase()}
-          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig ${mainquery}?`}
-          om={`är det självklara valet för hantering av bohag och dödsbo med 20 års erfarenhet.`}
+           query={mainquery.toUpperCase()}
+           oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
+           om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
       </div>
      
