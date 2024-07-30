@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   links: {
     color: "#0369a1",
     borderBottom: "1px solid black",
-    fontSize: "0.8rem"
+    fontSize: "3.8rem"
   },
 
   container: {

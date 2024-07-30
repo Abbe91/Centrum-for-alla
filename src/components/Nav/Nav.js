@@ -39,10 +39,10 @@ const Nav = () => {
         />
       </div>
      
-       <a href={`tel:${customerData.phone}`} style={{display:'flex',alignItems:'center', color:'#eabb12'}}>
-       <CallIcon style={{fontSize:'1.2rem', color: 'black',}}/>
-       <p style={{marginLeft:'0.3rem',fontSize:'0.8rem', color: 'black'}}>Ring</p>
-          </a>
+      <a href={`tel:${customerData.phone}`} className="nav-call">
+          <CallIcon className="nav-icon" />
+        <p className="nav-call-text">Ring</p>
+      </a>
     
         <div className="navbar" onClick={() => setShowNav(!showNav)}>
           <AiOutlineBars />

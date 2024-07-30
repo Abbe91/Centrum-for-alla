@@ -1,13 +1,13 @@
 nav {
   position: absolute;
-  top: 25px; /* Align it at the top */
+  top: 25px;
   left: 50%;
-  transform: translateX(-50%); /* Center it horizontally */
+  transform: translateX(-50%);
   height: 5rem;
-  background: rgba(255, 255, 255, 0.2); /* Slightly transparent */
+  background: rgba(255, 255, 255, 0.2);
   color: #333;
-  width: 80%; /* Not taking the whole width */
-  border-radius: 10px; /* Adding some rounding to the corners */
+  width: 80%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,16 +30,16 @@ nav {
   transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  visibility: hidden; /* Hide when closed */
-  opacity: 0; /* Transparent when closed */
+  visibility: hidden;
+  opacity: 0;
 }
 
 .show-nav {
   transform: translateX(0%);
-  visibility: visible; /* Show when open */
-  opacity: 1; /* Fully visible when open */
+  visibility: visible;
+  opacity: 1;
   width: 100%;
-  
+  height: 200vh;
 }
 
 .nav-links {
@@ -72,6 +72,21 @@ nav .navbar {
 .nav-logo img {
   width: 70px;
   height: auto;
+  margin-left: 15px;
+}
+
+.navbar {
+  font-size: 2.2rem;
+}
+
+.nav-logo img {
+  width: 40px;
+}
+.nav-call{
+  display: flex;
+  align-items: center;
+  font-size:1.2rem;
+  color: rgb(19, 12, 12);
 }
 
 .top-nav {
@@ -113,8 +128,12 @@ nav .navbar {
   border: none;
   color: #333;
   margin: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 5rem;
   transition: border-bottom 0.3s ease-in-out;
+}
+
+.nav-menu-link{
+  font-size: 4rem;
 }
 
 .nav-menu-link:hover {
@@ -159,9 +178,133 @@ nav .navbar {
   }
 }
 
-.call-to-action-phone-latest {
-  display: flex;
-  align-items: center;
-  color: #eabb12;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  nav {
+    width: 90%;
+    height: 6rem;
+  }
+
+  .nav-links button {
+    font-size: 1.9rem;
+  }
+
+  .user-contact div, .user-contact a {
+    font-size: 1.7rem;
+  }
+
+  .navbar {
+    font-size: 2.2rem;
+  }
+
+  .nav-logo img {
+    width: 40px;
+  }
+ 
+  
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: 95%;
+    height: 6.5rem;
+  }
+
+  .nav-links button {
+    font-size: 1.8rem;
+  }
+
+  .user-contact div, .user-contact a {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    font-size: 2.2rem;
+  }
+
+  .nav-logo img {
+    width: 40px;
+  }
+  .nav-call{
+    display: flex;
+    align-items: center;
+    font-size:3.2rem;
+    color: rgb(5, 3, 3);
+  }
+ 
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  nav {
+    width: 95%;
+    height: 6.5rem;
+  }
+
+  .nav-links button {
+    font-size: 1.8rem;
+  }
+
+  .user-contact div, .user-contact a {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    font-size: 2.2rem;
+  }
+
+  .nav-logo img {
+    width: 40px;
+    margin-left: 15px;
+  }
+  .nav-call{
+    display: flex;
+    align-items: center;
+    font-size:3.2rem;
+    color: rgb(7, 3, 3);
+  }
+  .nav-icon {
+    font-size: 3rem !important; /* Size for portrait mobile devices */
+  }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 520px) 
+  and (max-device-width: 1080px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  nav {
+    width: 90%;
+    height: 6rem;
+  }
+
+  .nav-links button {
+    font-size: 1.9rem;
+  }
+
+  .user-contact div, .user-contact a {
+    font-size: 1.7rem;
+  }
+
+  .navbar {
+    font-size: 2.2rem;
+  }
+
+  .nav-logo img {
+    left: 100px;
+    width: 40px;
+  }
+  .nav-call{
+    display: flex;
+    align-items: center;
+    font-size:3.2rem;
+    color: black;
+  }
+  .nav-call-text{
+    margin-left:'0.3rem'; font-size:'3.2rem'; color: 'black'
+  }
 }
