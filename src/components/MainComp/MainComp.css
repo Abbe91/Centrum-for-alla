@@ -354,41 +354,138 @@ input:focus {
   width: 850px;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-image img {
+      
+    }
+    .hero-section {
+      flex-direction: column; /* Change layout to column for mobile */
+      height: 100%; /* Adjust height for mobile */
+    }
   
-  .hero-section {
-    flex-direction: column; /* Change layout to column for mobile */
-    height: 100%; /* Adjust height for mobile */
-  }
+    .hero-content {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 1rem; /* Add bottom padding for spacing */
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content .search-bar .search-input {
+      top: -4px;
+      height: 3rem;
+      border-radius: 5px;
+      background-color: white;
+      width: 250px; /* Adjusted to 80% */
+      border-radius: 5px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+    }
+  
+    .hero-image {
+      width: 100%;
+      padding-top: 1rem; /* Add top padding for spacing */
+    }
+  
+    .hero-image img {
+      width: 100%;
+      border-radius: 0;
+    }
+}
 
-  .hero-content {
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 1rem; /* Add bottom padding for spacing */
-  }
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .hero-image img {
+      
+    }
+    .hero-section {
+      flex-direction: column; /* Change layout to column for mobile */
+      height: 100%; /* Adjust height for mobile */
+    }
+  
+    .hero-content {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 1rem; /* Add bottom padding for spacing */
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content .search-bar .search-input {
+      top: -4px;
+      height: 3rem;
+      border-radius: 5px;
+      background-color: white;
+      width: 250px; /* Adjusted to 80% */
+      border-radius: 5px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+    }
+  
+    .hero-image {
+      width: 100%;
+      padding-top: 1rem; /* Add top padding for spacing */
+    }
+  
+    .hero-image img {
+      width: 100%;
+      border-radius: 0;
+    }
+}
 
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content .search-bar .search-input {
-    top: -4px;
-    height: 3rem;
-    border-radius: 5px;
-    background-color: white;
-    width: 250px; /* Adjusted to 80% */
-    border-radius: 5px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-  }
-
-  .hero-image {
-    width: 100%;
-    padding-top: 1rem; /* Add top padding for spacing */
-  }
-
-  .hero-image img {
-    width: 100%;
-    border-radius: 0; /* Reset border radius for mobile */
-  }
+/* Landscape */
+@media only screen 
+  and (min-device-width: 520px) 
+  and (max-device-width: 1080px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .hero-image img {
+      
+    }
+    .hero-section {
+      flex-direction: column; /* Change layout to column for mobile */
+      height: 100%; /* Adjust height for mobile */
+    }
+  
+    .hero-content {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 1rem; /* Add bottom padding for spacing */
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content .search-bar .search-input {
+      top: -4px;
+      height: 3rem;
+      border-radius: 5px;
+      background-color: white;
+      width: 250px; /* Adjusted to 80% */
+      border-radius: 5px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+    }
+  
+    .hero-image {
+      width: 100%;
+      padding-top: 1rem; /* Add top padding for spacing */
+    }
+  
+    .hero-image img {
+      width: 100%;
+      border-radius: 0;
+    }
 }
