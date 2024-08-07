@@ -65,9 +65,7 @@ const MainUseComp = ({ formTitle }) => {
               <div key={i} className="mainComp-item">
                 <LazyLoadImage
                   alt={el.alt}
-                  height={"60px"}
                   src={el.srcImg}
-                  width={"60px"}
                   className="mainComp-img"
                 />
                 <a href={el.srcPath} title={el.alt} className="mainComp-link">

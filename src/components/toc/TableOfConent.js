@@ -22,7 +22,8 @@ const TableOfConent = ({ showInneHall, setshowInneHall }) => {
             fontWeight: "100",
             letterSpacing: "0.5px",
             marginBottom: "0.3rem",
-            borderBottom: "0.5px solid white"
+            borderBottom: "0.5px solid white",
+            fontSize: "2rem"
           }}
         >
           Innehållsförteckning
@@ -31,7 +32,7 @@ const TableOfConent = ({ showInneHall, setshowInneHall }) => {
           return (
             <li
               key={i}
-              style={{ textAlign: "left", margin: "0.75rem 0.5rem" }}
+              style={{fontSize: "2rem", textAlign: "left", margin: "0.75rem 0.5rem" }}
               className="toc-links"
               onClick={(e) => {
                 e.preventDefault();

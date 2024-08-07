@@ -65,6 +65,8 @@
   .mainComp-img {
     border-radius: 50%;
     margin-bottom: 0.5rem;
+    height: 60px;
+    width: 60px;
   }
   
   .mainComp-link {
@@ -87,3 +89,63 @@
     color: #ffd700;
     display: none;
   }
+
+  @media screen and (max-width: 672px) {
+    .mainComp-img {
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      height: 60px;
+      width: 60px;
+    }
+  }
+  
+  @media screen and (min-width: 673px) and (max-width: 849px) {
+    .mainComp-img {
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      height: 60px;
+      width: 60px;
+    }
+  }
+  
+  @media screen and (min-width: 850px) and (max-width: 1299px) {
+    .mainComp-img {
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      height: 80px;
+      width: 80px;
+    }
+    .mainComp-link {
+      font-size: 1rem;
+      margin-top: 0.3rem;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .mainComp-description{
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .mainComp-description a{
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .toc-root h3 {
+      font-weight: 100;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+      margin-right: 0.3rem;
+      margin-top: 30px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1300px) {
+    .mainComp-img {
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      height: 60px;
+      width: 60px;
+    }
+  }
+  
