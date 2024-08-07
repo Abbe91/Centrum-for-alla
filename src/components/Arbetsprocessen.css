@@ -53,15 +53,15 @@
   }
   
   .textContent {
-    width: 300px;
     margin-top: 0.5rem;
     line-height: 1.5;
+    padding: 20px;
     text-align: left;
   }
   
   .imageContent {
     height: 200px;
-    width: 200px;
+    width: 400px;
     object-fit: cover;
     margin-top: 4rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
@@ -80,42 +80,117 @@
     font-weight: bold;
   }
   
-  /* Media Queries for Desktop View */
-  @media (min-width: 768px) {
-    .textContent {
-      width: 400px;
+
+  @media screen and (max-width: 1200px) {
+    .section{
+      display: flex;
+      flex-direction: column;
     }
-  
-    .section, .sectionReversed {
-      width: 70%;
+    .sectionReversed{
+      display: flex;
+      flex-direction: column;
     }
-  
-    .section .textContent, .sectionReversed .textContent {
-      margin-right: 2rem;
-      margin-left: 2rem;
+    .textContent{
+      width: auto;
+      padding: 20px;
+      font-size: 1.5rem;
     }
-  
-    .imageContent {
-      margin-top: 0;
-    }
+    .imageContent{
+      width: 450px;
+    } 
   }
   
-  /* Media Queries for Mobile View */
-  @media (max-width: 767px) {
-    .section, .sectionReversed {
+
+  
+  @media screen and (max-width: 768px) {
+    
+    .section{
+      display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
     }
+    .sectionReversed{
+      display: flex;
+      flex-direction: column;
+    }
+    .textContent{
+      width: auto;
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+    .imageContent{
+      width: 450px;
+    } 
+    
+  }
   
-    .section .textContent, .sectionReversed .textContent {
-      margin: 1rem 0;
-      text-align: center;
+  @media screen and (max-width: 480px) {
+    .section{
+      display: flex;
+      flex-direction: column;
     }
+    .sectionReversed{
+      display: flex;
+      flex-direction: column;
+    }
+    .textContent{
+      width: auto;
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+    .imageContent{
+      width: 450px;
+    } 
+   
+  }
   
-    .imageContent {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+  /* Portrait */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      
+      .section{
+        display: flex;
+        flex-direction: column;
+      }
+      .sectionReversed{
+        display: flex;
+        flex-direction: column;
+      }
+      .textContent{
+        width: auto;
+        padding: 20px;
+        font-size: 1.5rem;
+      }
+      .imageContent{
+        width: 450px;
+      } 
+   
+  }
+  
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 520px) 
+    and (max-device-width: 1080px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      .section{
+        display: flex;
+        flex-direction: column;
+      }
+      .sectionReversed{
+        display: flex;
+        flex-direction: column;
+      }
+      .textContent{
+        width: auto;
+        padding: 20px;
+        font-size: 1.5rem;
+      }
+      .imageContent{
+        width: 450px;
+      } 
+    
   }
   
