@@ -19,20 +19,16 @@ const Seo = ({ videoText }) => {
   const newsData = useSelector(getNewsData);
   const bingNews = useSelector(getBingNews);
   const [content, setContent] = useState({
-    metaTitle:
-      "SEO meta title",
-    metaContent:
-      "SEO meta content",
+    metaTitle: "SEO meta title",
+    metaContent: "SEO meta content",
     query: "SEO",
     formTitle: "SEO",
-    subTitle2:
-      "Här kan du skriva en subtitle",
-    subTitle3: `Subtitle ${mainquery}`
+    subTitle2: "Här kan du skriva en subtitle",
+    subTitle3: `Subtitle ${mainquery}`,
   });
   const customerData = useSelector(getCustomerData);
 
-  const services =
-    "Vi kan skriva alla våra tjänster här";
+  const services = "Vi kan skriva alla våra tjänster här";
   const element = useSelector(getElement);
   useEffect(() => {
     document
@@ -48,14 +44,14 @@ const Seo = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://sheglam.se/SEO"
+          href="https://centrumforalla.se/SEO"
         />
       </Helmet>
       <div className="Nav">
         <Nav />
       </div>
       <div className="Hem">
-      <MainComp
+        <MainComp
           query={content.query}
           formTitle={content.formTitle}
           icon={<BsHouseDoor />}
@@ -69,14 +65,14 @@ const Seo = ({ videoText }) => {
           text2={`Vi kan hjälpa dig med ${services}`}
         />
       </div>
-    <div className="Om">
+      <div className="Om">
         <AboutUs
-           query={mainquery.toUpperCase()}
-           oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
-           om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
+          query={mainquery.toUpperCase()}
+          oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
+          om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
       </div>
-     
+
       <div className="Tjänster">
         <Erbjuder />
       </div>

@@ -19,15 +19,12 @@ const Adspages = ({ videoText }) => {
   const newsData = useSelector(getNewsData);
   const bingNews = useSelector(getBingNews);
   const [content, setContent] = useState({
-    metaTitle:
-      "AdsPages meta title",
-    metaContent:
-      "AdsPages meta content",
+    metaTitle: "AdsPages meta title",
+    metaContent: "AdsPages meta content",
     query: "AdsPages",
     formTitle: "AdsPages",
-    subTitle2:
-      "Här kan du skriva en subtitle",
-    subTitle3: `Subtitle ${mainquery}`
+    subTitle2: "Här kan du skriva en subtitle",
+    subTitle3: `Subtitle ${mainquery}`,
   });
   const customerData = useSelector(getCustomerData);
 
@@ -48,14 +45,14 @@ const Adspages = ({ videoText }) => {
         <link
           hrefLang="sv"
           rel="canonical"
-          href="https://sheglam.se/app"
+          href="https://centrumforalla.se/app"
         />
       </Helmet>
       <div className="Nav">
         <Nav />
       </div>
       <div className="Hem">
-      <MainComp
+        <MainComp
           query={content.query}
           formTitle={content.formTitle}
           icon={<BsHouseDoor />}
@@ -69,18 +66,16 @@ const Adspages = ({ videoText }) => {
           text2={`Vi kan hjälpa dig med ${services}`}
         />
       </div>
-    <div className="Om">
+      <div className="Om">
         <AboutUs
           query={mainquery.toUpperCase()}
           oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro?`}
           om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
-
       </div>
-      
+
       <div className="Tjänster">
-        <Erbjuder
-        city={"uddevalla"} />
+        <Erbjuder city={"uddevalla"} />
       </div>
 
       <div className="booking-lottie">
@@ -88,7 +83,7 @@ const Adspages = ({ videoText }) => {
           <h2>Hjälp med {mainquery}?</h2>
           <h4>
             Vi erbjuder helt kostnadfritt besök/genomgång för att kunna hjälpa
-            dig som kund med {mainquery}. 
+            dig som kund med {mainquery}.
             <strong style={{ fontWeight: "700" }}> {mainquery}.</strong>
           </h4>
           <button

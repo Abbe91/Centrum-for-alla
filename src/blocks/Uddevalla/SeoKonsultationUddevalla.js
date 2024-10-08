@@ -24,9 +24,8 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
       "Centrum för Alla erbjuder professionella SEO konsultation för företag i hela Sverige. Öka din synlighet och nå dina kunder snabbt med våra skräddarsydda strategier.",
     query: "Effektiv SEO konsultation",
     formTitle: "Boka en kostnadsfri SEO konsultation",
-    subTitle2:
-      "Öka Din Digitala Närvaro med Centrum för Alla",
-    subTitle3: `Behöver du hjälp med ditt ${mainquery}?`
+    subTitle2: "Öka Din Digitala Närvaro med Centrum för Alla",
+    subTitle3: `Behöver du hjälp med ditt ${mainquery}?`,
   });
   const customerData = useSelector(getCustomerData);
   const services =
@@ -42,14 +41,14 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
       addressLocality: "Stockhgolm",
       addressRegion: "Sweden",
       postalCode: "41702",
-      addressCountry: "SE"
+      addressCountry: "SE",
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: "57.71659765082482",
-      longitude: "11.94740491088092"
+      longitude: "11.94740491088092",
     },
-    url: "www.sheglam.se",
+    url: "www.centrumforalla.se",
     telephone: "+467200000",
     openingHoursSpecification: [
       {
@@ -61,16 +60,16 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
           "Thursday",
           "Friday",
           "Saturday",
-          "Sunday"
+          "Sunday",
         ],
         opens: "08:00",
-        closes: "18:00"
-      }
+        closes: "18:00",
+      },
     ],
     priceRange: "1000kr-20000kr",
     image: [
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    ]
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
   };
   return (
     <div>
@@ -82,13 +81,16 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
         <meta charSet="utf-8" />
         <title>{content.metaTitle}</title>
         <meta name="description" content={content.metaContent} />
-        <meta property="og:url" content="https://sheglam.se/goteborg/seo-konsultation" />
+        <meta
+          property="og:url"
+          content="https://centrumforalla.se/goteborg/seo-konsultation"
+        />
         <meta property="og:description" content={content.metaContent} />
         <meta
           property="og:image"
           content="https://images.pexels.com/photos/3651376/pexels-photo-3651376.jpeg?auto=compress&cs=tinysrgb&w=1300"
         />
-        <link hrefLang="sv" rel="canonical" href="https://sheglam.se" />
+        <link hrefLang="sv" rel="canonical" href="https://centrumforalla.se" />
       </Helmet>
       <div className="Nav">
         <Nav />
@@ -115,14 +117,13 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
           oss={`Vilka är vi? Och hur gör vi för att kunna hjälpa dig att optimera din digitala närvaro med ${mainquery}?`}
           om={`är det självklara valet för att maximera synligheten på våra centrumdomäner.`}
         />
-
       </div>
       <div className="booking-lottie">
         <div className="booking-content">
           <h2>Hjälp med {mainquery}?</h2>
           <h4>
             Vi erbjuder helt kostnadfritt besök/genomgång för att kunna hjälpa
-            dig som kund med {mainquery}. 
+            dig som kund med {mainquery}.
             <strong style={{ fontWeight: "700" }}> {mainquery}.</strong>
           </h4>
           <button
@@ -138,10 +139,9 @@ const SeoKonsultationUddevalla = ({ videoText }) => {
           <BookingModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
         )}
       </div>
-      
+
       <div className="Tjänster">
-        <Erbjuder
-        city={"Uddevalla"} />
+        <Erbjuder city={"Uddevalla"} />
       </div>
       <div className="Kostnadsfri">
         <Kostnadsfri
